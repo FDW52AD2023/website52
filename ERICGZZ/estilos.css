@@ -1,0 +1,16 @@
+
+
+/* *{
+    border: 3px double blue;
+} 
+*/
+/* Selector de tipo */
+li{
+    background-color: yellow;
+    color: black;
+    border: 4px dashed lime;
+    border-radius: 5px;
+}
+/* selector por id */
+
+/* selector de clase */

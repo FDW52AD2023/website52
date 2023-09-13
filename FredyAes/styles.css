@@ -1,0 +1,60 @@
+body {
+    background-image: url('https://www.xtrafondos.com/wallpapers/one-piece-artwork-4011.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #0116505b;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para las secciones de evidencia */
+.evidence {
+    background-color: rgba(0, 0, 0, 0.185);
+    color: beige;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.evidence-title {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.evidence ul {
+    list-style: none;
+    padding: 0;
+}
+
+.evidence ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1012854d;
+    color: rgb(255, 255, 255);
+}

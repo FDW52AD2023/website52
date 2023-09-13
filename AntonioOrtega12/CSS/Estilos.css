@@ -1,0 +1,63 @@
+/* Selector Universal */
+/* * (Asteristo) {
+    border: 3px double purple
+} */
+
+/* Selector de tipo */
+li {
+    background-color: peru;
+    color: aqua;
+    border: 5px dashed lime;
+    border-radius: 3px;
+}
+
+/* Selector de ID */
+#mp1 {
+    border-top: 5px groove antiquewhite;
+}
+
+/* Selector de Sombra */
+.sombra {
+    box-shadow: 5px 5px 5px gold;
+}
+
+/* Le cambia el tamaño de fuente de letra a los Main que tienen una clase "Sombra" */
+main.sombra {
+    font-size: 45px;
+}
+
+/* Selector por Atributos */
+[lang] {
+    font-size: 30px;
+}
+
+[lang="es"] {
+    background-color: blue;
+}
+
+/* Selector para inicio de la oracion o palabra */
+[href^="https"] {
+    background-color: green;
+}
+
+/* Selector para final de la oracion o palabra */
+[href$="mx"] {
+    background-color: rgb(218, 17, 17);
+}
+
+/* Selector para una letra o parte en una oracion o palabra */
+[href*="h"] {
+    background-color: blue;
+    color: white;
+}
+
+/* Selector por Descendientes */
+main p {
+    border-radius: 5px;
+    border: 3px dotted blueviolet;
+}
+
+/* Selector de "Hijos" (Parte diferente de un mismo bloque) */
+main > p {
+    box-shadow: 6px rgb(221, 23, 138);
+}

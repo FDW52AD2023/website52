@@ -1,0 +1,64 @@
+/* Selectro universal*/
+
+/* * {
+    border: 3px double black;
+} */
+
+
+/* Selectro de tipo */
+
+li {
+    background-color: black;
+    color: aqua;
+    border: 4px;
+    border-radius: 5px;
+}
+
+/* Selectro por id */
+
+#mp1 {
+    border-top: 5px groove rebeccapurple;
+}
+
+
+
+/* Selectro de clase */
+
+#sombra {
+    box-shadow: 5px 5px 5px gray;
+}
+
+main.sombra {
+    font-size: 10px;
+
+}
+
+/*  */
+
+[lang] {
+    font-size: 30px;
+}
+
+[lang="es"] {
+
+    background-color: gray;
+}
+
+[href ^="https"] {
+    background-color: red;
+}
+
+[href ^="es"] {
+    background-color: black;
+}
+
+[href ^="h"] {
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* Seletor de descemdites  */
+
+main.p {
+    border: 3px darkred blue;
+    border-radius: 5px;
+}

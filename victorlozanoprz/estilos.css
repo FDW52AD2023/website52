@@ -1,0 +1,19 @@
+/* selector universal */
+
+/* *(
+    border: 3px double blue;
+) 
+*/
+
+/* selector de tipos */
+li(
+    background-color: gold;
+    color:black;
+    border: 4px dashed lime;
+    border-radius 5px;
+)
+
+/* selector por id */
+#mp1 {
+    border-top: 5px groove gray;
+}

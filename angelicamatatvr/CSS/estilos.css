@@ -1,8 +1,9 @@
+/* Selector universal */
+
 /* li *{
 
     border: 3xp double brown;
-}
-*/
+} */
 
 /* Selector de tipo */
 li {
@@ -11,7 +12,7 @@ li {
     border-radius: 5px;
 }
 
-/* Selector de */
+/* Selector por id */
 #mp1 {
     border-top: 5px groove greenyellow;
 }

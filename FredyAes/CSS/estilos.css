@@ -29,6 +29,7 @@ li {
 .sombra {
     box-shadow: 5px 5px 5px rgb(190, 21, 21);
     color: white;
+    text-align: center;
 }
 
 main.sombra {
@@ -41,6 +42,7 @@ main.sombra {
     font-size: 30px;
     color: white;
     background-color: rgba(61, 43, 16, 0.658);
+    text-align: center;
 }
 
 [lang = "es"] { /* Especificamos cual exactamente */
@@ -86,5 +88,6 @@ body {
 
 
 h1 {
-    background-color: rgba(240, 248, 255, 0.267);
+    background-color: rgba(240, 248, 255, 0.589);
+    text-align: center;
 }

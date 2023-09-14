@@ -1,0 +1,44 @@
+/* selector universal */
+
+/* {
+    border: 3px double blue;
+} */
+
+
+/*selector de tipo */
+li {
+    background-color: gold;
+    color: black;
+    border: 4px dashed lime;
+    border-radius: 5px;
+}
+
+/*selector por id */
+#mp1 {
+    border-top: 5px groove gray;
+}
+
+
+/* selector de clase */
+.sombra {
+    box-shadow: 5px 5px 5px gray;
+}
+
+main.sombra{
+    font-size: 10px;
+}
+
+/* sector por atributo */
+[lang] {
+    font-size: 30px;
+}
+
+[lang+"es"]{
+    background-color: gray;
+}
+
+[href="https"]{
+    background-color: green;
+}
+
+

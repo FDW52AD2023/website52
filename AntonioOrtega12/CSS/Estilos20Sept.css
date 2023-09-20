@@ -1,0 +1,8 @@
+#mp1 .S2 ~ section {
+    background-color: blueviolet;
+}
+
+/* Hermano Adyacente */
+#mp1 h2 + section {
+    border-top: 5px double blue;
+}

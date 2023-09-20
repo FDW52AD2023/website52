@@ -1,0 +1,22 @@
+/* #mp1 .s2 ~ section {
+    background-color: rebeccapurple;
+}
+
+#mp1 h2 + section {
+    border-top: 5px double blue;
+} */
+
+#mp1 .s4 {
+    background-color: aqua;
+    color: white;
+}
+
+#lista1 li:first-child, #lista1 li:last-child, #lista1 li:nth-child(odd){
+    background-color: black;
+    color: white;
+}
+
+#lista1 li:nth-child(3n){
+    background-color: black;
+    color: white;
+}

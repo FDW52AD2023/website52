@@ -1,0 +1,35 @@
+/* #mp1 .s2 ~ section {
+background-color: aqua;
+} */
+
+/* #mp1 h2 + section {
+    border-top: 5px double purple;
+} */
+
+#mp1 .s4:hover  {
+    background-color: palevioletred;
+    color: white;
+}
+
+#lista1 li:first-child, #lista1 li:last-child{
+    background-color: blue;
+    color: azure;
+}
+
+/* Impares */
+#lista1 li:nth-child(odd) {
+    font-size: 5px;
+}
+
+/* Pares */
+#lista1 li:nth-child(even) {
+    text-decoration: line-through;
+}
+
+/* Cada 3 */
+#lista1 li:nth-child(3n) {
+    background-color: violet;
+}
+
+
+

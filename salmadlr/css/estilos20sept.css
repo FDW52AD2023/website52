@@ -7,11 +7,12 @@
 }
 */
 
-#mp1 .s4 :hover {
-    background-color:
+#mp1 .s4 :hover{
+    background-color:brown;
+    color: beige;
 }
 
-#lista1 li:first-child {
+#lista1 li:first-child, #lista1 li:last-child {
     background-color: black;
     color: white;
 }
@@ -21,7 +22,7 @@
     color: white;
 }
 
-#lista1 li:nth-child(6) {
+#lista1 li:nth-child(odd) {
     font-size: 5px;
 }
 

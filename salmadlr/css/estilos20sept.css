@@ -1,0 +1,30 @@
+/*#mp1 .s2 ~ section {
+    background-color: blue;
+}
+
+#mp1 h2 + section {
+    border-top: 5px double blueviolet;
+}
+*/
+
+#mp1 .s4 :hover {
+    background-color:
+}
+
+#lista1 li:first-child {
+    background-color: black;
+    color: white;
+}
+
+#lista1 li:nth-child(6) {
+    background-color: black;
+    color: white;
+}
+
+#lista1 li:nth-child(6) {
+    font-size: 5px;
+}
+
+#lista1 li:nth-child(even) {
+    text-decoration: line-through;
+}

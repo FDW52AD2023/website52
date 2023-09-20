@@ -1,0 +1,61 @@
+/* Selector universal */
+
+/* *{
+    border: 3px double blue;
+} */
+
+/* Selector de tipo */
+li {
+    background-color: gold;
+    color: black;
+    border: 4px dashed lime;
+    border-radius: 5px;
+}
+
+/* Selector por id */
+#mp1 {
+    border-top: Spx groove gray;
+}
+
+/* Selector de clase */
+.sombra {
+    box-shadow: Spx 5px gray;
+}
+
+main.sombra {
+    font-size: 10px;
+}
+
+/* Selector por atributo */
+[lang] {
+    font-size: 30px;
+}
+
+[lang="es"] {
+    background-color: gray;
+}
+
+[href="https"] {
+
+}
+
+[href $="mx"] {
+    background-color: red;
+}
+
+[href #="mx"] {
+    
+}
+
+/* Selector por descediente */
+main p {
+    border: 2px dotted blue;
+    border-radius: Spx;
+}
+
+/* Selector hijo directos */
+main > p {
+    box-shadow: 5px 5px 5px lime;
+}
+
+

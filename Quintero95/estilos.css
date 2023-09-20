@@ -1,3 +1,4 @@
+
 /* Selector universal */
 
 /* * {
@@ -12,7 +13,7 @@
     border: 4px dashed lime;
     border-radius: 5px;
  }
- 
+
  /* selector por id */
  #mp1 {
     border-top: 5px groove gray;
@@ -61,9 +62,3 @@ main p {
 main > p {
     box-shadow: 5px 5px 5px lime;
 }
-
-
-
-
-
-

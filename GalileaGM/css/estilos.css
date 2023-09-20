@@ -1,69 +1,60 @@
-/* Selector universal */
+/*Selector universal*/
 
 /* * {
-    border: 3px double blue;
-}
- */
+    border:3px double blue;
 
- /* Selector de tipo */
- li {
+} */
+
+/* Selector de tipo */
+li{
     background-color: gold;
-    color:black;
+    color: black;
     border: 4px dashed lime;
     border-radius: 5px;
- }
- 
- /* selector por id */
- #mp1 {
+} 
+
+/* Selector por id */
+#mp1{
     border-top: 5px groove gray;
- }
 
-
-/* selector de clase */
-.sombra {
-    box-shadow: 5px 5px 5px gray;
 }
 
-main.sombra {
+/*Selector de clase*/
+.sombra {
+    box-shadow: 5px 5px 5px gray ;
+}
+main.sombra{
     font-size: 10px;
 }
-
-/* selector por atributo */
-
+/* Selector por atributo */
 [lang] {
     font-size: 30px;
 }
 
-[lang="es"] {
+[lang= "es"] {
     background-color: gray;
 }
-
-[href ^="https"] {
+[href*="h"]{
+    background-color: black;
+    color: white;
+}
+[href^="https"] {
     background-color: green;
 }
-
-[href $="mx"] {
+[href$="mx"] {
     background-color: red;
 }
-
-[href *="h"] {
+[href*="h"] {
     background-color: black;
-    color:white;
+    color: white;
 }
-
-/* selector por descencientes */
+/* Selector por descendientes */
 main p {
     border: 2px dotted blue;
     border-radius: 5px;
 }
-
 /* Selector hijos directos */
 main > p {
     box-shadow: 5px 5px 5px lime;
 }
-
-
-
-
-
 

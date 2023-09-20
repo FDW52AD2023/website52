@@ -1,25 +1,28 @@
-/* Selector universal */
+/* Selector Universal */
 
 /* * {
-    border: 3px double blue;
-}
- */
+    border: 3px double blue; 
+} */
 
- /* Selector de tipo */
- li {
+
+/* Selector de Tipo */
+
+li {
     background-color: gold;
-    color:black;
+    color: black;
     border: 4px dashed lime;
     border-radius: 5px;
- }
- 
- /* selector por id */
- #mp1 {
+}
+
+/* Selector por id */
+
+#mp1 {
     border-top: 5px groove gray;
- }
 
+}
 
-/* selector de clase */
+/* Selector de clase */
+
 .sombra {
     box-shadow: 5px 5px 5px gray;
 }
@@ -28,7 +31,7 @@ main.sombra {
     font-size: 10px;
 }
 
-/* selector por atributo */
+/* Selector por atributo */
 
 [lang] {
     font-size: 30px;
@@ -48,10 +51,11 @@ main.sombra {
 
 [href *="h"] {
     background-color: black;
-    color:white;
+    color: white;
 }
 
-/* selector por descencientes */
+/* Selector por descendientes */
+
 main p {
     border: 2px dotted blue;
     border-radius: 5px;
@@ -61,9 +65,3 @@ main p {
 main > p {
     box-shadow: 5px 5px 5px lime;
 }
-
-
-
-
-
-

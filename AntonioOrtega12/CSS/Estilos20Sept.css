@@ -1,8 +1,35 @@
-#mp1 .S2 ~ section {
+/*#mp1 .S2 ~ section {
     background-color: blueviolet;
 }
 
-/* Hermano Adyacente */
+/* Hermano Adyacente 
 #mp1 h2 + section {
     border-top: 5px double blue;
+}*/
+
+#mp1 .S4:hover {
+    background-color: skyblue;
+    color: rgb(240, 240, 240);
+}
+
+#Lista1 li:first-child, li:last-child {
+    background-color: blue;
+    color: black;
+}
+
+#Lista1 li:nth-child(6) {
+    background-color: blue;
+    color: black;
+}
+
+#Lista1 li:nth-child(odd) {
+    font-size: 5px;
+}
+
+#Lista1 li:nth-child(even) {
+    text-decoration: line-through brown;
+}
+
+#Lista1 li:nth-child(3n) {
+    background-color: rgb(202, 48, 177);
 }

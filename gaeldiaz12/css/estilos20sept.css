@@ -1,10 +1,10 @@
-/* #mp1 .s2 ~ section {
+ #mp1 .s2 ~ section {
     background-color: rebeccapurple;
 }
 
 #mp1 h2 + section {
     border-top: 5px double blue;
-} */
+} 
 
 #mp1 .s4 {
     background-color: aqua;

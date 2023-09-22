@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c5c6c8;
+}
+
+header {
+    background-color: #d8f8e1;
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+article {
+    background-color: #ffe4e1;
+    margin: 10px auto;
+    padding: 20px;
+    width: 50vw;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #d8f8e1;
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
+}

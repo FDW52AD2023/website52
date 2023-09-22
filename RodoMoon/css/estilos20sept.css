@@ -1,0 +1,30 @@
+#mp1 .s2 ~ section {
+    background-color: purple;
+}
+
+
+#mp1 .h2 + section {
+    border-top: 5px double blue;
+}
+
+#lista1 Li:first-child, #lista1 Li:last-child {
+    background-color: black;
+    color:white;
+}
+
+#lista1 Li:nth-child(6) {
+    background-color: black;
+    color:white;
+}
+
+#lista1 Li:nth-child(odd) {
+    font-size: 5px;
+}
+
+#lista1 Li:nth-child(even) {
+    text-decoration: line-through;
+}
+
+#lista1 Li:nth-child(3n) {
+    background-color: brown;
+}

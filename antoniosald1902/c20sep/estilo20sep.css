@@ -1,0 +1,33 @@
+/* #mp1 .s2 ~ section {
+    background-color: rebeccapurple;
+}
+
+#mp1 h2 + section {
+    border-top: 5px double blue;
+} */
+
+#mp1 .s4 :hover {
+    background-color: rgb(29, 175, 36);
+}
+
+#lista1 li:first-child, #lista1 li:last-child {
+    background-color: rgb(227, 32, 237);
+    color: white;
+}
+
+#lista1 li:nth-child(6) {
+    background-color: rgb(210, 28, 195);
+    color: white;
+}
+
+#lista1 li:nth-child(odd) {
+    font-size: 5px;
+}
+
+#lista1 li:nth-child(even) {
+    text-decoration: line-through;
+}
+
+#lista1 li:nth-child(3n) {
+    background-color: rgb(27, 168, 239);
+}

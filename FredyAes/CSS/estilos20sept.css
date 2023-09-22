@@ -1,0 +1,44 @@
+
+/* Selector hermano general */
+
+/* #mp1 .s2 ~ section{
+    background-color: aqua;
+} */
+
+
+/* La sección que sea hermano adyacente de h2 */
+
+/* #mp1 h2 + section {
+    border-top: 5px double green;
+} */
+
+#mp1 .s4:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+#lista1 li:nth-child(6) {
+    background-color: black;
+    color: white;
+}
+
+#lista1 li:nth-child(odd) { /* odd --- son impares */
+    font-size: 5px;
+}
+
+#lista1 li:nth-child(even) { /* odd --- son pares */
+    text-decoration: line-through;
+}
+
+#lista1 li:nth-child(3n) {  /* Cada 3 */
+    background-color: brown;
+}
+
+body {
+    background-image: url('https://free4kwallpapers.com/uploads/originals/2021/06/26/makima-wallpaper.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}

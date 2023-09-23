@@ -36,10 +36,12 @@ header nav ul li:last-child {
     padding: 20px;
     margin: 20px 0;
     border-radius: 5px;
+    box-shadow: 8px 8px 8px rgb(226, 212, 80);
 }
 
 .evidence-title {
     font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
 }
 
 .evidence ul {
@@ -57,4 +59,10 @@ footer {
     padding: 10px;
     background-color: #1012854d;
     color: rgb(255, 255, 255);
+}
+
+/* Estilos para las etiquetas <a> cuando se hace hover */
+a:hover {
+    background-color: yellow; /* Fondo amarillo al pasar el mouse */
+    color: black; /* Texto negro al pasar el mouse */
 }

@@ -34,3 +34,11 @@
     background-color: brown;
 }
 
+body {
+    background-image: url('https://free4kwallpapers.com/uploads/originals/2021/06/26/makima-wallpaper.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}

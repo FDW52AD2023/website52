@@ -1,0 +1,53 @@
+/* *selectoruniversal{
+    border-radius: 3px double blue;
+} */
+
+li{
+    background: gold;
+    color: black;
+    border: 4px dashed lime;
+    border-radius: 5px;
+}
+
+
+#mp1 {
+    border-top: 5px groove gray;
+}
+
+.sombra{
+    box-shadow: 10px 10px 10px gray;
+}
+
+main.sombra{
+    font-size: 80px;
+}
+
+[lang] {
+    font-size: 30px;
+}
+
+[lang="es"] {
+    background-color: gray;
+}
+
+[href ^="https"] {
+    background-color: rgb(105, 181, 105);
+}
+
+[href $="mx"] {
+    background-color: rgb(211, 235, 30);
+}
+
+[href *="h"] {
+    background-color: rgb(190, 24, 24);
+    color: rgb(220, 34, 189);
+}
+
+main p {
+    border: 2px dotted rgb(25, 223, 177);
+    border-radius: 5px;
+}
+
+main > p {
+    box-shadow: 5px 5px 5px rgb(18, 68, 18);
+}

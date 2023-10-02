@@ -1,56 +1,56 @@
-#mp1 p:first-child:first-letter {
-    font-size: 100px;
-}
+/* #mp1 p::first-letter {
+    font-size: 300px;
+} */
+
 
 #mp1 p::first-line {
     background-color: peachpuff;
 }
 
 
+
 #mp1 > aside .subtitulo {
     background-color: green;
 }
+
 
 #mp1 > aside h2 {
     background-color: red !important;
 }
 
-/* Modelo de caja del artículo que está en footer */
 
-#mp1 > footer article {
-    background-color: gold;
-    /* Un valor para los 4 lados */
+/* modelo de caja del articulo que esta en footer */
+
+#mp1 > footer article{
+    background-color: blue;
+
+    /* un valor para 4 lados */
     padding: 30px;
-    
-    /* Dos valores. El primero es para arriba y abajo
-    y el segundo para izquierda y derecha */
+
+    /* dos valores. El primeor es para arriba y abajo
+    y el segundo para izq y der */
     padding: 10px 40px;
 
-    /* Tres valores
-    Primero: arriba
-    Segundo: izq y der
-    Tercero: abajo; */
+    /* tres valores:
+    primero:
+    segundo:
+    tercero: */
     padding: 10px 30px 50px;
 
-    /* Cuatro valores:
-    Primero: arriba
-    Segundo: der
-    Tercero: abajo
-    Cuarto: izq  */
+    /* cuatro valores:
+    primero:
+    segundo:
+    tercero:
+    cuatro:   */
     padding: 10px 20px 30px 40px;
 
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    padding-left: 40px;
-
-    /* Bordes */
-
+    /* bordes */
     border: 10px dotted gray;
-
     margin: 30px;
-
 }
+
+
+/* primer articulo dentro del aside */
 
 #mp1 > aside > article:first-child {
     background-color: gold;
@@ -78,41 +78,42 @@
     box-sizing: border-box;
 }
 
-#mp1 footer p {
+#mp1 footer p{
     display: inline;
 }
 
-#mp1 footer a {
+#mp1 footer a{
     display: block;
 }
 
-#mp1 .parrafo1 {
+#mp1 .parrafo1{
     display: block;
     width: 300px;
     height: 100px;
     background-color: blueviolet;
-    border: 4px solid black;
+    border: 1px solid black;
     padding: 5px;
 }
 
 #mp1 .link1 {
     width: 100px;
     height: 100px;
-    background-color: pink;
-    border: 4px solid black;
+    background-color: blueviolet;
+    border: 1px solid black;
     padding: 5px;
 }
 
 #mp1 .parrafo1 span {
     display: inline-block;
     width: 100px;
-    height: 100px;
-    background-color: greenyellow;
+    height: 50px;
+    background-color: blue;
 }
 
-#mp1 footer article h2 {
-    font-size: 20px;
-    border: .25em solid black ;
-    padding: .5rem;
-    
+#mp1 footer article h2{
+    font-size: 30px;
+    border: .25em solid black;
+    padding: .5em;
 }
+
+

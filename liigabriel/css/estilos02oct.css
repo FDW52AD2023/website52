@@ -1,10 +1,11 @@
-#mp1 p:first-child:first-letter {
-    font-size: 100px;
-}
+/* #mp1 p::first-letter {
+    font-size: 300px;
+} */
 
 #mp1 p::first-line {
     background-color: peachpuff;
 }
+
 
 
 #mp1 > aside .subtitulo {
@@ -15,51 +16,54 @@
     background-color: red !important;
 }
 
-/* Modelo de caja del artículo que está en footer */
+/* modelo de caja del articulo que esta en footer*/
 
-#mp1 > footer article {
+#mp1 > footer article{
     background-color: gold;
-    /* Un valor para los 4 lados */
+    /* un valor para los 4 lados */
     padding: 30px;
-    
-    /* Dos valores. El primero es para arriba y abajo
-    y el segundo para izquierda y derecha */
+
+    /* dos valores. El primero es  para arriba y abajo 
+    y el segundo para izq y der*/
     padding: 10px 40px;
 
-    /* Tres valores
-    Primero: arriba
-    Segundo: izq y der
-    Tercero: abajo; */
+    /* tres valores:
+    primero: arriba
+    segundo: izq y der
+    tercero: abajo */
     padding: 10px 30px 50px;
 
-    /* Cuatro valores:
-    Primero: arriba
-    Segundo: der
-    Tercero: abajo
-    Cuarto: izq  */
+    /* cuatro valores:
+    primero: arriba
+    segundo: der
+    tercero: abajo 
+    cuatro: izq
+    */
     padding: 10px 20px 30px 40px;
-
+    
     padding-top: 10px;
-    padding-right: 20px;
+    padding-right: 20px;    
     padding-bottom: 30px;
     padding-left: 40px;
 
-    /* Bordes */
-
+    /* bordes */
     border: 10px dotted gray;
 
     margin: 30px;
 
 }
 
+/* primer articulo dentro del aside */
 #mp1 > aside > article:first-child {
     background-color: gold;
     width: 500px;
     height: 200px;
     border: 5px solid blue;
     padding: 5px;
+    box-sizing: content-box;
 }
 
+/* segundo articulo dentro del aside */
 #mp1 > aside > article:nth-child(2) {
     background-color: gold;
     width: 500px;
@@ -69,6 +73,7 @@
     box-sizing: border-box;
 }
 
+/* segundo articulo dentro del aside */
 #mp1 > aside > article:last-child {
     background-color: gold;
     width: 100px;
@@ -77,6 +82,7 @@
     padding: 5px;
     box-sizing: border-box;
 }
+
 
 #mp1 footer p {
     display: inline;
@@ -107,12 +113,14 @@
     display: inline-block;
     width: 100px;
     height: 100px;
-    background-color: greenyellow;
+    background-color: lime;
 }
 
 #mp1 footer article h2 {
     font-size: 20px;
-    border: .25em solid black ;
+    border: .25em solid black;
     padding: .5rem;
-    
 }
+
+
+

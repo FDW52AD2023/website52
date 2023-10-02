@@ -1,0 +1,109 @@
+/* #mp1 p::first-letter {
+    font-size: 300px; 
+} */
+
+#mp1 p::first-line {
+    background-color: darkgoldenrod;
+}
+
+#mp1 > aside .subtitulo {
+    background-color: blue;
+}
+
+#mp1 > aside h2 {
+    background-color: red !important;
+}
+
+/* Modelo de caja del Articulo */
+#mp1 > footer article {
+    background-color: gold;
+    /* Un valor para los 4 lados */
+    padding: 20px;
+    /* Dos valores. El primero es para ariiba y abajo, y el segundo para izquierda y derecha */
+    padding: 10px 40px;
+    /* Tres valores
+    Primero: Arriba
+    Segundo: Izquierda y Derecha
+    Tercero: Abajo
+    */
+    padding: 10px 40px 5px;
+    /* Cuatro valores
+    Primero: Arriba
+    Segundo: Derecha
+    Tercero: Abajo
+    Cuarto: Izquierda
+    */
+    padding: 45px 5px 10px 100px;
+
+    /* Bordes */
+    border: 10px dotted gray;
+
+    margin: 50px;
+}
+
+/* Primer arciculo del aside */
+#mp1 > aside > article:first-child {
+    background-color: aqua;
+    width: 500px;
+    height: 200px;
+    border: solid 5px blue;
+    padding: 10px;
+}
+
+/* Segundo arciculo del aside */
+#mp1 > aside > article:nth-child(2) {
+    background-color: rgb(245, 35, 133);
+    width: 500px;
+    height: 200px;
+    border: solid 5px rgb(49, 8, 104);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Tercer arciculo del aside */
+#mp1 > aside > article:nth-child(3) {
+    background-color: rgb(90, 56, 72);
+    width: 100px;
+    height: 100px;
+    border: solid 5px rgb(133, 102, 173);
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#mp1 footer p {
+    display: inline;
+}
+
+#mp1 footer a {
+    display: block;
+}
+
+#mp1 .parrafo1 {
+    display: block;
+    background-color: rgb(72, 212, 103);
+    width: 300px;
+    height: 100px;
+    border: solid 4px rgb(26, 4, 56);
+    padding: 5px;
+}
+
+#mp1 .link1 {
+    background-color: rgb(32, 255, 188);
+    width: 100px;
+    height: 100px;
+    border: solid 4px rgb(100, 204, 31);
+    padding: 5px;
+}
+
+#mp1 .parrafo1 span {
+    display: inline-block;
+    background-color: rgb(21, 22, 95);
+    width: 100px;
+    height: 100px;
+}
+
+#mp1 footer article h2 {
+    font-size: 30px;
+    border: .25em solid black;
+    padding: .5em;
+}

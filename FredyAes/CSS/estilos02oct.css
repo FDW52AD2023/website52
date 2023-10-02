@@ -38,4 +38,24 @@
     Tercero: abajo
     Cuarto: izq  */
     padding: 10px 20px 30px 40px;
+
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+
+    /* Bordes */
+
+    border: 10px dotted gray;
+
+    margin: 30px;
+
+}
+
+#mp1 > aside > article:first-child {
+    background-color: gold;
+    width: 500px;
+    height: 200px;
+    border: 5px solid blue;
+    padding: 5px;
 }

@@ -12,5 +12,30 @@
 }
 
 #mp1 > aside h2 {
-    background-color: red;
+    background-color: red !important;
+}
+
+/* Modelo de caja del artículo que está en footer */
+
+#mp1 > footer article {
+    background-color: gold;
+    /* Un valor para los 4 lados */
+    padding: 30px;
+    
+    /* Dos valores. El primero es para arriba y abajo
+    y el segundo para izquierda y derecha */
+    padding: 10px 40px;
+
+    /* Tres valores
+    Primero: arriba
+    Segundo: izq y der
+    Tercero: abajo; */
+    padding: 10px 30px 50px;
+
+    /* Cuatro valores:
+    Primero: arriba
+    Segundo: der
+    Tercero: abajo
+    Cuarto: izq  */
+    padding: 10px 20px 30px 40px;
 }

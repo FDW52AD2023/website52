@@ -109,3 +109,10 @@
     height: 100px;
     background-color: greenyellow;
 }
+
+#mp1 footer article h2 {
+    font-size: 20px;
+    border: .25em solid black ;
+    padding: .5rem;
+    
+}

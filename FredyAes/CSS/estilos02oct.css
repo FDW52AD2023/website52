@@ -1,0 +1,16 @@
+#mp1 p::first-letter {
+    font-size: 100px;
+}
+
+#mp1 p::first-line {
+    background-color: peachpuff;
+}
+
+
+#mp1 > aside .subtitulo {
+    background-color: green;
+}
+
+#mp1 > aside h2 {
+    background-color: red;
+}

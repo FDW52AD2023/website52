@@ -21,7 +21,7 @@ header {
 /* colores de los articulos */
 /* azul, verde, tomate, peru, oro, gris */
 .azul {
-    background-color: blue;
+    background-color: rgb(84, 84, 180);
 }
 .verde {
     background-color: green;

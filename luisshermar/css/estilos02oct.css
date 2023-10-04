@@ -1,43 +1,42 @@
-/* #mp1 p::first-letter {
+/* #mp1 p::first-letter{
     font-size: 300px;
 } */
 
-#mp1 p::first-line {
+#mp1 p ::first-line {
     background-color: peachpuff;
 }
 
-#mp1 > aside .subtitulo {
+#mp1 > aside .Subtitulo {
     background-color: green;
 }
+
 
 #mp1 > aside h2 {
     background-color: red !important;
 }
 
-/* Modelo de caja del articulo que esta en footer */
+/* modelo de caja del articulo que esta en footer */
 
 #mp1 > footer article {
     background-color: gold;
-    /* un valor para los 4 lados */
+    /* Un valor para los 4 lados */
     padding: 30px;
-    
 
-    /* dos valores. El primero es para arriba y abajo y
- el segundo es para izquierda y derecha */
+    /* dos valores. El primero es para arrib y abajp y el segundo
+        para izq y der */
     padding: 10px 40px;
 
-    /* 3 valores:
+    /* tres valores:
     primero: arriba
-    segundo: izq y derecha
+    segundo: izq y der
     tercero: abajo */
     padding: 10px 30px 50px;
 
-    /* 4 valores
+    /* Cuatro valores:
     primero: arriba
-    segundo: derecha
+    segundo: der
     tercero: abajo
-    cuarto: izquierda
-     */
+    cuarto: izq */
     padding: 10px 20px 30px 40px;
 
     padding-top: 10px;
@@ -45,16 +44,14 @@
     padding-bottom: 30px;
     padding-left: 40px;
 
-
-/* bordes */
-border: 10px dotted gray;
-
-/* margen */
-margin: 30px;
+    /* Bordes*/
+    border: 10px dotted grey;
+    
+    margin: 30px;
 }
 
-/* primer articulo dentro de asid */
-#mp1 > aside > article:first-child {
+    /* Primer Articulo*/
+#mp1 > aside > article :first-child {
     background-color: gold;
     width: 500px;
     height: 200px;
@@ -63,8 +60,8 @@ margin: 30px;
     box-sizing: content-box;
 }
 
-/* segundo articulo dentro de asid */
-#mp1 > aside > article:nth-child(2) {
+    /* segundo Articulo dentro del aside*/
+#mp1 > aside > article :nth-child(2) {
     background-color: gold;
     width: 500px;
     height: 200px;
@@ -73,26 +70,26 @@ margin: 30px;
     box-sizing: border-box;
 }
 
-/* tercero articulo dentro de asid */
-#mp1 > aside > article:last-child {
-    background-color: gold;
-    width: 100px;
-    height: 100px;
-    border: 5px solid blue;
-    padding: 5px;
-    box-sizing: border-box;
+        /* segundo Articulo dentro del aside*/
+#mp1 > aside > article :last-child(2) {
+            background-color: gold;
+            width: 100px;
+            height: 100px;
+            border: 5px solid blue;
+            padding: 5px;
+            box-sizing: border-box;
 }
 
 #mp1 footer p {
-    display: block;
+    display: inline;
 }
 
 #mp1 footer a {
     display: block;
 }
 
-#mp1 .parrafo1, .link1 {
-    width: 300px;
+#mp1 .parrafo1 {
+    width: 100px;
     height: 100px;
     background-color: blueviolet;
     border: 1px solid black;
@@ -100,9 +97,9 @@ margin: 30px;
 }
 
 #mp1 .link1 {
-    width: 300px;
+    width: 100px;
     height: 100px;
-    background-color: pink;
+    background-color: blueviolet;
     border: 1px solid black;
     padding: 5px;
 }
@@ -111,12 +108,10 @@ margin: 30px;
     width: 100px;
     height: 100px;
     background-color: lime;
-    display: inline-block;   
 }
 
 #mp1 footer article h2 {
-    font-size: 20px;
+    font-size: 40px;
     border: .25em solid black;
-    padding: .5em;
+    padding:.5em;
 }
-

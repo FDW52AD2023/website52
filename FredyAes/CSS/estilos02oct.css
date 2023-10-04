@@ -109,3 +109,17 @@
     height: 100px;
     background-color: greenyellow;
 }
+
+#mp1 footer article h2 {
+    font-size: 20px;
+    border: .25em solid black ;
+    padding: .5rem;
+    
+}
+
+body {
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/817/552/desktop-wallpaper-code-geass-kallen-stadtfeld-and-mobile-backgrounds-kallen-stadtfeld.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}

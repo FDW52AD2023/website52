@@ -97,3 +97,12 @@ header {
 #header7 #a6 {
     height: 300px;
 }
+
+#header8 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#header8 article {
+    width: 50%;
+}

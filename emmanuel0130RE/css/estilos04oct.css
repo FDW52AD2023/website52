@@ -1,0 +1,89 @@
+header{
+    border: 5px solid black;
+}
+#header1 img {
+    float: right;
+    border-radius: 50%;
+    width: 100px;
+  height: 100px;
+
+}
+.clearfix::after{
+    content: "";
+    clear:both;
+    display: table;
+}
+#header2 img{
+    float: left;
+    border-color: brown;
+    border-radius: 50%;
+    width: 100px;
+  height: 100px;
+}
+/* Colores de los articulos*/
+/*azul, verde, tomate, peru, oro, gris*/
+.azul{
+    background-color: blue;
+}
+.verde{
+    background-color: green;
+}
+.tomate{
+    background-color: tomato;
+}
+.peru{
+    background-color: peru;
+}
+.oro{
+    background-color: gold;
+}
+.gris{
+    background-color: gray;
+}
+#header3 article{
+    float: left;
+    width: 16.6%;
+}
+#header4 article {
+    display: flex;
+    float: right;
+}
+#header5{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#header6{
+    display: flex;
+}
+#header6 #a1{
+    width: 20%;
+}
+#header6 #a4{
+    width: 30%;
+}
+#header6 #a5{
+    width: 40%;
+}
+#header7 {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+}
+#header7 #a2{
+    height: 50px;
+}
+#header7 #a4{
+    height: 150px;
+}
+#header7 #a6{
+    height: 250px;
+}
+#header8 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+}
+#header8 article{
+    width: 50%;
+}

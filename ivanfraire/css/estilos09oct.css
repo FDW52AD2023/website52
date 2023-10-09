@@ -185,5 +185,13 @@ header {
 
 #mp1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
+}
+
+#mp1 header {
+    grid-column: 1 / -1;
+}
+
+#mp1 footer {
+    grid-column: 1 / -1;
 }

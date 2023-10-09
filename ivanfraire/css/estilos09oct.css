@@ -1,0 +1,66 @@
+header {
+    border: 5px solid black;
+}
+
+/* colores de los articulos */
+/* azul,verde,tomate,peru,oro,gris */
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
+
+.tomate {
+    background-color: tomato;
+}
+
+.peru {
+    background-color: peru;
+}
+
+.oro {
+    background-color: gold;
+}
+
+.gris {
+    background-color: grey;
+}
+
+#header1 {
+    display: flex;
+    flex-flow: column wrap;
+    height: 200px;
+}
+
+#header1 #a1 {
+    height: 180px;
+}
+
+#header2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header3 {
+    display: flex;
+    justify-content: center;
+}
+
+#header4 {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 200px;
+    justify-content: space-around;
+}
+
+#header5 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+#header5 article {
+    width: 50%;
+}

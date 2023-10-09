@@ -165,3 +165,25 @@ header {
 #header11 #a6 {
     align-self: flex-start;
 }
+
+#mp1 header {
+    background-color: green;
+    border: 0px;
+}
+
+#mp1 main {
+    background-color: lightcoral;
+}
+
+#mp1 aside {
+    background-color: darkgoldenrod;
+}
+
+#mp1 footer {
+    background-color: yellowgreen;
+}
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

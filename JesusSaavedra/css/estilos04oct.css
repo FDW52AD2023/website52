@@ -1,0 +1,29 @@
+header {
+    border: 5px solid rgb(247, 3, 3);
+    margin: 5px;
+}
+
+#header1 img {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#header2 img {
+    float: left;
+    margin-right: 1em;
+}
+
+/* Colores de los artículos */
+/* Azul, verde, tomate, peru, oro, gris */
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}

@@ -123,3 +123,91 @@ body {
     background-attachment: fixed;
     margin: 0;
 }
+
+/* Estilos para la sección con id "mp1" */
+#mp1 {
+    margin: 20px;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+/* Estilos para el encabezado dentro de "mp1" */
+#mp1 header {
+    background-color: #007bff80;
+    color: #72ff72;
+    padding: 10px;
+    box-shadow: 6px 6px 6px rgb(158, 41, 142);
+}
+
+#mp1 h1 {
+    margin: 0;
+}
+
+#mp1 nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#mp1 nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#mp1 nav a {
+    text-decoration: none;
+    color: #e8f801;
+}
+
+/* Estilos para el main dentro de "mp1" */
+#mp1 main {
+    padding: 20px;
+}
+
+/* Estilos para el aside dentro de "mp1" */
+#mp1 aside {
+    margin-top: 20px;
+    background-color: #970c0c7e;
+    padding: 10px;
+    box-shadow: 6px 6px 6px rgb(158, 41, 142);
+}
+
+#mp1 article h2 {
+    margin: 0;
+}
+
+/* Estilos para el footer dentro de "mp1" */
+#mp1 footer {
+    margin-top: 20px;
+    background-color: #00e1ff7e;
+    color: #050505;
+    padding: 10px;
+    box-shadow: 6px 6px 6px rgb(158, 41, 142);
+}
+
+#mp1 footer article h2 {
+    margin: 0;
+}
+
+#mp1 p.parrafo1,
+#mp1 p.parrafo2,
+#mp1 p.parrafo3 {
+    margin: 5px 0;
+}
+
+#mp1 span {
+    font-weight: bold;
+}
+
+#mp1 a.link1,
+#mp1 a.link2,
+#mp1 a.link3 {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Añadir sombra al hover de los enlaces */
+#mp1 a.link1:hover,
+#mp1 a.link2:hover,
+#mp1 a.link3:hover {
+    text-shadow: 2px 2px 5px #cd0bfd;
+}

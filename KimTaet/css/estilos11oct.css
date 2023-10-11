@@ -1,0 +1,80 @@
+header {
+    background-color: magenta;
+}
+
+main{
+    background-color: blue;
+}
+
+aside{
+    background-color: lawngreen;
+}
+
+footer {
+    background-color: crimson;
+}
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:"h h"
+                        "a m"
+                        "f f";
+}
+
+#mp1 header {
+    grid-area: h;
+}
+
+#mp1 main {
+    grid-area: m;
+}
+
+#mp1 aside {
+    grid-area: a;
+}
+
+#mp1 footer {
+    grid-area: f;
+}
+
+#contenedor {
+    display: flex;
+}
+
+#contenedor section{
+    margin: 0 5px;
+}
+
+.boton1 {
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+header h2 {
+    color: white;
+}
+
+#header-main{
+    background-color: #0a0a23;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+#header-main input{
+    width: 40%;
+}
+
+#header-main h2{
+    margin-left: 5px;
+    width: 40%;
+}
+
+.botonAmarillo {
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+}

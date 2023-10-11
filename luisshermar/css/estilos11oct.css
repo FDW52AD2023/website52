@@ -1,0 +1,58 @@
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas:"header header"
+                        "aside main"
+                         "footer footer";
+}
+
+header {
+    background-color: magenta;
+    grid-area: header;
+}
+
+main {
+    background-color: goldenrod;
+    grid-area: main;
+}
+
+aside {
+    background-color: lawngreen;
+    grid-area: aside;
+}
+
+footer {
+    background-color: saddlebrown;
+    grid-area: footer;
+}
+
+.boton1 {
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+#header-main h2 {
+    color: white;
+}
+
+#header-main {
+    color: rgba(3, 3, 63, 0.954);
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+#header-main input {
+    width: 40%;
+}
+
+#header-main h2 {
+    width: 100px;
+}
+
+
+
+

@@ -1,0 +1,363 @@
+/* Colores de los artículos */
+/* Azul, verde, tomate, peru, oro, gris */
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
+
+.tomate {
+    background-color: tomato;
+}
+
+.peru {
+    background-color: peru;
+}
+
+.oro {
+    background-color: gold;
+}
+
+.gris {
+    background-color: gray;
+}
+
+header {
+    border: 5px solid rgba(170, 3, 247, 0.5);
+}
+
+#header1 {
+    display: flex;
+    flex-flow: column wrap;
+    height: 200px;
+}
+
+#header1 #a1 {
+    height: 180px;
+}
+
+#header2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header3 {
+    display: flex;
+    justify-content: center;
+}
+
+#header4 {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 200px;
+    justify-content: space-between;
+}
+
+#header5 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    align-content: space-between;
+}
+
+#header5 article {
+    text-align: center;
+    width: 50%;
+    padding: 24px 0px;
+}
+
+#header6 {
+    display: flex;
+}
+
+#header6 #a1 {
+    order: 1;
+}
+
+#header7 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header7 #a1 {
+    order: 2;
+}
+
+#header7 #a2 {
+    order: 1;
+}
+
+#header7 #a3 {
+    order: 4;
+}
+
+#header7 #a4 {
+    order: 3;
+}
+
+#header7 #a5 {
+    order: 6;
+}
+
+#header7 #a6 {
+    order: 5;
+}
+
+#header7 article {
+    padding: 5px 73px;
+}
+
+#header8 {
+    display: flex;
+}
+
+#header8 #a5 {
+    flex-grow: 1;
+}
+#header8 #a3 {
+    flex-grow: 2;
+}
+
+#header9 {
+    display: flex;
+}
+
+#header9 #a2 {
+    flex-shrink: 1;
+    width: 200px;
+}
+#header9 #a4 {
+    flex-shrink: 2;
+    width: 200px;
+}
+#header9 #a6 {
+    flex-shrink: 0; /* No se encoje */
+    flex-grow: 1;
+    width: 200px; /* Hasta llegar a este tamaño ideal */
+}
+
+#header10 {
+    display: flex;
+}
+
+#header10 #a5 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+#header10 #a2 {
+    flex: 1 0 200px;
+}
+
+#header11 {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#header11 #a1 {
+    align-self: flex-end;
+}
+
+#header11 #a6 {
+    align-self: flex-start;
+}
+
+
+
+#mp1 header {
+    background-color: greenyellow;
+    border: 0px;
+}
+
+#mp1 main {
+    background-color: lightcoral;
+}
+
+#mp1 aside {
+    background-color: darkgoldenrod;
+}
+
+#mp1 footer {
+    background-color: yellowgreen;
+}
+
+#mp1 {
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+#mp1 header {
+    grid-column: 1 / -1;
+}
+
+#mp1 footer {
+    grid-column: 1 / -1;
+}
+
+
+
+
+
+
+
+
+body {
+    background-image: url('https://i.pinimg.com/originals/a4/71/31/a4713167a9a9ea6e46d83e9e07a1dc23.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Estilos adicionales */
+
+/* Estilo para los enlaces que cambian de color al pasar el cursor */
+a:hover {
+    color: purple;
+}
+
+/* Estilo para los párrafos dentro del main */
+main p {
+    font-style: italic;
+    color: #333;
+    padding: 5px;
+}
+
+/* Estilo para los elementos de la lista dentro del main */
+main li {
+    list-style-type: square;
+    color: rgb(7, 236, 236);
+}
+
+/* Estilo para los enlaces dentro del aside */
+aside a {
+    color: #d0ff00;
+    text-decoration: none;
+}
+
+/* Estilo para los enlaces dentro del aside que cambian de color al pasar el cursor */
+aside a:hover {
+    color: #2600ff;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo para el nombre del desarrollador en el footer */
+footer b {
+    color: #FF5733;
+}
+
+/* Estilos adicionales (continuación) */
+
+/* Estilo para los títulos h2 */
+h2 {
+    color: #ff3c00;
+    border-bottom: 2px solid #fd0303;
+    padding-bottom: 5px;
+    padding: 5px;
+}
+
+/* Estilo para los títulos h1 */
+h1 {
+    color: #FF5733;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la sección con id "mp1" */
+#mp1 {
+    margin: 4px;
+    padding: 4px;
+    border: 2px solid #53b6dd;
+    border-radius: 10px;
+}
+
+/* Estilo para el fondo del body */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Estilo para el enlace de "Ir a inicio" */
+h2 a {
+    color: #2196F3;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Estilo para cambiar el color del enlace al pasar el cursor */
+h2 a:hover {
+    color: #FF5733;
+}
+
+/* Estilo para el fondo de la sección con id "mp1" */
+#mp1 {
+    background-color: #9d0aff81;
+}
+
+/* Estilo para el borde de las secciones dentro de main */
+main section {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para el texto en inglés dentro del main */
+main p[lang="en"] {
+    color: #2196F3;
+}
+
+/* Estilo para el texto en español dentro del main */
+main p[lang="es"] {
+    color: #4CAF50;
+}
+
+/* Estilo para la sombra en las secciones */
+main .sombra {
+    box-shadow: 2px 2px 5px #888888;
+}
+
+/* Estilo para el artículo dentro de main */
+main article {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ac1a1a;
+}
+
+/* Estilo para los artículos dentro de aside */
+aside article {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los artículos dentro de aside con sombra */
+aside article.sombra {
+    box-shadow: 2px 2px 5px #888888;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#id1 {
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+}
+

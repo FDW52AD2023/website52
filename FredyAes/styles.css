@@ -9,7 +9,7 @@ body {
 
 /* Estilos para el encabezado */
 header {
-    background-color: #0116505b;
+    background-color: #01165096;
     color: white;
     padding: 10px 0;
 }
@@ -31,7 +31,7 @@ header nav ul li:last-child {
 
 /* Estilos para las secciones de evidencia */
 .evidence {
-    background-color: rgba(0, 0, 0, 0.185);
+    background-color: rgba(0, 0, 0, 0.432);
     color: beige;
     padding: 20px;
     margin: 20px 0;
@@ -65,4 +65,28 @@ footer {
 a:hover {
     background-color: yellow; /* Fondo amarillo al pasar el mouse */
     color: black; /* Texto negro al pasar el mouse */
+}
+
+nav {
+    font-family: sans-serif;
+    color: rgb(255, 230, 6);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas adicionales si no caben en una sola línea */
+}
+
+nav div {
+    flex-basis: calc(33.33% - 20px); /* Ajusta el tamaño de cada elemento para ocupar aproximadamente un tercio del contenedor */
+    margin: 10px;
+}
+
+nav p, nav a {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 10px;
+}
+
+a {
+    color: rgb(1, 255, 115);
+    padding: 10px;
 }

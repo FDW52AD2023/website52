@@ -1,0 +1,85 @@
+header {
+    background-color: deeppink;
+}
+
+main {
+    background-color: aqua;
+}
+
+aside {
+    background-color: coral;
+}
+
+footer {
+    background-color: darkgoldenrod;
+}
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:"h h"
+                        "a m"
+                        "f f";
+
+}
+
+#mp1 header{
+    grid-area: h;
+}
+#mp1 main{
+    grid-area: m;
+}
+#mp1 aside{
+    grid-area: a;
+}
+#mp1 footer{
+    grid-area: f;
+}
+
+
+#Contenedor{
+    display: flex;
+}
+
+#Contenedor section{
+    margin: 0 5px;
+}
+
+
+
+.boton1{
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+header h2 {
+    color: white;
+}
+
+#Header-main{
+    background-color: rgb(32, 4, 4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#Header-main input{
+    width: 40%;
+}
+
+#Header-main h2{
+    margin-left: 5px;
+    width: 40%;
+}
+
+
+.botonamarillo{
+
+}
+
+.boton3{
+
+}

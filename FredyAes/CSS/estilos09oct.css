@@ -207,7 +207,157 @@ header {
 
 
 body {
-    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/903/141/desktop-wallpaper-chainsaw-man-top-chainsaw-man-backgrounds-chainsaw-man-pc.jpg');
+    background-image: url('https://i.pinimg.com/originals/a4/71/31/a4713167a9a9ea6e46d83e9e07a1dc23.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
+
+/* Estilos adicionales */
+
+/* Estilo para los enlaces que cambian de color al pasar el cursor */
+a:hover {
+    color: purple;
+}
+
+/* Estilo para los párrafos dentro del main */
+main p {
+    font-style: italic;
+    color: #333;
+    padding: 5px;
+}
+
+/* Estilo para los elementos de la lista dentro del main */
+main li {
+    list-style-type: square;
+    color: rgb(7, 236, 236);
+}
+
+/* Estilo para los enlaces dentro del aside */
+aside a {
+    color: #d0ff00;
+    text-decoration: none;
+}
+
+/* Estilo para los enlaces dentro del aside que cambian de color al pasar el cursor */
+aside a:hover {
+    color: #2600ff;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo para el nombre del desarrollador en el footer */
+footer b {
+    color: #FF5733;
+}
+
+/* Estilos adicionales (continuación) */
+
+/* Estilo para los títulos h2 */
+h2 {
+    color: #ff3c00;
+    border-bottom: 2px solid #fd0303;
+    padding-bottom: 5px;
+    padding: 5px;
+}
+
+/* Estilo para los títulos h1 */
+h1 {
+    color: #FF5733;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la sección con id "mp1" */
+#mp1 {
+    margin: 4px;
+    padding: 4px;
+    border: 2px solid #53b6dd;
+    border-radius: 10px;
+}
+
+/* Estilo para el fondo del body */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Estilo para el enlace de "Ir a inicio" */
+h2 a {
+    color: #2196F3;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Estilo para cambiar el color del enlace al pasar el cursor */
+h2 a:hover {
+    color: #FF5733;
+}
+
+/* Estilo para el fondo de la sección con id "mp1" */
+#mp1 {
+    background-color: #9d0aff81;
+}
+
+/* Estilo para el borde de las secciones dentro de main */
+main section {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para el texto en inglés dentro del main */
+main p[lang="en"] {
+    color: #2196F3;
+}
+
+/* Estilo para el texto en español dentro del main */
+main p[lang="es"] {
+    color: #4CAF50;
+}
+
+/* Estilo para la sombra en las secciones */
+main .sombra {
+    box-shadow: 2px 2px 5px #888888;
+}
+
+/* Estilo para el artículo dentro de main */
+main article {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ac1a1a;
+}
+
+/* Estilo para los artículos dentro de aside */
+aside article {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los artículos dentro de aside con sombra */
+aside article.sombra {
+    box-shadow: 2px 2px 5px #888888;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#id1 {
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+}
+

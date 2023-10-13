@@ -1,0 +1,119 @@
+header{
+    background-color: rgb(156, 5, 156);
+    padding: 14px;
+}
+
+main {
+    background-color: goldenrod;
+}
+
+aside {
+    background-color: lawngreen;
+}
+
+footer {
+    background-color: saddlebrown;
+}
+
+a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(238, 234, 16);
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.863);
+    text-decoration: none;
+    transition: color 0.3s;
+}  
+
+a:hover {
+    color: aqua;
+}
+
+h1 {
+    background-color: rgba(0, 0, 0, 0.863);
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    padding: 20px;
+    text-align: center;
+}
+
+#mp1 {
+    display: grid;
+    background-color: rgba(2, 2, 2, 0.753);
+    padding: 20px;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:"h h"
+                        "a m"
+                        "f f";
+    text-align: center;
+}
+
+#mp1 header {
+    grid-area: h;
+}
+#mp1 main {
+    grid-area: m;
+}
+#mp1 aside {
+    grid-area: a;
+}
+#mp1 footer {
+    grid-area: f;
+}
+
+#contenedor {
+    display: flex;
+}
+
+#contenedor section {
+    margin: 0 5px;
+}
+
+.boton1 {
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+header h2 {
+    color: white;
+}
+
+#header-main {
+    background-color: #03030c;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+#header-main input {
+    width: 40%;
+}
+
+#header-main h2 {
+    width: 45%;
+    margin-left: 15px;
+}
+
+#header-main 
+.botonamarillo {
+    background-color: yellow;
+    padding: 5px;
+}
+
+
+
+
+
+body {
+    background-image: url('https://i.pinimg.com/originals/e0/0e/2b/e00e2b1f286998c0517a5f4139c962db.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    color: white;
+}

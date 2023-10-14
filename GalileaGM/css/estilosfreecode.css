@@ -1,31 +1,53 @@
+/* body{
+    background-color: ;
+} */
+
+#header-main {
+    background-color: #0a0a23;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+}
+
+#header-main input{
+    width: 30%;
+    background-color: #3b3b4f;
+    color: white;
+    height: 24px;
+}
+.btnfd {
+    background-color: #3b3b4f;
+    color: white;
+    height: 30px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#header-img{
+    display: flex;
+    flex-wrap: wrap ;
+}
+#header-a{
+
+    align-items: end;
+    
+}
+
 .boton1{
     border: 1px solid white;
     padding: 5px;
     text-decoration: none;
     color: white;
 }
-
-
-#header-main h2{
-   margin-left: 5px;
-   width: 40%;
-   color: white;
-}
-
-#header-main {
-    background-color: #0a0a23;
-    display: flex;
-    align-items: center;
-    height: 80px;
-}
-
-#header-main input{
-    width: 40%;
-}
-
 .botonamarillo{
-    background-color:  gold;
+    background-color: #ffb83efb;
     padding: 5px;
+    border:1px solid #feac32 ;
     text-decoration: none;
-    color: white;
+    color:#101728;
+    align-items: flex-end;
 }

@@ -89,4 +89,15 @@ footer {
     font-family: Arial;
     padding: 4rem 18rem;
     font-size: 25px;
+    background-color: #f5f6f7;
+}
+
+#section2 {
+    display: flex;
+    flex-flow: column nowrap;
+    color: #d0d0d5;
+    font-family: Arial;
+    padding: 4rem 18rem;
+    font-size: 25px;
+    background-color: #292934;
 }

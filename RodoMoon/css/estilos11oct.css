@@ -103,3 +103,18 @@ footer {
     background-color: #292934;
     text-align: center;
 }
+
+#section3 {
+    display: flex;
+    flex-flow: column nowrap;
+    color: #1b1b32;
+    font-family: Arial;
+    font-size: 25px;
+    background-color: #f5f6f7;
+    text-align: center;
+}
+
+#encabezado1 img {
+    float: left;
+    margin-right: 1em;
+}

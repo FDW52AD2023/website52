@@ -1,0 +1,146 @@
+html{
+    background-color: rgb(245, 245, 245);
+}
+
+
+
+
+.boton1{
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+header h2 {
+    color: white;
+}
+
+#Header-main{
+    background-color: rgb(32, 4, 4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#Header-main input{
+    width: 40%;
+}
+
+#Header-main h2{
+    margin-left: 5px;
+    width: 40%;
+}
+
+#mp2 {
+    align-items: center;
+}
+
+.Imagen {
+    text-align: center;
+}
+
+h2.boton2{
+    background-color: #ffb036;
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 100px;
+}
+
+footer{
+    background-color: #3b3b4f
+}
+
+footer h1{
+    color: #d0d0d5;
+    font-size: 50px;
+
+
+}
+
+main #main2{
+    text-align: center;
+}
+
+main p{
+    font-size: 40px;
+    text-align: center;
+}
+
+#header1 {
+    border: 3px solid black;
+}
+
+#header1 img {
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#header1 {
+    background-color: white;
+}
+
+#header1 p {
+    font-size: 25px;
+}
+
+#header2{
+    background-color: white;
+}
+#header2 {
+    border: 3px solid black;
+}
+
+#header2 img {
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+#header2 p {
+    font-size: 25px;
+}
+#header3{
+    background-color: white;
+}
+#header3 {
+    border: 3px solid black;
+}
+
+#header3 img {
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+#header3 p {
+    font-size: 25px;
+}
+
+.Imagen4{
+    text-align: center;
+}
+
+.Imagen4 p{
+    font-size: 50px;
+}

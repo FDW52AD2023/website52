@@ -88,7 +88,7 @@ footer {
     flex-flow: column nowrap;
     color: #1b1b32;
     font-family: Arial;
-    padding: 4rem 18rem;
+    padding: 4rem 20rem;
     font-size: 25px;
     background-color: #f5f6f7;
 }
@@ -140,4 +140,13 @@ footer {
 
 #encabezado3 {
     font-size: 20px;
+}
+
+.botonGris {
+    display: flex;
+    background-color: #d0d0d5;
+    border: 3px solid #1b1b32;
+    color: #1b1b32;
+    text-decoration: none;
+    padding: 5px;
 }

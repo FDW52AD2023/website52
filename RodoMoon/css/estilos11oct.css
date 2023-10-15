@@ -64,6 +64,7 @@ footer {
     color: #0a0a23;
     text-decoration: none;
     padding: 5px;
+    align-content: space-between;
 }
 
 #header-main {

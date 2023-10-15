@@ -58,13 +58,14 @@ footer {
     color: white;
 }
 .botonAmarillo {
+    display: flex;
     background-color: #feac32;
     background-image: linear-gradient(#fecc4c,#ffac33);
     border: 3px solid #feac32;
     color: #0a0a23;
     text-decoration: none;
     padding: 5px;
-    align-content: space-between;
+    justify-content: center;
 }
 
 #header-main {
@@ -100,4 +101,5 @@ footer {
     padding: 4rem 18rem;
     font-size: 25px;
     background-color: #292934;
+    text-align: center;
 }

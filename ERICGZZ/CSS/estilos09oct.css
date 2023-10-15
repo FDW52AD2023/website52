@@ -185,7 +185,6 @@ align-self: flex-end;
 }
 
 #mp1 {
-    font-family: sans-serif;
     display: grid;
     grid-template-columns: 4fr 1fr;
 }

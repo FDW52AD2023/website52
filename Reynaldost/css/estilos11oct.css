@@ -1,17 +1,21 @@
+body {
+    background-color: #f5f6f7;
+}
+
 header {
-    background-color: magenta;
+    background-color: white;
 }
 
 main {
-    background-color: goldenrod;
+    background-color: white;
 }
 
 aside {
-    background-color: green;
+    background-color: white;
 }
 
 footer {
-    background-color: blue;
+    background-color: white;
 }
 
 #mp1 {
@@ -88,6 +92,7 @@ footer {
 
 #header-main input {
     width: 40%;
+    background-color: #3b3b4f;
 }
 
 h1.mainletter {
@@ -100,3 +105,41 @@ h2.año {
     margin-left: 300px;
 }
 
+h2.selector {
+    background-color: #ffb036;
+    width: 350px;
+    margin: 0 auto; /* Centra el cuadro horizontalmente */
+    display: flex; /* Añade flex para centrar verticalmente el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 50px; /* Ajusta la altura si es necesario */
+    margin-top: 100px;
+
+}
+
+.img1 {
+    display: block; /* Esto hace que la imagen se comporte como un bloque, lo que permite ajustar el margen horizontal */
+    margin: 0 auto; /* Mueve la imagen hacia la derecha al establecer el margen izquierdo y derecho a "auto" */
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+    margin-top: 60px;
+  }
+
+h1.inf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulo1 {
+    display: flex;
+    align-items: center;
+}
+
+.articulo1 img {
+    max-width: 50%; /* Ajusta el ancho de la imagen a la mitad del contenedor */
+    height: auto;
+}
+
+.articulo1 p {
+    flex: 1; /* Toma todo el espacio restante disponible para el párrafo */
+}

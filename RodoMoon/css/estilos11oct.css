@@ -60,8 +60,7 @@ footer {
 .botonAmarillo {
     background-color: #feac32;
     background-image: linear-gradient(#fecc4c,#ffac33);
-    border-color: #feac32;
-    border-width: 3px;
+    border: 3px solid #feac32;
     color: #0a0a23;
     text-decoration: none;
     padding: 5px;

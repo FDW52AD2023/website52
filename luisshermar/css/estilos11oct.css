@@ -1,57 +1,47 @@
 
-#mp1 {
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    grid-template-areas:"header header"
-                        "aside main"
-                         "footer footer";
-}
-
-header {
+#mp1 header {
     background-color: magenta;
     grid-area: header;
 }
 
-main {
+#mp1 main {
     background-color: goldenrod;
     grid-area: main;
 }
 
-aside {
+#mp1 aside {
     background-color: lawngreen;
     grid-area: aside;
 }
 
-footer {
+#mp1 footer {
     background-color: saddlebrown;
     grid-area: footer;
 }
 
-.boton1 {
+header {
+    background-color: rgb(0, 20, 136);
+    display: flex;
+    padding: 10px;
+}
+
+header h2 {
+    color: white;
+    width: 50%
+}
+
+header a {
     border: 1px solid white;
-    padding: 5px;
+    margin: 0 5px;
+    padding: 5px 10px;
     text-decoration: none;
     color: white;
 }
 
-#header-main h2 {
-    color: white;
+header input {
+    width: 30%;
 }
 
-#header-main {
-    color: rgba(3, 3, 63, 0.954);
-    display: flex;
-    align-items: center;
-    height: 80px;
-}
-
-#header-main input {
-    width: 40%;
-}
-
-#header-main h2 {
-    width: 100px;
-}
 
 
 

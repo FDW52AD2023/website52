@@ -1,38 +1,80 @@
-header {
-    border: 5px solid black;
-}
+/* colores de los articulos */
 
-/*colores de los articulos*/
-/*azul,verde,tomate,peru,oro,gris*/
 .azul {
     background-color: blue;
 }
+
 .verde {
     background-color: green;
 }
+
 .tomate {
     background-color: tomato;
 }
+
 .peru {
     background-color: peru;
-}
-
-.oro {
-    background-color: gold;
 }
 
 .gris {
     background-color: gray;
 }
 
+.oro {
+    background-color: goldenrod;
+}
+
+#header1 {
+    border: 5px solid black;
+}
+
+#header2 {
+    border: 5px solid black;
+}
+
+#header3 {
+    border: 5px solid black;
+}
+
+#header4 {
+    border: 5px solid black;
+}
+
+#header5 {
+    border: 5px solid black;
+}
+
+#header6 {
+    border: 5px solid black;
+}
+
+#header7 {
+    border: 5px solid black;
+}
+
+#header8 {
+    border: 5px solid black;
+}
+
+#header9 {
+    border: 5px solid black;
+}
+
+#header10 {
+    border: 5px solid black;
+}
+
+#header11 {
+    border: 5px solid black;
+}
 
 #header1 {
     display: flex;
-    flex-flow: column wrap; 
+    flex-flow: column wrap;
     height: 200px;
 }
 
-#header1 #a1{
+#header1 #a1 {
     height: 180px;
 }
 
@@ -46,11 +88,11 @@ header {
     justify-content: center;
 }
 
-#header4{
+#header4 {
     display: flex;
     flex-flow: column nowrap;
-    height:  200px;
-    justify-content:  space-between;
+    height: 200px;
+    justify-content: space-between;
 }
 
 #header5 {
@@ -60,18 +102,17 @@ header {
     align-content: space-between;
 }
 
-#header5 article{
+#header5 article {
+    text-align: center;
     width: 50%;
     padding: 10px 0px;
 }
 
 #header6 {
     display: flex;
-
-
 }
 
-#header6 #a1{
+#header6 #a1 {
     order: 1;
 }
 
@@ -80,31 +121,27 @@ header {
     justify-content: space-evenly;
 }
 
-
-
-#header7 #a1{
+#header7 #a1 {
     order: 2;
 }
 
-
-#header7 #a2{
+#header7 #a2 {
     order: 1;
 }
 
-#header7 #a3{
+#header7 #a3 {
     order: 4;
 }
 
-
-#header7 #a4{
+#header7 #a4 {
     order: 3;
 }
 
-#header7 #a5{
+#header7 #a5 {
     order: 6;
 }
 
-#header7 #a6{
+#header7 #a6 {
     order: 5;
 }
 
@@ -112,30 +149,30 @@ header {
     display: flex;
 }
 
-#header8 #a5{
+#header8 #a5 {
     flex-grow: 1;
 }
 
-#header8 #a3{
+#header8 #a3 {
     flex-grow: 2;
 }
 
-#header9{
+#header9 {
     display: flex;
 }
-#header9 #a2{
-flex-shrink: 1;
-width: 200px;
+
+#header9 #a2 {
+    flex-shrink: 1;
+    width: 200px;
 }
 
-#header9 #a4{
+#header9 #a4 {
     flex-shrink: 2;
     width: 200px;
 }
 
-#header9 #a6{
-    flex-shrink: 0;
-    flex-flow: 1;
+#header9 #a6 {
+    flex-shrink: 2;
     width: 200px;
 }
 
@@ -143,30 +180,29 @@ width: 200px;
     display: flex;
 }
 
-#header10 #a5{
+#header10 #a5 {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 200px;
 }
 
-#header10 #a2{
+#header10 #a5 {
     flex: 1 0 200px;
 }
 
 #header11 {
     display: flex;
     height: 200px;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-
-#header11 #a1{
-align-self: flex-end;
+#header11 #a1 {
+    align-self: flex-end;
 }
 
-#header11 #a6{
-  align-self: flex-start;  
+#header11 #a6 {
+    align-self: flex-start;
 }
 
 #mp1 header {
@@ -176,12 +212,26 @@ align-self: flex-end;
 #mp1 main {
     background-color: lightcoral;
 }
+
 #mp1 aside {
     background-color: darkgoldenrod;
-
 }
-#mp1 footer{
+
+#mp1 footer {
     background-color: yellowgreen;
+}
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+#mp1 header {
+    grid-column: 1 / -1;
+}
+
+#mp1 footer {
+    grid-column: 1 / -1;
 }
 
 #mp1 {
@@ -191,10 +241,3 @@ align-self: flex-end;
 }
 
 
-#mp1 header{
-grid-column: 1/ -1;
-}
-
-#mp1 footer {
-    grid-column: 1 / -1;
-}

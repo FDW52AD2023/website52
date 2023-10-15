@@ -1,0 +1,168 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: magenta;
+}
+
+main {
+    background-color: goldenrod;
+}
+
+aside {
+    background-color: lawngreen;
+}
+
+footer {
+    background-color: saddlebrown;
+}
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;  /* especifica el espacio y tamaño que ocupara cada elemento del grid */
+    grid-template-areas: "h h"     /* para definir la estructura de los elementos en la página (el grid) */
+                         "a m"
+                         "f f";
+    margin: 5px;
+}
+
+#mp1 header {
+    grid-area: h;  /* grid-area para darle un nombre (h) al elemento en cuestión (header) */
+}
+
+#mp1 main {
+    grid-area: m;
+}
+
+#mp1 aside {
+    grid-area: a;
+}
+
+#mp1 footer {
+    grid-area: f;
+}
+
+#contenedor {
+    display: flex;
+    margin: 0px;
+}
+
+.boton {
+    border: 1px solid white;
+    /* padding: 5px; */
+    text-decoration: none;   /* para quitarle el subrayado que tienen los links por default */
+    color: white;
+    margin: 3px 4px;
+}
+
+.boton_amarillo {
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+header h2 {
+    color: white;
+}
+
+
+#header_main {
+    background-color: #0a0a23;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -10px;
+    border: 0px;
+}
+
+#header_main #buscador {
+    margin: -13px;
+    display: flex;
+    width: 37%;
+    background-color: #3b334f;
+    padding: 3px 0px;
+}
+
+#header_main #buscador input {
+    width: 100%;
+    font-size: 18px;
+    font-family: sans-serif;
+    background-color: #3b334f;
+    color: #fff;
+    border: none;
+}
+
+#lupa {
+    font-size: 18px;
+    background: none;
+    border: none;
+}
+
+#lupa:hover {
+    background-color: #7c7a85;
+}
+
+#header_main h2 {
+    width: 40%;
+    font-family: "courier";
+    font-weight: lighter;
+    padding: 0%;
+}
+
+#header_main #botones_header {
+    display: flex;
+    justify-content: flex-end;
+    margin: -10px;
+}
+
+#header_main #botones_header #boton_mundo {
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 0px 2px;
+}
+
+#header_main #botones_header #boton_menu {
+    font-size: 17px;
+    font-family: sans-serif;
+    padding: 3px 12px;
+}
+
+#header_main #botones_header #boton_amarillo_header {
+    font-size: 17px;
+    padding: 3px 12px;
+    border-color: #feac32;
+    border-width: 3px;
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    color: black;
+}
+
+#intro {
+    background-color: #1b1b32;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+#intro h1 {
+    color: white;
+    padding: 30px 330px 0px 300px;
+    font-size: 42px;
+    line-height: 2.1;
+}
+
+#intro h2 {
+    color: white;
+    padding: 0px 330px 0px 300px;
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+#intro div {
+    padding: 0px 300px 65px 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+}

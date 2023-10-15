@@ -1,0 +1,102 @@
+header {
+    background-color: magenta;
+}
+
+main {
+    background-color: goldenrod;
+}
+
+aside {
+    background-color: green;
+}
+
+footer {
+    background-color: blue;
+}
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "h h"
+                         "m a"
+                         "f f";
+}
+
+#mp1 header{
+    grid-area: h;
+}
+
+#mp1 main {
+    grid-area: m;
+}
+
+#mp1 aside {
+    grid-area: a;
+}
+
+#mp1 footer {
+    grid-area: f;
+}
+
+#Contenedor {
+    display: flex;
+}
+
+#Contenedor section {
+    margin: 0 5px;
+}
+
+.boton1 {
+    border: 1px solid white;
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+}
+
+.boton2 {
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+}
+
+.boton3{
+    border: 2px solid rgb(254 172 50);
+    padding: 5px;
+    text-decoration: none;
+    color: #0a0a23;
+    margin-right: 5px;
+    background-color: #ffb036;
+}
+
+#header-main h2 {
+    color: white;
+    width: 40%;
+    margin-left: 50px;
+    font-family: monospace;
+}
+
+
+#header-main {
+    background-color: #0a0a23;
+    display: flex;
+    align-items: center;
+}
+
+
+#header-main input {
+    width: 40%;
+}
+
+h1.mainletter {
+    text-align: left;
+    margin-left: 300px;
+}
+
+h2.año {
+    text-align: left;
+    margin-left: 300px;
+}
+

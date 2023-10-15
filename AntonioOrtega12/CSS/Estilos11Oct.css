@@ -1,0 +1,88 @@
+header {
+    background-color: rgb(255, 0, 0);
+}
+
+main {
+    background-color: aqua;
+}
+
+aside {
+    background-color: lawngreen;
+}
+
+footer {
+    background-color: rgb(255, 251, 0);
+}
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: "Encab Encab"
+                         "Main Publi"
+                         "Pie Pie";   
+}
+
+#mp1 header {
+    grid-area: Encab;
+}
+
+#mp1 main {
+    grid-area: Main;
+}
+
+#mp1 aside {
+    grid-area: Publi;
+}
+
+#mp1 footer {
+    grid-area: Pie;
+}
+
+#cont section {
+    display: flex;
+}
+
+#cont section {
+    margin: 0 5px;
+}
+
+.Boton1 {
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.Boton2 {
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.Boton3 {
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+header h2 {
+    color: white;
+}
+
+#header-main {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+#header-main input {
+    width: 40% ;
+}
+
+#header-main h2 {
+    margin-left: 5px;
+    width: 40%;
+}

@@ -109,6 +109,7 @@ footer {
     flex-flow: column nowrap;
     color: #1b1b32;
     font-family: Arial;
+    padding: 4rem 12rem;
     font-size: 25px;
     background-color: #f5f6f7;
     text-align: center;

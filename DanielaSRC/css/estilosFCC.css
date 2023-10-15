@@ -1,0 +1,39 @@
+.boton1 {
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#header-main h2{
+    color: white;
+    width: 40%;
+    margin-left: 5px;
+}
+
+#header-main input{
+    width: 40%;
+}
+
+.botonAmarrillo{
+
+
+}
+
+#header-main{
+    background-color: #0a0a23;
+    display: flex;
+    align-items: center;
+}
+
+#main-pag{
+    background-color: #1a1b32;
+    display: grid;
+}
+
+#main-pag h1{
+    text-align: left;
+    margin-left: 300px;
+    color: white;
+}

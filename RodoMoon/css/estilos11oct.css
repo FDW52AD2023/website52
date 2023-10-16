@@ -48,7 +48,7 @@ footer {
 }
 
 .boton1 {
-    border: 1px solid white;
+    border: 3px solid white;
     padding: 5px;
     text-decoration: none;
     color: white;
@@ -75,11 +75,13 @@ footer {
 }
 
 #header-main input {
-    width: 40%;
+    width: 45%;
+    background-color: #282849;
+    color: #f5f6f7;
 }
 
 #header-main h2 {
-    margin-left: 5px;
+    margin-left: 10px;
     width: 40%;
 }
 

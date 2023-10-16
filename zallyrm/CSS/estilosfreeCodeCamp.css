@@ -1,85 +1,11 @@
-/*header {
-    background-color: magenta;
-}
-
-main {
-    background-color: goldenrod;
-}
-
-aside {
-    background-color: lawngreen;
-}
-
-footer {
-    background-color: saddlebrown;
-}
-
-#mp1 {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-areas:"h h"
-                        "a m"
-                        "f f";
-    margin: 5px;
-}
-
-#mp1 header {
-    grid-area: h;
-}
-
-#mp1 main {
-    grid-area: m;
-}
-
-#mp1 aside {
-    grid-area: a;
-}
-
-#mp1 footer {
-    grid-area: f;
-}
-*/
-#contenedor {
-    display: flex;
-    margin: 0px;
-}
-
-#contenedor section {
-    margin: 0 5px;
-}
-
-.boton1 {
-    border: 2px solid white;
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-
-}
-
-header h2 {
-    color: white;
-}
-
-#header-main {
-    background-color: #0a0a23;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#header_main input {
-    width: 40%;
-}
-
-#header_main h2 {
-    width: 40%;
-    margin-left: 5px;
-}
-
 body {
     margin: 0px;
     padding: 0px;
     background-color: #1b1b32;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .boton {
@@ -98,6 +24,10 @@ body {
     background-color: #feac32;
     background-image: linear-gradient(#fecc4c, #ffac33);
     color: black;
+}
+
+.boton_amarillo:hover {
+    background-image: linear-gradient(#fac84a, #fac84a)
 }
 
 header h2 {
@@ -216,7 +146,7 @@ header h2 {
     padding: 8px 28px;
 }
 
-#intro p {
+#intro p, #info #donations, #info a {
     font-family: sans-serif;
     font-weight: 600;
     color: #d0d0d5;
@@ -295,7 +225,7 @@ header h2 {
     padding: 0px 285px 20px 275px;
 }
 
-#verified_certif h2, #prof_certif h2, #prepare_for h2 {
+#verified_certif h2, #prof_certif h2, #prepare_for h2, #questions h2 {
     font-size: 42px;
     font-family: sans-serif;
     color: white;
@@ -352,7 +282,122 @@ header h2 {
 }
 
 .get_started_margin {
-    /* padding: 0px 285px 20px 275px; */
-    margin-left: 275px;
-    margin-right: 285px;
+    width: 36% !important;
+}
+
+#questions {
+    padding: 5px 248px 0px 240px;
+}
+
+#questions h4 {
+    font-size: 23px;
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 23px;
+    margin-top: 20px;
+}
+
+#questions p {
+    font-size: 17.5px;
+    font-family: sans-serif;
+    color: white;
+    line-height: 1.6;
+    padding-bottom: 9px;
+}
+
+#questions #happy_coding {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0px;
+}
+
+footer {
+    background-color: #2a2a40;
+}
+
+#trending_guides {
+    padding: 40px 10px 20px 40px;
+    display: flex;
+    align-items: center;
+}
+
+#trending_guides #info {
+    width: 46%;
+}
+
+#trending_guides #info #donations {
+    text-align: left;
+    padding-top: 8px;
+}
+
+#trending_guides p, #guides a {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #d0d0d5;
+    line-height: 1.9;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+#guides a:hover, #links_footer a:hover {
+    text-decoration: underline;
+}
+
+#guides h4 {
+    font-size: 17px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    grid-area: t;
+}
+
+#guides li {
+    padding: 2px 0px 2px 0px;
+}
+
+#guides ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#guides #lista_guias1 {
+    grid-area: a;
+}
+
+#guides #lista_guias2 {
+    grid-area: b;
+}
+
+#guides {
+    width: 54%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "t t"
+                         "a b";
+}
+
+#links_footer hr {
+    width: 95%;
+    color: #d0d0d5;
+}
+
+#links_footer {
+    padding-bottom: 30px;
+}
+
+#links_footer a {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #d0d0d5;
+    line-height: 1.9;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 25px;
 }

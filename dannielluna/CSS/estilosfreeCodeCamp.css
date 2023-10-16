@@ -1,7 +1,3 @@
-#contenedor {
-    background-color: #f5f6f7;
-}
-
 .buscar {
     background-color: #3b3b4f;
 }
@@ -21,6 +17,10 @@
     text-decoration: none;
     color: black;
     margin-right: 10px;
+}
+
+#contenedor {
+    background-color: #f5f6f7;
 }
 
 #header-main h2 {
@@ -155,8 +155,63 @@
 }
 
 .questions {
+    line-height: 1.5;
     font-size: 23px;
 }
+
+#links {
+    color: #3b3b4f;
+    background-color: #dfdfe2;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h m ";
+    grid-gap: 50px;
+}
+
+#links{
+    text-decoration: none;
+    color: #3b3b4f;
+}
+
+#links > main > a {
+    text-decoration: none;
+    color: #3b3b4f;
+}
+
+#links > aside > a {
+    text-decoration: none;
+    color: #3b3b4f;
+}
+
+#links header{
+    grid-area: h;
+}
+
+#links main{
+    grid-area: m;
+}
+
+#links main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+#pie > a{
+    text-decoration: none;
+    color: #3b3b4f;
+}
+
+#pie {
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #dfdfe2;
+}
+
 
 
 

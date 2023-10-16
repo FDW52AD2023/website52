@@ -100,7 +100,7 @@ footer {
     flex-flow: column nowrap;
     color: #d0d0d5;
     font-family: Arial;
-    padding: 10rem 5rem;
+    padding: 4rem 14rem;
     font-size: 25px;
     background-color: #292934;
     text-align: center;
@@ -114,6 +114,7 @@ footer {
     padding: 4rem 14rem;
     font-size: 25px;
     background-color: #f5f6f7;
+    text-align: center;
 }
 
 #encabezado1 img {

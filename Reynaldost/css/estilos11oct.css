@@ -116,6 +116,11 @@ h2.selector {
     margin-top: 50px;
 }
 
+h2.selector:hover {
+    outline: 1px solid #fec949;
+    border: 9px #ffb036;
+}
+
 div.imgkorea {
     text-align: center;
 }

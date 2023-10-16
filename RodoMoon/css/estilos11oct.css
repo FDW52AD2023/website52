@@ -48,7 +48,7 @@ footer {
 }
 
 .boton1 {
-    border: 1px solid white;
+    border: 3px solid white;
     padding: 5px;
     text-decoration: none;
     color: white;
@@ -75,11 +75,13 @@ footer {
 }
 
 #header-main input {
-    width: 40%;
+    width: 45%;
+    background-color: #282849;
+    color: #f5f6f7;
 }
 
 #header-main h2 {
-    margin-left: 5px;
+    margin-left: 10px;
     width: 40%;
 }
 
@@ -98,7 +100,7 @@ footer {
     flex-flow: column nowrap;
     color: #d0d0d5;
     font-family: Arial;
-    padding: 4rem 18rem;
+    padding: 4rem 14rem;
     font-size: 25px;
     background-color: #292934;
     text-align: center;
@@ -109,7 +111,7 @@ footer {
     flex-flow: column nowrap;
     color: #1b1b32;
     font-family: Arial;
-    padding: 4rem 12rem;
+    padding: 4rem 14rem;
     font-size: 25px;
     background-color: #f5f6f7;
     text-align: center;

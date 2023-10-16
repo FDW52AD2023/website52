@@ -1,0 +1,45 @@
+header {
+    background-color: magenta;
+}
+
+main {
+    background-color: goldenrod;
+}
+
+
+aside {
+    background-color: lawngreen;
+}
+
+footer {
+    background-color: saddlebrown;
+}
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+   grid-template-areas: "h h"
+                        "m a"
+                        "f f";
+}
+
+#mp1 header {
+    grid-area: h;
+ }
+
+ #mp1 main {
+    grid-area: m;
+ }
+
+ #mp1 aside {
+    grid-area: a;
+ }
+
+ #mp1 footer {
+    grid-area: f;
+ }
+
+ #contendor {
+    display: flex;
+ }
+

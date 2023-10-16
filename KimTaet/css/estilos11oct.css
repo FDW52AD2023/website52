@@ -335,35 +335,15 @@ section h6{
 }
 
 #final{
-    background-color: #dfdfe2;
-    margin-right: 50%;
-    border: 4px solid black;
-    padding: 5px 2rem;
-    font-size: 17px;
-    font-family: Arial;
-}
-
-
-#lista1{
     display: flex;
-    justify-content: center;
     background-color: #dfdfe2;
-    margin-right: 50%;
-    border: 4px solid black;
-    padding: 5px 2rem;
-    font-size: 17px;
-    font-family: Arial;
-}
-
-#lista2{
-    display: flex;
-    justify-content: right;
-    background-color: #dfdfe2;
-    margin-right: 50%;
     border: 4px solid black;
     font-size: 17px;
     font-family: Arial;
-
+    flex-wrap: wrap;
+    align-content: space-between;
 }
+
+
 
 

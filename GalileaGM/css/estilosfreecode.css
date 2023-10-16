@@ -1,0 +1,122 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #1b1b32;
+}
+
+#header-main{ /* la navegación,logo,menu*/
+    background-color: #0a0a23;
+    border: 3px;
+    display: flex;
+    align-items:center; /*centrar en el cuadro de la altura*/
+    height: 56px; 
+    justify-content:space-between;
+    padding: 0px 15px;
+
+}
+#header-main #search{ /*Formato de la union del boton y input para buscar*/
+    display: flex;
+    width: 40%;
+    background-color:#3b334f;
+
+}
+#header-main #icon{ /*icono del buscador*/
+    background-color: transparent;
+    color: white;
+    border:none;
+}
+
+#header-main #search input{ /*barra del buscador*/
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color:#3b334f;
+    border: none;
+}
+#header-main h2{ /*Titulo*/
+    color: white;
+    font-family: 'Courier New';
+    font-weight: lighter;
+    font-size: 30px;
+    padding: 0px;
+
+}
+#header-main #btn { /*3 botones del header*/
+  display: flex;
+  justify-content: flex-end;
+  margin: 6px;
+  font-family: sans-serif;
+  gap: 17px;
+
+}
+#header-main #btn-iconmundo{ /*boton del mundo*/
+    color:white;
+    font-size: 25px;
+    border: 1px solid white;
+    padding: 0 2px;
+}
+#header-main #btn-menu{ /*boton del menú*/
+    border: 1px solid white;
+    font-size: 15px;
+    color: white;
+    padding: 3px 10px;
+    text-decoration: none;
+}
+#header-main #btn-sign{ /*boton de iniciar sesion*/
+    border: 2px solid #feac32;
+    background: linear-gradient(#fecc4c, #ffac33);
+    font-size: 15px;
+    color:#0a0a23;
+    padding: 3px 10px;
+    text-decoration: none;
+}
+
+#main-section{
+    font-family: sans-serif;
+    color: white;
+    padding: 5px 290px 0px 281px; 
+}
+
+#main-section #ms1{
+    font-size: 2.5rem;
+}
+#main-section #ms2{
+    font-size: 1.5rem;
+}
+#main-svg {
+    display: flex;
+    justify-content: space-between;
+    fill: rgb(208 208 213);
+    margin: 5px 0px;
+    width: 717px;
+    height: 44px;
+}
+#main-section #espacio{
+    padding: 15px 0px;
+}
+
+#main-section #main-btnget{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#main-section #btn-get {/*boton de comenzar*/
+    text-decoration: none;
+    border: 4px solid #feac32;
+    background: linear-gradient(#fecc4c, #ffac33);
+    border-width: -8px;
+    font-size: 25px;
+    color: #0a0a23;
+    padding: 5px 109px;
+}
+#main-section #formatp{ /*pie de foto*/
+    font-size: 20px;
+    font-family:'Arial Narrow';
+    font-weight: lighter;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}

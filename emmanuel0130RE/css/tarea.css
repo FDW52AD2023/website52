@@ -1,226 +1,65 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    background-color: #1b1b32;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-.boton {
+.boton1{
     border: 1px solid white;
-    /* padding: 5px; */
-    text-decoration: none;   /* para quitarle el subrayado que tienen los links por default */
-    color: white;
-    margin: 3px 4px;
-}
-
-.boton_amarillo {
-    font-family: sans-serif;
+    padding: 5px;
     text-decoration: none;
-    border-color: #feac32;
-    border-width: 3px;
-    background-color: #feac32;
-    background-image: linear-gradient(#fecc4c, #ffac33);
-    color: black;
-}
-
-.boton_amarillo:hover {
-    background-image: linear-gradient(#fac84a, #fac84a)
-}
-
-header h2 {
     color: white;
 }
-
-#header_main {
+header h2{
+    color: white;
+}
+#header-main {
     background-color: #0a0a23;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: -9px;
-    margin-bottom: 0px;
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
+    height:80px ;
 }
-
-#header_main #buscador {
-    margin-top: 8px;
-    display: flex;
-    width: 37%;
-    background-color: #3b3b4f;
-    padding: 3px 0px;
-}
-
-#header_main #buscador input {
-    width: 100%;
-    font-size: 18px;
-    font-family: sans-serif;
-    background-color: #3b334f;
-    color: #fff;
-    border: none;
-}
-
-#lupa {
-    font-size: 18px;
-    background: none;
-    border: none;
-}
-
-#lupa:hover {
-    background-color: #7c7a85;
-}
-
-#header_main h2 {
+#header-main input{
     width: 40%;
-    font-family: "courier";
-    font-weight: lighter;
-    margin-left: 24px;
-    margin-bottom: 13px;
 }
-
-#header_main #botones_header {
+#header-main h2{
+    margin-left: 5px;
+    width: 40%;
+}
+h1 {
+    text-align: center;
+}
+h3.centrado  {
+    text-align: center;
+}
+img{
+    width: 50px;
+    height: 30px;
+    justify-content: baseline;
+}
+.botonAmarillo {
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+    border: black;
+}
+.botonamarillo2 {
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+    display:flexbox;
+    left: 45%;
+    place-items: center;
+    position: absolute;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid;
+}
+ul.cuadrogris{
     display: flex;
-    justify-content: flex-end;
-    margin-top: 8px;
-    align-items: center;
-}
-
-#header_main #botones_header #boton_mundo {
-    font-size: 20px;
-    font-family: sans-serif;
-    padding: 0px 2px;
-}
-
-#header_main #botones_header #boton_menu {
-    font-size: 18px;
-    font-family: sans-serif;
-    padding: 3px 12px;
-    margin-left: 4px;
-}
-
-#header_main #botones_header #boton_amarillo_header {
-    font-size: 18px;
-    padding: 4px 12px;
-    margin-left: 4px;
-}
-
-#intro {
-    overflow: hidden;
-    font-family: sans-serif;
-    padding: 85px 310px 10px 300px
-}
-
-#intro h1 {
-    color: white;
-    font-size: 42px;
-    line-height: 2.2;
-}
-
-#intro h2 {
-    color: white;
-    padding: 0px;
-    font-size: 21px;
-    font-weight: 600;
-    margin-top: -13px;
-}
-
-#intro div {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: baseline;
-}
-
-#boton_get_started {
-    font-size: 26px;
-    margin-top: 53px;
-    margin-bottom: 60px;
+    background-color: gray;
     text-align: center;
-    display: block;
-    margin-left: auto ;
-    margin-right: auto;
-    width: 66%;
-    padding: 8px 28px;
+    justify-content: center;
+    padding: 30px;
 }
-
-#intro p, #info #donations, #info a {
-    font-family: sans-serif;
-    font-weight: 600;
-    color: #d0d0d5;
-    text-align: center;
+img.img1{
+    width: 250px;
+    height: 250px;
 }
-
-#as_seen_in {
-    background-color: #3b3b4f;
-    margin-top: -40px;
-    padding-bottom: 45px;
-}
-
-#as_seen_in h2 {
-    color: #d0d0d5;
-    text-align: center;
-    font-family: sans-serif;
-    padding-top: 52px;
-    font-size: 41px;
-}
-
-#as_seen_in div {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    padding: 0px 375px 10px 375px
-}
-
-#as_seen_in #div2 {
-    justify-content: space-evenly;
-    padding-top: 8px;
-    align-items: center;
-}
-
-#alumni {
-    padding: 30px 90px 20px 90px;
-    text-align: center;
-}
-
-#alumni h2 {
-    font-size: 42px;
-    font-family: sans-serif;
-    color: #d0d0d5;
-    padding-bottom: 10px;
-}
-
-#alumni article {
-    background-color: #0a0a23;
-    display: flex;
-    margin-bottom: 60px;
-}
-
-#testimonio_texto {
-    font-family: sans-serif;
-    color: #d0d0d5;
-    font-size: 20px;
-    width: 73%;
-}
-
-#datos_alumno {
-    font-size: 22px;
-    padding-top: 43px;
-    text-align: center;
-}
-
-#testimonio_p {
-    padding: 8px 40px 20px 40px;
-    line-height: 1.4;
-    text-align: justify;
-}
-
-#alumni #boton_get_started {
-    width: 42%;
-}
-
 #verified_certif, #prof_certif, #prepare_for {
     padding: 0px 285px 20px 275px;
 }
@@ -401,3 +240,9 @@ footer {
     justify-content: space-evenly;
     margin-top: 25px;
 }
+h2.sub1{
+    text-align: center;
+}
+
+
+

@@ -4,6 +4,14 @@ body {
     background-color: #1b1b32;
 }
 
+#boton_regresar {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #d0d0d5;
+    padding: 70px 4px 0px 15px;
+    margin-left: 0px;
+}
+
 button:hover {
     cursor: pointer;
 }
@@ -110,7 +118,7 @@ header h2 {
 #intro {
     overflow: hidden;
     font-family: sans-serif;
-    padding: 85px 310px 10px 300px
+    padding: 0px 310px 10px 300px
 }
 
 #intro h1 {
@@ -329,7 +337,7 @@ footer {
     padding-top: 8px;
 }
 
-#trending_guides p, #guides a {
+#trending_guides p, #guides a, #boton_regresar a {
     font-size: 16px;
     font-family: sans-serif;
     color: #d0d0d5;
@@ -338,7 +346,7 @@ footer {
     text-decoration: none;
 }
 
-#guides a:hover, #links_footer a:hover {
+#guides a:hover, #links_footer a:hover, #boton_regresar a:hover {
     text-decoration: underline;
 }
 

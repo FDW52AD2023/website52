@@ -1,24 +1,3 @@
-.buscar {
-    background-color: #3b3b4f;
-}
-
-.boton1 {
-    border: 1px solid white;
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-    margin-right: 10px;
-}
-
-.botonamarillo {
-    background-color: #feac32;
-    border: 1px solid white;
-    padding: 5px;
-    text-decoration: none;
-    color: black;
-    margin-right: 10px;
-}
-
 #contenedor {
     background-color: #f5f6f7;
 }
@@ -81,6 +60,26 @@
 #img {
     display: flex;
     justify-content: center; 
+}
+.buscar {
+    background-color: #3b3b4f;
+}
+
+.boton1 {
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.botonamarillo {
+    background-color: #feac32;
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
 }
 
 .text {

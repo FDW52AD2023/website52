@@ -89,7 +89,7 @@ body {
     flex-flow: column nowrap;
     color: #1b1b32;
     font-family: Arial;
-    padding: 4rem 18rem;
+    padding: 4rem 18rem 0rem;
     font-size: 25px;
 }
 
@@ -114,3 +114,236 @@ section h6{
     justify-content: center;
     color: #3b3b4f;
 }
+
+#seccionlogos {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #3b3b4f;
+    color: #d0d0d5;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 2rem 0rem 4rem;
+}
+
+#nuevaseccion {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-size: 42px;
+    font-family: Arial;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#persona p{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+#persona > .justificado{
+    font-size: 20px;
+    margin: 0rem 2rem ;
+    font-family: Arial;
+}
+
+#persona img {
+    float: left;
+    margin-right: 3rem;
+}
+
+#persona{
+    background-color: #ffffff;
+    border: 3px solid #e9eaeb;
+    margin: 3rem 5rem 3rem ;
+    font-size: 22px;
+    font-family: Arial;
+    color: #3b3b4f;
+}
+
+#persona2 p{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#persona2 > .justificado{
+    font-size: 20px;
+    margin: 0rem 2rem ;
+    font-family: Arial;
+}
+
+#persona2 img {
+    float: left;
+    margin-right: 3rem;
+}
+
+#persona2{
+    background-color: #ffffff;
+    border: 3px solid #e9eaeb;
+    margin: 4rem 5rem 4rem ;
+    font-size: 22px;
+    font-family: Arial;
+    color: #3b3b4f;
+}
+
+#persona3 p{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#persona3 > .justificado{
+    font-size: 20px;
+    margin: 0rem 2rem ;
+    font-family: Arial;
+}
+
+#persona3 img {
+    float: left;
+    margin-right: 3rem;
+}
+
+#persona3 {
+    background-color: #ffffff;
+    border: 3px solid #e9eaeb;
+    margin: 4rem 5rem 4rem ;
+    font-size: 22px;
+    font-family: Arial;
+    color: #3b3b4f;
+}
+
+.botonAmarillo3 {
+    background-color: #febc40;
+    margin: 8% 30%;
+    border: 5px solid #feac32;
+    padding: .5rem 9rem ;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+#seccioneschicas img {
+    float: left;
+    margin: .5rem 1rem;
+}
+
+#seccioneschicas {
+    background-color: #d0d0d5;
+    border: 3px solid #1b1b32;
+    margin: .5rem 17rem;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+#seccioneschicas:hover{
+    background-color: #1b1b32;
+    color: white;
+}
+
+#nuevaseccion3 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-size: 42px;
+    font-family: Arial;
+    margin: 8rem 17rem 2rem;
+}
+
+#nuevaseccion4 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-size: 45px;
+    font-family: Arial;
+    margin: 2rem 15rem ;
+}
+
+#nuevaseccion5 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: left;
+    font-size: 42px;
+    font-family: Arial;
+    margin: 2rem 17rem;
+}
+
+#seccioneschicas2 img {
+    float: left;
+    margin: .5rem 1rem;
+}
+
+#seccioneschicas2 {
+    background-color: #d0d0d5;
+    border: 3px solid #1b1b32;
+    margin: .5rem 17rem 4rem;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+#seccioneschicas2:hover{
+    background-color: #1b1b32;
+    color: white;
+}
+
+
+.botonAmarillo4 {
+    background-color: #febc40;
+    margin: 30% ;
+    border: 5px solid #feac32;
+    padding: .5rem 9rem ;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+#Ultimaseccion {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: left;
+    font-size: 42px;
+    font-family: Arial;
+    padding: 5rem 16rem 0rem;
+}
+
+#textofinal {
+    display: flex;
+    flex-flow: column nowrap;
+    color: #1b1b32;
+    font-family: Arial;
+    padding: 0rem 16rem 2rem;
+    font-size: 17px;
+}
+
+.botonAmarillo5 {
+    background-color: #febc40;
+    margin: 30% ;
+    border: 5px solid #feac32;
+    padding: .5rem 9rem ;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+#final{
+    display: flex;
+    background-color: #dfdfe2;
+    border: 4px solid black;
+    font-size: 17px;
+    font-family: Arial;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+
+
+

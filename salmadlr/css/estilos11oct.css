@@ -1,22 +1,23 @@
 header {
-    background-color: magenta;
+    background-color: deeppink;
 }
 
-main{
-    background-color: goldenrod;
-}
-aside{
-    background-color: lawngreen;
+main {
+    background-color: aqua;
 }
 
-footer{
-    background-color: saddlebrown;
+aside {
+    background-color: coral;
+}
+
+footer {
+    background-color: darkgoldenrod;
 }
 
 #mp1 {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-areas:"h h" 
+    grid-template-areas:"h h"
                         "a m"
                         "f f";
 
@@ -72,4 +73,13 @@ header h2 {
 #Header-main h2{
     margin-left: 5px;
     width: 40%;
+}
+
+
+/*.botonamarillo{
+
+} /*
+
+.boton3{
+
 }

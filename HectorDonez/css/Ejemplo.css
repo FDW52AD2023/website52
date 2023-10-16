@@ -72,12 +72,10 @@ main p{
     text-align: center;
 }
 
-#header1 {
-    border: 3px solid black;
-}
 
 #header1 img {
     float: left;
+    margin-right: 1em;
 }
 
 .clearfix::after {
@@ -97,12 +95,11 @@ main p{
 #header2{
     background-color: white;
 }
-#header2 {
-    border: 3px solid black;
-}
+
 
 #header2 img {
     float: left;
+    margin-right: 1em;
 }
 
 .clearfix::after {
@@ -118,12 +115,11 @@ main p{
 #header3{
     background-color: white;
 }
-#header3 {
-    border: 3px solid black;
-}
+
 
 #header3 img {
     float: left;
+    margin-right: 1em;
 }
 
 .clearfix::after {

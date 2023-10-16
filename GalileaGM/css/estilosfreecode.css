@@ -1,0 +1,331 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #1b1b32;
+}
+
+#header-main{ /* la navegación,logo,menu*/
+    background-color: #0a0a23;
+    border: 3px;
+    display: flex;
+    align-items:center; /*centrar en el cuadro de la altura*/
+    height: 56px; 
+    justify-content:space-between;
+    padding: 0px 15px;
+}
+#header-main #search{ /*Formato de la union del boton y input para buscar*/
+    display: flex;
+    width: 40%;
+    background-color:#3b334f;
+
+}
+#header-main #icon{ /*icono del buscador*/
+    background-color: transparent;
+    color: white;
+    border:none;
+}
+
+#header-main #search input{ /*barra del buscador*/
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color:#3b334f;
+    border: none;
+}
+#header-main h2{ /*Titulo*/
+    color: white;
+    font-family: 'Courier New';
+    font-weight: lighter;
+    font-size: 30px;
+    padding: 0px;
+
+}
+#header-main #btn { /*3 botones del header*/
+  display: flex;
+  justify-content: flex-end;
+  margin: 6px;
+  font-family: sans-serif;
+  gap: 17px;
+
+}
+#header-main #btn-iconmundo{ /*boton del mundo*/
+    color:white;
+    font-size: 25px;
+    border: 1px solid white;
+    padding: 0 2px;
+}
+#header-main #btn-menu{ /*boton del menú*/
+    border: 1px solid white;
+    font-size: 15px;
+    color: white;
+    padding: 3px 10px;
+    text-decoration: none;
+}
+#header-main #btn-sign{ /*boton de iniciar sesion*/
+    border: 2px solid #feac32;
+    background: linear-gradient(#fecc4c, #ffac33);
+    font-size: 15px;
+    color:#0a0a23;
+    padding: 3px 10px;
+    text-decoration: none;
+}
+
+#main-section{
+    font-family: sans-serif;
+    color: white;
+    padding: 5px 290px 0px 281px; 
+}
+
+#main-section #ms1{
+    font-size: 2.5rem;
+}
+#main-section #ms2{
+    font-size: 1.5rem;
+}
+#main-svg {
+    display: flex;
+    justify-content: space-between;
+    fill: rgb(208 208 213);
+    margin: 5px 0px;
+    width: 717px;
+    height: 44px;
+}
+#main-section #espacio{
+    padding: 15px 0px;
+}
+
+#main-section #main-btnget{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#main-section #btn-get {/*boton de comenzar*/
+    text-decoration: none;
+    border: 4px solid #feac32;
+    background: linear-gradient(#fecc4c, #ffac33);
+    border-width: -8px;
+    font-size: 25px;
+    color: #0a0a23;
+    padding: 5px 109px;
+}
+#main-section #formatp{ /*pie de foto*/
+    font-size: 20px;
+    font-family:'Arial Narrow';
+    font-weight: lighter;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+#main-section #main-logos{
+    background-color: #3b334f;
+    display: flex;
+    margin: 7px -259px -9px;
+    margin-left: -282px;
+    margin-right: -288px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 12px;
+    font-size: 2.5rem;
+}
+#main-section #contenedor {
+    background-color: #0A0A23;
+    height: 352px;
+    margin: 32px -190px;
+    width: 1111px;
+    display: flex;
+    color: white;
+}
+
+#main-section #texto1 {
+    text-align: justify;
+    font-family: sans-serif;
+    color: white;
+    font-size: 2.5rem;
+
+}
+#main-section #info {
+    margin-left: 70px;
+    margin-top: 45px;
+    width: 50%;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#main-section #descp {
+    margin-left: -16px;
+    margin-right: -91px;
+    margin-top: 22px;
+    width: 50;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    text-align: justify;
+}
+
+#certif1,#certif2, #certif3  {
+    padding: 0px 285px 20px 275px;
+}
+
+#certif1 button ,#certif2 button, #certif3 button {
+    width: 100%;
+    background-color: #3b3b4f;
+    border: solid white;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#certif1 #unionbtn, #certif2 #unionbtn,#certif3 #unionbtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#certif1 #uniontxt, #certif2 #uniontxt,#certif3 #uniontxt {
+    display: flex;
+    align-items: center;
+}
+
+#certif1 #unionbtn svg, #certif2 #unionbtn svg, #certif3 #unionbtn svg {
+    padding: 8px 12px 10px 12px;
+
+}
+#certif1 #uniontxt p, #certif2 #uniontxt p,#certif2 #uniontxt p{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    padding-bottom: 10px;
+}
+
+#certif1 button:hover,#certif2 button:hover,#certif3 button:hover{
+    background-color: white;
+    border: solid white;
+    color: #1b1b32;
+}
+#certif1 button #uniontxt svg,#certif2 button #uniontxt svg, #certif3 button #uniontxt svg{
+    filter: contrast(0%);
+} 
+
+#certif1 button:hover #uniontxt svg, #certif2 button:hover #uniontxt svg,#certif3 button:hover #uniontxt svg {
+    filter: contrast(60%);
+}
+#frenquely .texto0 {
+    font-family: sans-serif;
+    font-size: 40px;
+    justify-content: left;
+    color: white;
+    margin-left: -63px;
+    margin-right: 0px;
+}
+#frenquely .texto1 {
+    font-family: sans-serif;
+    justify-content: left;
+    color: white;
+    margin-left: -63px;
+    margin-right: 0px;
+    margin-top: 3%;
+}
+#frenquely .texto2 {
+    font-family: sans-serif;
+    justify-content: left;
+    color: white;
+    margin-left: -63px;
+    margin-right: 0px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #2a2a40;
+    margin-left: -282px;
+    margin-right: -288px;
+}
+#footren {
+    padding: 25px 16px 58px 61px;
+    display: flex;
+    align-items: center;
+}
+#footren #infop1 {
+    width: 46%;
+}
+#footren p,#footren a, #list-trend li>a{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #d0d0d5;
+    line-height: 1.9;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+#footren #infop1 #inforp1 {
+    text-align: left;
+    padding-top: 8px;
+}
+
+#list-trend h4 {
+    font-size: 17px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    grid-area: g;
+}
+
+#list-trend li {
+    padding: 2px 0px 2px 0px;
+}
+
+#list-trend ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#list-trend #list1 {
+    grid-area: l;
+}
+
+#list-trend #list2 {
+    grid-area: p;
+}
+
+#list-trend {
+    width: 54%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "g g"
+                         "l p";
+}
+
+#lkf hr {
+    width: 95%;
+    color: #d0d0d5;
+}
+
+#lkf {
+    padding-bottom: 30px;
+}
+
+#lkf a {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #d0d0d5;
+    line-height: 1.9;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+#lk {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+

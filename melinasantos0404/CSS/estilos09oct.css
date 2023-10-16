@@ -1,0 +1,200 @@
+header {
+    border: 5px solid black;
+}
+
+/*colores de los articulos*/
+/*azul,verde,tomate,peru,oro,gris*/
+.azul {
+    background-color: blue;
+}
+.verde {
+    background-color: green;
+}
+.tomate {
+    background-color: tomato;
+}
+.peru {
+    background-color: peru;
+}
+
+.oro {
+    background-color: gold;
+}
+
+.gris {
+    background-color: gray;
+}
+
+
+#header1 {
+    display: flex;
+    flex-flow: column wrap; 
+    height: 200px;
+}
+
+#header1 #a1{
+    height: 180px;
+}
+
+#header2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header3 {
+    display: flex;
+    justify-content: center;
+}
+
+#header4{
+    display: flex;
+    flex-flow: column nowrap;
+    height:  200px;
+    justify-content:  space-between;
+}
+
+#header5 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    align-content: space-between;
+}
+
+#header5 article{
+    width: 50%;
+    padding: 10px 0px;
+}
+
+#header6 {
+    display: flex;
+
+
+}
+
+#header6 #a1{
+    order: 1;
+}
+
+#header7 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+#header7 #a1{
+    order: 2;
+}
+
+
+#header7 #a2{
+    order: 1;
+}
+
+#header7 #a3{
+    order: 4;
+}
+
+
+#header7 #a4{
+    order: 3;
+}
+
+#header7 #a5{
+    order: 6;
+}
+
+#header7 #a6{
+    order: 5;
+}
+
+#header8 {
+    display: flex;
+}
+
+#header8 #a5{
+    flex-grow: 1;
+}
+
+#header8 #a3{
+    flex-grow: 2;
+}
+
+#header9{
+    display: flex;
+}
+#header9 #a2{
+flex-shrink: 1;
+width: 200px;
+}
+
+#header9 #a4{
+    flex-shrink: 2;
+    width: 200px;
+}
+
+#header9 #a6{
+    flex-shrink: 0;
+    flex-flow: 1;
+    width: 200px;
+}
+
+#header10 {
+    display: flex;
+}
+
+#header10 #a5{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+
+#header10 #a2{
+    flex: 1 0 200px;
+}
+
+#header11 {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#header11 #a1{
+align-self: flex-end;
+}
+
+#header11 #a6{
+  align-self: flex-start;  
+}
+
+#mp1 header {
+    background-color: greenyellow;
+}
+
+#mp1 main {
+    background-color: lightcoral;
+}
+#mp1 aside {
+    background-color: darkgoldenrod;
+
+}
+#mp1 footer{
+    background-color: yellowgreen;
+}
+
+#mp1 {
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+
+#mp1 header{
+grid-column: 1/ -1;
+}
+
+#mp1 footer {
+    grid-column: 1 / -1;
+}

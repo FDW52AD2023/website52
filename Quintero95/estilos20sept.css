@@ -1,41 +1,75 @@
-/*#mp1 .s2  ~ section {
-    background-color: rebeccapurple;
+header{
+    background-color: lightpink;
 }
 
-#mp1 h2 + section{
-    border-top: 5px double blue;
+main{
+    background-color: lightblue;
 }
-*/
 
-#mp1 .s4:hover{
-    background-color: palevioletred;
+aside{
+    background-color: lightgreen;
+}
+
+footer{
+    background-color: gold;
+}
+
+#mp1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h  h"
+                         "a  m"
+                         "f  f";
+}
+
+#mp1 header{
+    grid-area: h;
+}
+
+#mp1 main{
+    grid-area: m;
+}
+
+#mp1 aside{
+    grid-area: a;
+}
+
+#mp1 footer{
+    grid-area: f;
+}
+
+#contenedor{
+    display: flex;
+}
+
+.boton1{
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
     color: white;
 }
 
-#lista1 li:first-child, #lista1 li:last-child {
-    background-color: black;
+#header-main h2{
+    margin-left: 5px;
+    width: 40%;
     color: white;
+}
+
+#header-main {
+    background-color: #0a0a23;
+    display: flex;
+    align-items: center;
+    height: 80px;
 
 }
 
-#lista1 li:nth-child(6) {
-    background-color: black;
+#header-main input{
+    width: 40%;
+}
+
+.botonamarillo{
+    background-color: gold;
+    padding: 5px;
+    text-decoration: none;
     color: white;
-
 }
-
-#lista1 li:nth-child(odd) {
-    font-size: 5px;
-
-}
-
-#lista1 li:nth-child(even) {
-    text-decoration: line-through;
-
-}
-
-#lista1 li:nth-child(3n) {
-    background-color: brown;
-
-}
-

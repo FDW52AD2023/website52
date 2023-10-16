@@ -144,3 +144,77 @@ main p{
 .Imagen4 p{
     font-size: 50px;
 }
+
+#nuevos h1{
+    text-align: center;
+    font-size: 50px;
+    margin-left: 50px;
+    margin-right: 300px;
+}
+
+#nuevos h3{
+    text-align: left;
+    font-size: 23px;
+    margin-left: 246px;
+    margin-right: 200px;
+}
+
+#nuevos p{
+    text-align: left;
+    font-size: 25px;
+    margin-left: 246px;
+    margin-right: 200px;
+}
+
+#nuevos h1{
+    text-align: left;
+    font-size: 30px;
+    margin-left: 246px;
+    margin-right: 200px;
+}
+
+
+#footer2{
+    background-color:#d0d0d5;
+    grid-column: 1 / -1;
+}
+
+#botonnuevo{
+    display: flex;
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c,#ffac33);
+    border-color: #feac32;
+    border-width: 3px;
+    color: #0a0a23!important;
+    margin: 0 auto;
+    font-size: 20px;
+    max-height: 100%;
+    max-width: 500px;
+    padding: 5px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#mp0 main{
+    background-color: #d0d0d5;
+}
+#mp0 aside{
+    background-color: #d0d0d5;
+    text-align: center;
+}
+
+#mpo p{
+    text-align: right;
+}
+
+#mp0 {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+}
+
+#footer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

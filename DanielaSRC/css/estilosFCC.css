@@ -160,3 +160,28 @@
     max-width: 50%;
     height: auto;
 }
+
+#parte3 h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+}
+
+.botonesp3 {
+    display: flex;
+    background-color: #d0d0d5;
+    border: 3px solid;
+    color: #333;
+    width: 60%;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+}
+
+.botonesp3 img {
+    height: 30px;
+    width: 25px;
+}

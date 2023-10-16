@@ -102,3 +102,61 @@
     justify-content: center;
     padding: 10px;
 }
+
+#parte2 h1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 50px;
+}
+
+#persona1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    font-size: 25px;
+    margin: 80px;
+    box-shadow: 0 0 10px #e5e6e7;
+}
+
+#persona1 img {
+    display: flex;
+    background-color: white;
+    max-width: 50%;
+    height: auto;
+}
+
+#persona2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    font-size: 25px;
+    margin: 80px;
+    box-shadow: 0 0 10px #e5e6e7;
+}
+
+#persona2 img {
+    display: flex;
+    background-color: white;
+    max-width: 50%;
+    height: auto;
+}
+
+#persona3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    font-size: 25px;
+    margin: 80px;
+    box-shadow: 0 0 10px #e5e6e7;
+}
+
+#persona3 img {
+    display: flex;
+    background-color: white;
+    max-width: 50%;
+    height: auto;
+}

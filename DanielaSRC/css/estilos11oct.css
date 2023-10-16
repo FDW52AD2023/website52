@@ -1,10 +1,11 @@
-header {
+header{
     background-color: magenta;
 }
 
 main{
     background-color: goldenrod;
 }
+
 aside{
     background-color: lawngreen;
 }
@@ -16,61 +17,71 @@ footer{
 #mp1 {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-areas:"h h" 
+    grid-template-areas:"h h"
                         "a m"
                         "f f";
-
 }
 
 #mp1 header{
     grid-area: h;
 }
+
 #mp1 main{
     grid-area: m;
 }
+
 #mp1 aside{
     grid-area: a;
 }
+
 #mp1 footer{
     grid-area: f;
 }
 
-
-#Contenedor{
+#contenedor {
     display: flex;
 }
 
-#Contenedor section{
-    margin: 0 5px;
+#contenedor section{
+    margin: 0 5px ;
 }
 
-
-
-.boton1{
+.boton1 {
     border: 1px solid white;
     padding: 5px;
     text-decoration: none;
     color: white;
+    
 }
 
-header h2 {
+#header-main h2{
     color: white;
+    width: 40%;
+    margin-left: 5px;
 }
 
-#Header-main{
-    background-color: rgb(32, 4, 4);
+#header-main input{
+    width: 40%;
+}
+
+.botonAmarrillo{
+
+
+}
+
+#header-main{
+    background-color: #0a0a23;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
 }
 
-#Header-main input{
-    width: 40%;
+#main-pag{
+    background-color: #1a1b32;
+    display: grid;
 }
 
-#Header-main h2{
-    margin-left: 5px;
-    width: 40%;
+#main-pag h1{
+    text-align: left;
+    margin-left: 300px;
+    color: white;
 }
-

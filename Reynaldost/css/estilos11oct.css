@@ -108,11 +108,11 @@ h2.año {
 h2.selector {
     background-color: #ffb036;
     width: 350px;
-    margin: 0 auto; /* Centra el cuadro horizontalmente */
-    display: flex; /* Añade flex para centrar verticalmente el contenido */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    height: 50px; /* Ajusta la altura si es necesario */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
     margin-top: 50px;
 }
 
@@ -121,9 +121,9 @@ div.imgkorea {
 }
 
 .img1 {
-    display: block; /* Esto hace que la imagen se comporte como un bloque, lo que permite ajustar el margen horizontal */
-    margin: 0 auto; /* Mueve la imagen hacia la derecha al establecer el margen izquierdo y derecho a "auto" */
-    max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
     margin-top: 60px;
   }
 
@@ -139,12 +139,12 @@ h1.inf {
 }
 
 .articulo1 img {
-    max-width: 50%; /* Ajusta el ancho de la imagen a la mitad del contenedor */
+    max-width: 50%;
     height: auto;
 }
 
 .articulo1 p {
-    flex: 1; /* Toma todo el espacio restante disponible para el párrafo */
+    flex: 1;
 }
 
 
@@ -214,8 +214,8 @@ div.alinear2 {
 }
 
 .imagen {
-    float: left; /* Coloca la imagen en el lado izquierdo del contenido */
-    margin-right: 10px; /* Añade un espacio entre la imagen y el texto */
+    float: left;
+    margin-right: 10px;
 }
 
 
@@ -239,3 +239,9 @@ section.preguntas {
     border: 0px solid black; /* Borde negro de 2 píxeles */
     margin-top: 10px;
 }
+
+/* section.end {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px;
+} */

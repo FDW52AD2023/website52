@@ -1,0 +1,66 @@
+.boton1{
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+header h2{
+    color: white;
+}
+#header-main {
+    background-color: #0a0a23;
+    display: flex;
+    align-items: center;
+    height:80px ;
+}
+#header-main input{
+    width: 40%;
+}
+#header-main h2{
+    margin-left: 5px;
+    width: 40%;
+}
+h1 {
+    text-align: center;
+}
+h3.centrado  {
+    text-align: center;
+}
+img{
+    width: 50px;
+    height: 30px;
+    justify-content: baseline;
+}
+.botonAmarillo {
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+    border: black;
+}
+.botonamarillo2 {
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+    display:flexbox;
+    left: 45%;
+    place-items: center;
+    position: absolute;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid;
+}
+ul.cuadrogris{
+    display: flex;
+    background-color: gray;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
+img.img1{
+    width: 250px;
+    height: 250px;
+}
+
+
+
+

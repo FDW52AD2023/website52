@@ -6,7 +6,7 @@ main {
     background-color: goldenrod;
 }
 
-aside{
+aside {
     background-color: lawngreen;
 }
 
@@ -16,62 +16,62 @@ footer {
 
 #mp1 {
     display: grid;
-    grid-template-columns: 5fr 1fr;
-    grid-template-areas: "h h"
-                         "m a"
-                         "f f";
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:"h h"
+                        "a m"
+                        "f f";
     margin: 5px;
 }
 
-#mp1 header{
+#mp1 header {
     grid-area: h;
 }
 
-#mp1 main{
+#mp1 main {
     grid-area: m;
 }
 
-#mp1 aside{
+#mp1 aside {
     grid-area: a;
 }
 
-#mp1 footer{
+#mp1 footer {
     grid-area: f;
 }
 
-#Contenedor{
+#contenedor {
     display: flex;
+    margin: 0px;
 }
 
-#Contenedor section{
-    margin: 20px;
+#contenedor section {
+    margin: 0 5px;
 }
 
-.boton1{
-    border: 1px solid white;
+.boton1 {
+    border: 2px solid white;
     padding: 5px;
     text-decoration: none;
     color: white;
+
 }
 
-#header-main h2 {
+header h2 {
     color: white;
 }
 
-#header-main{
+#header-main {
     background-color: #0a0a23;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 80px;
+    justify-content: space-between;
 }
 
-#header-main input{
+#header_main input {
     width: 40%;
 }
 
-#header-main h2{
-    margin-right: 10px;
-    margin-left: 20px;
+#header_main h2 {
     width: 40%;
+    margin-left: 5px;
 }

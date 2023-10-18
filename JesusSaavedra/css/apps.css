@@ -1,0 +1,21 @@
+* {
+    font-family: sans-serif;
+}
+
+input[type ="text"]{
+    padding: 8px;
+    border: none;
+    border-bottom:2px solid black;
+}
+
+/*input[type ="submit"]{
+    padding: 10px;
+}*/
+
+.row{
+    margin: 15px;
+}
+
+.btn{
+    padding: 15px 50px;
+}

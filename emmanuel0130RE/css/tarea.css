@@ -49,13 +49,26 @@ img{
     text-decoration: none;
     border: 1px solid;
 }
-ul.cuadrogris{
-    display: flex;
-    background-color: gray;
-    text-align: center;
-    justify-content: center;
-    padding: 30px;
+#cuadro_gris {
+    background-color: grey;
+    padding: 50px;
 }
+#cuadro_gris h1 {
+    color: black;
+    text-align: center;
+    font-family: Arial;
+}
+#cuadro_gris div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 350px 5px 350px;
+}
+#cuadro_gris #div2 {
+    justify-content: space-evenly;
+    padding-top: 8px;
+    align-items: center;
+}
+
 img.img1{
     width: 250px;
     height: 250px;

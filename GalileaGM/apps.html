@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps</title>
+    <link rel="stylesheet" href="css/apps.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Regresar a las evidencias </a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Apps</h1>
+
+    <form id="app1" action="">
+        <h2>Programa "Suma Numeros"</h2>
+
+        <div  class="row">
+            <label for="app1Num1">Numero 1:</label>
+            <input type="text" name="app1Num1" id="app1Num1">
+        </div>
+        <div class="row">
+            <label for="app1Num2">Numero 2:</label>
+            <input type="text" name="app1Num2" id="app1Num2">
+        </div>
+        <div class="row"> 
+            <label for="app1Res">Resultado:</label>
+            <input  readonly type="text" name="app1Res" id="app1Res">
+        </div>
+        <div >
+            <input id="app1BtnCalcular" class="btn" type="submit" value="Calcular">
+        </div>        
+    </form>
+
+    
+    <form id="app2" action="">
+        <h2>Programa "Repite cadena"</h2>
+
+        <div  class="row">
+            <label for="app2Texto">Texto:</label>
+            <input type="text" name="app2Texto" id="app2Texto">
+        </div>
+        <div class="row">
+            <label for="app2Veces">Veces:</label>
+            <input type="text" name="app2Veces" id="app2Veces">
+        </div>
+        <div class="row"> 
+            <label for="app2Res">Resultado:</label>
+            <input  readonly type="text" name="app2Res" id="app2Res">
+        </div>
+        <div >
+            <input id="app2BtnRepetir" class="btn" type="submit" value="Repetir">
+        </div>        
+    </form>
+    <script src="js/apps.js"></script>
+</body>
+</html>

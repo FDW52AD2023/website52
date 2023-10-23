@@ -1,0 +1,17 @@
+* {
+    font-family: sans-serif;
+}
+
+input[type="text"]{
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.row {
+    margin-bottom: 8px;
+}
+
+.btn {
+    padding: 8px 50px;
+}

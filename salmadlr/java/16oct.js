@@ -24,13 +24,13 @@ let estado = "Nuevo Leon";
 Grupo = "Grupo 52";
 semestre = 6;
 
-document.write(`Radico en ${estado} 
-                y curso el ${semestre} 
+document.write(`Radico en ${estado}
+                y curso el ${semestre}
                 semestre y mi grupo es ${Grupo}`)
 
-document.write(`<article> 
-                <h2>Titulo del articulo </h2> 
-                <p> Texto del parrafo </p> 
+document.write(`<article>
+                <h2>Titulo del articulo </h2>
+                <p> Texto del parrafo </p>
                 <article>`);
 
 const PORC_COMISION = 0.1;

@@ -52,3 +52,4 @@ const tituloNuevo = document.getElementById("titulo");
 let texto = prompt("Que quieres ver en el titulo");
 
 tituloNuevo.innerHTML = texto;
+

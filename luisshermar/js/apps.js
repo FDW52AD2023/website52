@@ -38,3 +38,62 @@ app2BtnRepetir.addEventListener("click", (e) => {
 
     app2Res.value = resultado;
 })
+
+/* apps */
+const appnum1 = document.getElementById("appnum1")
+const appnum2 = document.getElementById("appnum2")
+const app3operacion = document.getElementById("app3resultado")
+const app3Res = document.getElementById("app3Res")
+const app3Calcular = document.getElementById("app3Calcular")
+
+app3Calcular.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let n1 = 
+
+    let operacion = app3Operacion.value;
+    let resultado;
+
+    /* checar que operacion selecciono el usuario */
+
+    if (operacion == "s" )(
+        resultado = n1 + n2
+    )
+
+
+    else if( operacion == "r" )(
+        resultado = n1 + n2
+    )
+
+
+})
+
+
+/* App4 */
+
+const app4tabla = document.getElementById("app4tabla");
+const app4Inv = document.getElementById("app4Inv");
+const app4solopunto = document.getElementById("app4solopunto");
+const app4Res = document.getElementById("app4Res");
+const app4btnver = document.getElementById("app4btnver");
+
+app4btnver.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let tabla = parseInt(app4tabla.value);
+
+    let lista = document.createElement("ul");
+
+    if()
+        for(let 1 =1; i <= 10, 1++)(
+            let mult = tabla + " x " + 1 + " = " + tabla * i;
+            let item = document.createElement("li");
+            console.log(mult);
+            item.innerHTML - mult;
+
+            lista.appendChild(item);
+        )
+
+    app4Res.appendChild(lista);
+})
+

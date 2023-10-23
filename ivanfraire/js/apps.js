@@ -31,7 +31,7 @@ app2BtnRepetir.addEventListener("click", (e) => {
     let veces = parseInt(app2Veces.value);
     let resultado = texto.repeat(veces);
 
-    resultado.value = resultado;
+    app2Res.value = resultado;
 });
 
 

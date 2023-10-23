@@ -42,7 +42,7 @@
 
         <div class="row">
             <label for="app2Veces">Veces</label>
-            <input type="text" name="app1Num2" id="app2Veces">
+            <input type="text" name="app2Veces" id="app2Veces">
         </div>
 
         <div class="row">
@@ -54,6 +54,69 @@
             <input class="btn" id="app2BtnRepetir" type="submit" value="repetir">
         </div>
     </form>
+    <form id="app3" action="">
+        <h2>Programa Operaciones Aritmeticas</h2>
+
+        <div class="row">
+            <label for="app3Num1">Numero</label>
+            <input type="text" name="app3Num1" id="app3Num1">
+        </div>
+
+        <div class="row">
+            <label for="app3Num2">Numero 2</label>
+            <input type="text" name="app3Num2" id="app3Num2">
+        </div>
+
+        <div class="row">
+            <label for="app3Operacion">Operacion</label>
+            <select name="app3Operacion" id="app3Operacion">
+                <option value="s">Suma</option>
+                <option value="r">Resta</option>
+                <option value="m">Multiplicacion</option>
+                <option value="d">Division</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="app3Res">Resultado: </label>
+            <input readonly type="text" name="app3Res" id="app3Res">
+        </div>
+
+        <div class="boton">
+            <input class="btn" id="app3BtnCalcular" type="submit" value="Calcular">
+        </div>
+    </form>
+
+    <form id="app4" action="">
+        <h2>Tabla de multiplicar</h2>
+
+        <div class="row">
+            <label for="app4Tabla">Tabla</label>
+            <input type="text" name="app4Tabla" id="app4Tabla">
+        </div>
+
+        <div class="row">
+            <label for="app4Inv">Tabla Invertida</label>
+            <input type="checkbox" name="app4Inv" id="app4Inv">
+        </div>
+
+        <div class="row">
+            <label for="app4SoloPunto">Mostrar resultados con el simbolo punto</label>
+            <input type="checkbox" name="app4SoloPunto" id="app4SoloPunto">
+        </div>
+
+        <div class="row">
+            <label for="app4Res">Resultado</label>
+            <div id="app4Res">
+
+            </div>
+        </div>
+
+        <div class="boton">
+            <input class="btn" id="app4BtnVer" type="submit" value="Ver tabla">
+        </div>
+    </form>
+
     <script src="js/apps.js"></script>
 </body>
 </html>

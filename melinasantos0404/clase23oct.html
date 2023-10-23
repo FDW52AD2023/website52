@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Clase 23 de octubre </title>
+    
+ </head>
+ <body>
+    <form id="app3" action="">
+        <h2>Programa suma numeros</h2>
+
+        <div class="row">
+        <label for="app3Num1">Numero:</label>
+        <input type="text" name="app3Num1" id="app3Num1">
+        </div>
+
+        <div class="row">
+        <label for="app3Num2">Numero 2:</label>
+        <input type="text" name="app3Num2" id="app3Num2">
+        </div>
+
+        <div class="row">
+        <label for="app3operaciones">operaciones</label>
+        <select  name="app3operaciones" id="app3operaciones">
+            <option value="s">SUMA</option>
+            <option value="r">RESTA</option>
+            <option value="m">MULTIPLICACION </option>
+            <option value="d">DIVISION </option>
+        </select>
+        </div>
+
+        <div class="row">
+            <label for="app3Res">Resultado</label>
+            <input readonly type="text" name="app3Res" id="app3Res">
+            </div>
+
+        <div class="row">
+        <input class ="btn" id ="app3BtnCalcular" type="submit" value="Calcular">
+        </div>
+
+    </form>
+
+
+
+
+
+    <form id="app4" action="">
+        <h2>TABLA DE MULTIPLICAR</h2>
+
+        <div class="row">
+        <label for="app4Tabla">TABLA:</label>
+        <input type="text" name="app4Tabla" id="app4Tabla">
+        </div>
+
+        <div class="row">
+        <input type="checkbox" name="app4Inv" id="app4Inv">
+        <label for="app4Inv">TABLA INVERTIDA: </label>
+        </div>
+
+        <div class="row">
+            <input type="checkbox" name="app4SoloPunto" id="app4SoloPunto">
+            <label for="app4SoloPunto"> MOSTRAR RESULATADOS CON SOLO PUNTO </label>
+        </div>
+
+        <div class="row">
+            <label for="app4Res">Resultado</label>
+            <div id="app4Res"></div>
+            </div>
+
+        <div class="row">
+        <input class ="btn" id ="app4BtnVer" type="submit" value="Ver tablas">
+        </div>
+
+    </form>
+
+    <script src="Js/clase23oct.js"></script>
+
+ </body>
+ </html>

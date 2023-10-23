@@ -1,0 +1,17 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+.row {
+    margin-bottom: 5px;
+}
+
+.btn {
+    padding: 8px 50px;
+}

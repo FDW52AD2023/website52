@@ -106,7 +106,7 @@ app4BtnVer.addEventListener("click", (e) =>{
         }
     }
     else{
-        for(let i=10 ; i >=1 ; i++){
+        for(let i=10 ; i >=1 ; i--){
             let mult = tabla + " x " + i + " = " + tabla*i;
             let item = document.createElement("li");
             item.innerHTML = mult;

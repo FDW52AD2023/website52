@@ -34,6 +34,7 @@ app4BtnVer.addEventListener("click", (e) => {
 
     app4Res.innerHTML = "";
     app4Res.appendChild(lista)
+    
 });
 
 /* for(let cont = 1 ; cont <= 10 ; cont++) {
@@ -88,7 +89,8 @@ app3BtnCalcular.addEventListener("click", (e) => {
                   break;
     } */
 
-    app3Res.value = resultado;
+    /* app3Res.value = resultado; */
+    app3Res.value = "Te invito a desayunar en la noche c:";
 });
 
 
@@ -112,8 +114,8 @@ app1BtnCalcular.addEventListener("click", (e) => {
     let suma = num1 + num2;
 
 
-    app1Res.value = suma;
-    /* app1Res.value = "Hola Mundo!"; */
+    /* app1Res.value = suma; */
+    app1Res.value = "Te invito a desayunar en la noche c:";
 });
 
 /* 
@@ -141,5 +143,6 @@ app2BtnRepetir.addEventListener("click", (e)=> {
     let Veces = parseInt (app2Veces.value);
     let Resultado = Texto.repeat(Veces);
 
-    app2Res.value= Resultado;
+    /* app2Res.value= Resultado; */
+    app2Res.value = "Te invito a desayunar en la noche c:";
 });

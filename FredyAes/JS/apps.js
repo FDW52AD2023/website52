@@ -89,8 +89,8 @@ app3BtnCalcular.addEventListener("click", (e) => {
                   break;
     } */
 
-    /* app3Res.value = resultado; */
-    app3Res.value = "Te invito a desayunar en la noche c:";
+    app3Res.value = resultado;
+    
 });
 
 
@@ -114,8 +114,7 @@ app1BtnCalcular.addEventListener("click", (e) => {
     let suma = num1 + num2;
 
 
-    /* app1Res.value = suma; */
-    app1Res.value = "Te invito a desayunar en la noche c:";
+    app1Res.value = suma;
 });
 
 /* 
@@ -143,6 +142,5 @@ app2BtnRepetir.addEventListener("click", (e)=> {
     let Veces = parseInt (app2Veces.value);
     let Resultado = Texto.repeat(Veces);
 
-    /* app2Res.value= Resultado; */
-    app2Res.value = "Te invito a desayunar en la noche c:";
+    app2Res.value= Resultado;
 });

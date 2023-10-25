@@ -1,4 +1,8 @@
 
+/* Práctica */
+
+
+
 /* App4 */
 
 const app4Tabla = document.getElementById("app4Tabla")

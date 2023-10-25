@@ -34,6 +34,7 @@ app4BtnVer.addEventListener("click", (e) => {
 
     app4Res.innerHTML = "";
     app4Res.appendChild(lista)
+    
 });
 
 /* for(let cont = 1 ; cont <= 10 ; cont++) {
@@ -89,6 +90,7 @@ app3BtnCalcular.addEventListener("click", (e) => {
     } */
 
     app3Res.value = resultado;
+    
 });
 
 
@@ -113,7 +115,6 @@ app1BtnCalcular.addEventListener("click", (e) => {
 
 
     app1Res.value = suma;
-    /* app1Res.value = "Hola Mundo!"; */
 });
 
 /* 

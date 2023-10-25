@@ -93,10 +93,7 @@ app4BtnVer.addEventListener("click", (e) => {
 
     if (app4Inv.checked && app4SoloPunto.checked){
         for(let i = 10 ; i >= 1 ; i--) {
-            let punto = ".";
-            let veces = tabla * i;
-            punto = punto.repeat(veces);
-            let mult = tabla + " X " + i + " = " + punto;
+            let mult = tabla + " X " + i + " = " + ".".repeat(tabla * i);
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);
@@ -111,10 +108,7 @@ app4BtnVer.addEventListener("click", (e) => {
         }
     } else if (app4SoloPunto.checked) {
         for(let i = 1 ; i <= 10 ; i++) {
-            let punto = ".";
-            let veces = tabla * i
-            punto = punto.repeat(veces)
-            let mult = tabla + " X " + i + " = " + punto;
+            let mult = tabla + " X " + i + " = " + ".".repeat(tabla * i);
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);

@@ -1,0 +1,60 @@
+/* Selector universal */
+
+/* * {
+    border: 3px double blue;
+} */    /* el asterisco (*) es para que el bloque de código aplique a todos los elementos de la página*/
+
+/* Selector de tipo */
+li {
+    background-color: gold;
+    color: black;
+    border: 4px dashed lime;
+    border-radius: 5px;
+}
+
+/* Selector por id */
+#mp1 { /* el # es para decir que se trata de un id */
+    border-top: 5px groove gray;
+}
+
+/* Selector por clase */
+.sombra { /* el punto . es para decir que se trata de una clase */
+    box-shadow: 5px 5px 5px gray;
+}
+
+main.sombra { /* selector de clase de un tag en particular */
+    font-size: 10px;
+}
+
+/* Selector por atributo */
+[lang] { /* con [ ] es para decir que se trata de los elementos con el atributo en cuestión*/
+    font-size: 30px;
+}
+
+[lang="es"] { /* con [ ] es para decir que se trata de los elementos con el atributo en cuestión*/
+    background-color: gray;
+}
+
+[href ^="https"] { /* el ^ es para decir que tome en cuenta los atributos que empiecen con lo indicado entre " " */
+    background-color: green;
+}
+
+[href $=".mx"] { /* el $ es para decir que tome en cuenta los atributos que terminen con lo indicado entre " " */
+    background-color: green;
+}
+
+[href *="h"] { /* el * es para decir que tome en cuenta los atributos que en general incluyan lo indicado entre " " */
+    background-color: black;
+    color: white;
+}
+
+/* Selector por descendientes */
+main p { /* de las etiquetas <p>, tomar solo las que estén dentro de <main> */
+    border: 2px blue dotted;
+    border-radius: 5px;
+}
+
+/* Selector hijos directos */
+main > p {
+    box-shadow: 5px 5px 5px lime;
+}

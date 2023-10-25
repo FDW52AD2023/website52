@@ -85,16 +85,24 @@ const app4SoloPunto =document.getElementById("app4SoloPunto");
 const app4Res =document.getElementById("app4Res");
 const app4BtnVer =document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener("click", (e)=>{
-    e.preventDefault();
-
+function mostrarTabla(){
     let tabla =parseInt(app4Tabla.value);
     
     let lista =document.createElement("ul"); //es para crear una etiqueta desde java
 
     if(!app4Inv.checked){ //es el no
         for(let i=1; i<=10; i++){
-            let mult= tabla + " X " + i + " = " + tabla*i;
+
+            let resMulti= app4SoloPunto.checked ? "♡".repeat(tabla*i) : tabla*i; //? esto representa el if y : representa el else
+/*             let resMulti;
+            if(app4SoloPunto.checked){
+                resMulti= "♡".repeat(tabla*i)
+            }
+            else{
+                resMulti= tabla*i;
+            }
+ */
+            let mult= tabla + " X " + i + " = " + resMulti;
             let item =document.createElement("li");
             item.innerHTML= mult; //aqui se va mostrar lo que tienes en el java al html
             lista.appendChild(item); //aqui agrega todos los elementos a la lista
@@ -103,7 +111,17 @@ app4BtnVer.addEventListener("click", (e)=>{
     }
     else{
         for(let i=10; i>=1; i--){
-            let mult= tabla + " X " + i + " = " + tabla*i;
+            let resMulti= app4SoloPunto.checked ? "♡".repeat(tabla*i) : tabla*i;
+
+/*             let resMulti;
+            if(app4SoloPunto.checked){
+                resMulti= "♡".repeat(tabla*i)
+            }
+            else{
+                resMulti= tabla*i;
+            } */
+
+            let mult= tabla + " X " + i + " = " + resMulti;
             let item =document.createElement("li");
             item.innerHTML= mult; //aqui se va mostrar lo que tienes en el java al html
             lista.appendChild(item); //aqui agrega todos los elementos a la lista
@@ -112,4 +130,16 @@ app4BtnVer.addEventListener("click", (e)=>{
     }
     app4Res.innerHTML=""; //para limpiar
     app4Res.appendChild(lista);
+}
+
+app4BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+    mostrarTabla()
+})
+
+app4Inv.addEventListener("change", (e) =>{
+    mostrarTabla()
+})
+app4SoloPunto.addEventListener("change", (e) =>{
+    mostrarTabla()
 })

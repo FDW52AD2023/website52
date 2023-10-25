@@ -21,7 +21,18 @@ app4BtnVer.addEventListener("click", (e) => {
 
     if( !app4Inv.checked ){
         for(let i=1; i <= 10; i++){
-            let mult = tabla + "x" + i + "=" + tabla * i; 
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+
+/*             let resMult;
+            if (app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }
+ */
+            let mult = tabla + "x" + i + "=" + resMult; 
             let item = document.createElement("li");
             item.innerHTML = mult; 
     
@@ -32,7 +43,11 @@ app4BtnVer.addEventListener("click", (e) => {
     }
     else{
         for(let i=10; i >= 1; i--){
-            let mult = tabla + "x" + i + "=" + tabla * i; 
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+
+
+            let mult = tabla + "x" + i + "=" + resMult; 
             let item = document.createElement("li");
             item.innerHTML = mult; 
     
@@ -46,6 +61,7 @@ app4BtnVer.addEventListener("click", (e) => {
     app4Res.appendChild(lista);
 
 });
+
 
 
 

@@ -20,32 +20,55 @@ header h2{
     margin-left: 5px;
     width: 40%;
 }
-h1 {
+#intro {
+    padding: 50px 100px;
     text-align: center;
 }
-h3.centrado  {
+#referencias {
+    padding: 50px 100px;
+}
+#alm1 {
+    padding: 40px 100px;
+    font-family: Arial;
+}
+#alm1 h2{
+    text-align: center;
+}
+#alm2 {
+    padding: 40px 100px;
+    font-family: arial;
+}
+#alm2 h2{
+    text-align: center;
+}
+#alm3 {
+    padding: 40px 100px;
+    font-family: arial;
+}
+#alm3 h2{
     text-align: center;
 }
 img{
     width: 50px;
     height: 30px;
+    border-radius: 50%;
     justify-content: baseline;
 }
 .botonAmarillo {
-    background-color: yellow;
+    background-color: orange;
     text-decoration: none;
     color: black;
     border: black;
 }
 .botonamarillo2 {
-    background-color: yellow;
+    background-color: orange;
     text-decoration: none;
     color: black;
     display:flexbox;
     left: 45%;
     place-items: center;
     position: absolute;
-    padding: 10px;
+    padding: 5px 20px;
     text-decoration: none;
     border: 1px solid;
 }

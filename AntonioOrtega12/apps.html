@@ -32,16 +32,16 @@
         </div>
     </form>
 
-    <form id="app1" action="">
-        <h2>Programa suma números</h2>
+    <form id="app2" action="">
+        <h2>Programa repetidor de palabras</h2>
 
         <div class="row">
-            <label for="app2Texto">Número 1:</label>
+            <label for="app2Texto">Palabra:</label>
             <input type="text" name="app2Texto" id="app2Texto">
         </div>
 
         <div class="row">
-            <label for="app2Veces">Número 2:</label>
+            <label for="app2Veces">Número de repeticiones:</label>
             <input type="text" name="app2Veces" id="app2Veces">
         </div>
 
@@ -53,6 +53,78 @@
         <div class="Boton">
             <input class="btn" id="app2BtnRepetir" type="submit" value="Repetir">
         </div>
+    </form>
+
+    <form id="app3" action="">
+        <h2>Programa de operaciones</h2>
+
+        <div class="row">
+            <label for="app3Num1">Número 1:</label>
+            <input type="text" name="app3Num1" id="app3Num1">
+        </div>
+
+        <div class="row">
+            <label for="app3Num2">Número 2:</label>
+            <input type="text" name="app3Num2" id="app3Num2">
+        </div>
+
+        <div class="row">
+            <label for="app3Op">Operación:</label>
+            <select name="app3Operacion" id="app3Operacion">
+                <option value="S">Suma</option>
+                <option value="R">Resta</option>
+                <option value="M">Multiplicación</option>
+                <option value="D">División</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="app3Res">Resultado:</label>
+            <input readonly type="text" name="app3Res" id="app3Res">
+        </div>
+
+        <div class="Boton">
+            <input class="btn" id="app3BtnCalcular" type="submit" value="Calcular">
+        </div>
+    </form>
+
+    <form id="app4" action="">
+        <h2>Programa tabla de multiplicar</h2>
+
+        <div class="row">
+            <label for="app4Tabla">Tabla:</label>
+            <input type="text" name="app4Tabla" id="app4Tabla">
+        </div>
+
+        <div class="row">
+            <input type="checkbox" name="app4inv" id="app4inv">
+            <label for="app4inv">Tabla Invertida:</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="app4SoloPunto" id="app4SoloPunto">
+            <label for="app4SoloPunto">Mostrar resultados con el simbolo punto (.)</label>
+        </div>
+
+        <div class="row">
+            <label for="app4Res">Resultado:</label>
+            <div id="app4Res">
+                
+            </div>
+        </div>
+
+        <div class="Ver">
+            <input class="btn" id="app4BtnVer" type="submit" value="Ver">
+        </div>
+    </form>
+
+    <form id="app5" action="">
+        <h2>Programa para colocar bordes</h2>
+
+        <div class="row">
+            <input class="switch" type="swtich">
+        </div>
+
     </form>
     <script src="js/apps.js"></script>
 

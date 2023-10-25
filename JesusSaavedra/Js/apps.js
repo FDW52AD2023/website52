@@ -94,7 +94,7 @@ const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
 app4BtnVer.addEventListener("click", (e) => {
-    e.defaultPrevented();
+    e.preventDefault();
 
     let tabla = parseInt(app4Tabla.value);
     let lista = document.createElement("ul");

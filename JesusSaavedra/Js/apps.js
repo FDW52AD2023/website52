@@ -93,15 +93,27 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener("click", (e) => {
-    e.defaultPrevented();
+
+    app4BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
 
     let tabla = parseInt(app4Tabla.value);
     let lista = document.createElement("ul");
 
     if( !app4Inv.checked ){
         for (let i=1; i <= 10; i++){
-            let mult = tabla + "X" + i +"="+ tabla * i;
+            
+            //let resMult =app4SoloPunto.checked ? ".".repeat(tabla * i) : resMult = tabla * i;
+
+            let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }
+
+            let mult = tabla + "X" + i +"="+ resMult;
             let item = document.createElement("li");
             item.innerHTML=mult;
             lista.appendChild(item);
@@ -110,19 +122,36 @@ app4BtnVer.addEventListener("click", (e) => {
     }
     else {
         for (let i=10; i >= 1; i--){
-            let mult = tabla + "X" + i +"="+ tabla * i;
+
+            
+            let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }
+
+            let mult = tabla + "X" + i +"="+ resMult;
             let item = document.createElement("li");
             item.innerHTML=mult;
             lista.appendChild(item);
         }
 
-
     }
     app4Res.innerHTML="";
     app4Res.appendChild(lista);
 
-})
+    
+});
 
+app4Inv.addEventListener("change", (e) => {
+    
+});
+
+app4SoloPunto.addEventListener("change", (e)  => {
+    
+});
 
 
 

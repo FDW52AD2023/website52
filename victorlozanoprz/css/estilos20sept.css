@@ -1,0 +1,36 @@
+/* selector de hermano en general*/
+#mp1 .s2 ~ section {
+    background-color: rebeccapurple;
+}
+
+/* selector de hermano adyacente */
+#mp1 h2 + section {
+    border-top: 5px double blue;
+}
+
+#mp1 .s4:hover {   /* hover aplica los cambios cuando se pasa el cursos sobre el elemento */
+    background-color: palevioletred;
+    color: white;
+}
+
+#lista1 li:first-child,  #lista1 li:last-child {
+    background-color: black;
+    color: white;
+}
+
+#lista1 li:nth-child(6) {  /* toma el elemento numero (tal) de los hijos del elemento */
+    background-color: black;
+    color: white;
+}
+
+#lista1 li:nth-child(odd) {  /* toma los elementos con posición de numero impar de los hijos del elemento */
+    font-size: 5px;
+}
+
+#lista1 li:nth-child(even) {  /* toma los elementos con posición de numero par de los hijos del elemento */
+    text-decoration: line-through;
+}
+
+#lista1 li:nth-child(3n) {  /* toma los elementos con saltos de (tal numero n) de posiciones de los hijos del elemento */
+    background-color: brown;
+}

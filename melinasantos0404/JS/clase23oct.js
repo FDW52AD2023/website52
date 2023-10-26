@@ -47,36 +47,157 @@ app3BtnCalcular.addEventListener("click",(e) => {
     app3Res.value = resultado;
 });
 
-/* App4 */
+
+
+//APP 4//
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
-const app4SoloPunto = document.getElementById("app4SoloPunto")
-const app4Res = document.getElementById("app4Res")
-const app4BtnVer = document.getElementById("app4BtnVer")
+const app4SoloPunto = document.getElementById("app4SoloPunto");
+const app4Res = document.getElementById("app4Res");
+const app4BtnVer = document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener("click", (e) => {
-    e.preventDefault();
-
+    function mostrarTabla(){
     let tabla = parseInt(app4Tabla.value);
-
     let lista = document.createElement("ul");
 
     if( !app4Inv.checked ){
-        for(let i=1; i <= 10 ; i++ ){
-            let mult = tabla + " X " + i + " = " + tabla * i;
+        for (let i=1; i <= 10; i++){
+            
+            let resMult =app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+
+            let mult = tabla + "X" + i +"="+ resMult;
             let item = document.createElement("li");
-            item.innerHTML = mult;
+            item.innerHTML=mult;
             lista.appendChild(item);
         }
+
     }
-    else{
-        for(let i=10; i >= 1 ; i-- ){
-            let mult = tabla + " X " + i + " = " + tabla * i;
+    else {
+        for (let i=10; i >= 1; i--){
+
+            let resMult= app4SoloPunto.checked ? ".".repeat(tabla*i) : tabla*i;
+            let mult = tabla + "X" + i +"="+ resMult;
             let item = document.createElement("li");
-            item.innerHTML = mult;
+            item.innerHTML=mult;
             lista.appendChild(item);
         }
+
     }
-    app4Res.innerHTML = "";
-    app4Res.appendChild(lista);
-})
+    app4Res.innerHTML="";
+    app4Res.appendChild(lista);  
+}
+
+app4BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+    mostrarTabla()
+});
+
+app4Inv.addEventListener("change", (e) =>{
+    mostrarTabla()
+});
+app4SoloPunto.addEventListener("change", (e) =>{
+    mostrarTabla()
+});
+
+
+//App 5//
+const app5Color = document.getElementById("app5Color");
+const app5Borde = document.getElementById("app5Borde");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const resultado5 = document.getElementById("resultado5");
+const app5BtnVer = document.getElementById("app5BtnVer");
+
+function actualizarborde() {
+    const posicion = app5Borde.value;
+    const grosor = app5Grosor.value;
+    const tipo = app5Tipo.value;
+    const borde = `${grosor} ${tipo} black`;
+
+    // Reiniciar las propiedades de borde antes de aplicar el nuevo estilo//
+    resultado5.style.border = 'none';
+    resultado5.style.borderTop = 'none';
+    resultado5.style.borderRight = 'none';
+    resultado5.style.borderBottom = 'none';
+    resultado5.style.borderLeft = 'none';
+
+
+    if (posicion === 'all') {
+        resultado5.style.border = borde;
+         // Construye el nombre de la propiedad de estilo de borde de manera dinámica//
+    } else {
+        resultado5.style['border' + posicion.charAt(0).toUpperCase() + posicion.slice(1)] = borde;
+    }
+}
+
+app5BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+    actualizarborde()
+});
+app5BtnVer.addEventListener("click" , (e) => {
+    actualizarborde()
+});
+
+app5BtnVer.addEventListener("click", (e) => {
+    const colorElegido = app5Color.value;
+        // Actualiza el color de fondo del rectángulo para reflejar la selección del usuario
+        resultado5.style.backgroundColor = colorElegido;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

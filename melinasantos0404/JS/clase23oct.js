@@ -1,4 +1,3 @@
-
 //App 3//
 
 const app3Num1 = document.getElementById("app3Num1");
@@ -131,3 +130,4 @@ app5BtnVer.addEventListener("click", (e) => {
        
         resultado5.style.backgroundColor = colorElegido;
 });
+

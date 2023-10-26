@@ -58,6 +58,71 @@
         
     </form>
 
+    <form id="app3" action="">
+        <h2>Programa Operaciones aritemitcas</h2>
+
+        
+        <div class="row">
+            <label for="app3Num1">Numero:</label>
+            <input type="text" name="app3Num1" id="app3Num1">
+        </div>
+    
+        <div class="row">
+            <label for="app3Num2">Numero:</label>
+            <input type="text" name="app3Num2" id="app3Num2">
+        </div>
+
+        <div class="row">
+            <label for="app3Operacion">Operacion:</label>
+            <select name="app3Operacion" id="app3Operacion">
+                <option value="S">Suma</option>
+                <option value="R">Resta</option>
+                <option value="M">Multiplicacion</option>
+                <option value="D">Division</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="app3Res">Resultado:</label>
+            <input readonly type="text" name="app3Res" id="app3Res">
+        </div>
+
+        <div class="btn"><input id="app3BtnCalcular" type="submit" value="Calcular"></div>
+
+        
+    </form>
+</form>
+
+<form id="app4" action="">
+    <h2>Programa Tabla de multiplicar</h2>
+
+    
+    <div class="row">
+        <label for="app4Tabla">Tabla:</label>
+        <input type="text" name="app4Tabla" id="app4Tabla">
+    </div>
+
+    <div class="row">
+        <input type="checkbox" name="app4Inv" id="app4Inv">
+     <label for="app4Inv">Tabla Invertida</label>
+    </div>
+    
+    <div class="row">
+        <input type="checkbox" name="app4SoloPunto" id="app4SoloPunto">
+        <label for="app4SoloPunto">mostrar resultado con el simbolo punto</label>
+    </div>
+
+    <div class="row">
+        <label for="app4Res">Resultado:</label>
+        <div id="app4Res">
+            
+        </div>
+    </div>
+
+    <div class="btn"><input id="app4BtnVer" type="submit" value="Ver Tabla"></div>
+
+    
+</form>
 
     <script src="apss.js"></script>
 </body>

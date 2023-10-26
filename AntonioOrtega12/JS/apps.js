@@ -98,7 +98,16 @@ app4BtnVer.addEventListener("click", (e) => {
 
     if(!app4inv.checked){
         for(let i=1; i <= 10; i++){
-            let mult = tabla + " X " + i + " = " + tabla * i;
+
+            let resMult;
+            if(app4SoloPunto.checked){
+                resMult = "°".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }
+
+            let mult = tabla + " X " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);
@@ -107,7 +116,16 @@ app4BtnVer.addEventListener("click", (e) => {
 
     else{
         for(let i=10; i >= 1; i--){
-            let mult = tabla + " X " + i + " = " + tabla * i;
+
+            let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }
+
+            let mult = tabla + " X " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);

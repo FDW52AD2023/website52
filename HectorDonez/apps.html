@@ -8,6 +8,50 @@
 </head>
 <body>
     <h1>Apps</h1>
+    <form id="app5" action="">
+        <h2>BORDE SOLICITADOO</h2>
+        
+        <div class="row">
+        <label for="app5Borde">Borde</label>
+        <select id="app5Borde">
+            <option value="todos">Todos</option>
+            <option value="sup">Superior</option>
+            <option value="inf">Inferior</option>
+            <option value="izq">Izquierda</option>
+            <option value="der">Derecha</option>
+        </select>
+        </div>
+
+        <div class="row">
+            <label for="app5Color">Color:</label>
+            <input type="color" id="app5Color">
+        </div>   
+
+        <div class="row">
+        <label for="app5Grosor">Grosor:</label>
+        <input type="text" id="app5Grosor">
+        </div>
+
+        <div class="row">
+        <label for="app5Tipo">Tipo:</label>
+        <select id="app5Tipo">
+            <option value="dotted">dotted</option>
+            <option value="dashed">dashed</option>
+            <option value="solid">Solid</option>
+            <option value="double">double</option>
+            <option value="groove">Groove</option>
+            <option value="ridge">Ridge</option>
+            <option value="inset">Inset</option>
+            <option value="outset">Outset</option>
+        </select>
+        </div>
+        
+        <div class="row">
+        <button id="app5BtnVer">Aplicar borde</button>
+        </div>
+    
+        <div id="app5Resultados" style="width: 300px; height: 100px;"></div>
+    </form>
 
     <form id="app3" action="">
         <h2>Tabla de multiplicar</h2>
@@ -55,15 +99,7 @@
             <input type="text" name="app3Num2" id="app3Num2">
         </div>
 
-        <div class="row">
-            <label for="app30operacion">Operacion</label>
-            <select name="app30operacion" id="app30operacion">
-                <option value="s">Suma</option>
-                <option value="r">Resta</option>
-                <option value="m">Multiplicacion</option>
-                <option value="d">Division</option>
-            </select>    
-        </div>
+
 
         <div class="row">
             <label for="app3Res">Resultado</label>
@@ -127,8 +163,6 @@
             <input class="btn" id="app2BtnRepetir" type="submit" value="Repetir">          
         </div>
 
-
-    </form>
     <script src="js/apps.js"></script>
 </body>
 </html>

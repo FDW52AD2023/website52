@@ -80,7 +80,7 @@ app3BtnCalcular.addEventListener("click",(e) => {
 /* App 4*/
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
-const app4SoloPunto = document.getElementById("appSoloPunto");
+const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const appBtnVer = document.getElementById("app4BtnVer");
 
@@ -93,15 +93,35 @@ appBtnVer.addEventListener("click", (e) => {
 
     if(!app4Inv.checked ){
         for(let i=1; i <= 10 ; i++ ){
-            let mult = tabla + " X " + i + " = " + tabla * i;
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i ;
+/*
+            let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }
+            */
+            let mult = tabla + " X " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);
-        }
+        } 
     }
     else{
         for(let i=10; i >= 1 ; i-- ){
-            let mult = tabla + " X " + i + " = " + tabla * i;
+            let resMult =app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla *i;
+/*
+            let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }*/
+            let mult = tabla + " X " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);
@@ -110,4 +130,48 @@ appBtnVer.addEventListener("click", (e) => {
 
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
+});
+
+
+/*  APP 5  */
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5BtnVer = document.getElementById("app5BtnVer");
+const app5Resultados = document.getElementById("app5Resultados");
+
+function cambiarborde() {
+    const lugar = app5Borde.value;
+    const grosor = app5Grosor.value;
+    const tipo = app5Tipo.value;
+    const borde = `${grosor} ${tipo} black`;
+
+    app5Resultados.style.border = 'none';
+    app5Resultados.style.borderSup = 'none';
+    app5Resultados.style.borderDerecha = 'none';
+    app5Resultados.style.borderBoton = 'none';
+    app5Resultados.style.borderIzquierda = 'none';
+
+
+    if (lugar === 'all') {
+        app5Resultados.style.border = borde;
+        
+    } else {
+        app5Resultados.style['border' + lugar.charAt(0).toUpperCase() + lugar.slice(1)] = borde;
+    }
+}
+
+app5BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+    actualizarborde()
+});
+app5BtnVer.addEventListener("click" , (e) => {
+    actualizarborde()
+});
+
+app5BtnVer.addEventListener("click", (e) => {
+    const colorElegido = app5Color.value;
+       
+        resultado5.style.backgroundColor = colorElegido;
 });

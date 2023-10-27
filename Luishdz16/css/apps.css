@@ -1,6 +1,5 @@
 * {
     font-family: sans-serif;
-    list-style: none;
 }
 
 input[type="text"] {
@@ -32,4 +31,14 @@ form {
 
 .btn {
     padding: 8px 50px;
+}
+
+#app5Prueba {
+    border: 1px solid;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

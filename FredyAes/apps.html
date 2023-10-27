@@ -8,11 +8,48 @@
 </head>
 <body>
     <a href="index.html">Inicio</a>
-    <br><br>
+
+    <div id="contenedor">
+        <br>
+        <label for="borde">Borde:</label>
+        <select id="borde">
+            <option value="todos">Todos</option>
+            <option value="superior">Superior</option>
+            <option value="inferior">Inferior</option>
+            <option value="izquierdo">Izquierdo</option>
+            <option value="derecho">Derecho</option>
+        </select>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color">
+
+        <label for="grosor">Grosor:</label>
+        <input type="number" id="grosor" min="1">
+
+        <label for="tipo">Tipo:</label>
+        <select id="tipo">
+            <option value="dotted">Punteado</option>
+            <option value="dashed">Rayado</option>
+            <option value="solid">Sólido</option>
+            <option value="double">Doble</option>
+            <option value="groove">Cincelado</option>
+            <option value="ridge">Crestado</option>
+            <option value="inset">Hundido</option>
+            <option value="outset">Saliente</option>
+        </select>
+        
+        <div id="pruebaDiv">Este es un div de prueba</div>
+        <br>
+        <button onclick="aplicarBorde()">Aplicar Borde</button>
+        <button onclick="restablecerDiv()">Restablecer</button>
+        <br><br>
+    </div>
+    <br>
     <form id="app3" action="">
         <h1>Apps</h1>
+        
         <h2>Programa tabla de multiplicar</h2>
-
+        
         <div class="row">
             <label for="app4Tabla">Tabla: </label>
             <input type="text" name="app4Tabla" id="app4Tabla">

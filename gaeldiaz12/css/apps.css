@@ -15,3 +15,9 @@ input[type="text"]{
 .btn {
     padding: 8px 50px;
 }
+
+#app5Prueba {
+    padding: 10px;
+    height: 10px;
+    border: 1px solid;
+}

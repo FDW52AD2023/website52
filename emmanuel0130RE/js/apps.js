@@ -82,28 +82,54 @@ const app4Solopunto = document.getElementById("app4Solopunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener("click", (e) => {
-    e.preventDefault();
+function mostrartabla(){
+
 
     let tabla = parseInt(app4Tabla.value);
+
     let lista = document.createElement("ul");
 
     if(!app4Inv.checked){
-        for(let i=1; i<=10;i++){
-            let mult=tabla + "x"+i+"="+ tabla*i;
-            let item=document.createElement("li");
-            item.innerHTML=mult;
-            lista.appendChild(item);
+        for(let i=1; i <=10;i++){
+
+            let resMult =app4Solopunto.checked?".".repeat(tabla*i):tabla*i;
+            /* if(app4Solopunto.checked){
+                resMult=".",repeat(tabla*i);
+            }
+            else{
+                resMult= tabla*i;
+            } */
+        let mult=tabla + "x"+i+"="+ resMult;
+        let item=document.createElement("li");
+        item.innerHTML=mult;
+        lista.appendChild(item);
+        }
     }
     else{
-        for(let i=1; i>=10;i++){
-            let mult=tabla + "x"+i+"="+ tabla*i;
+        for(let i=10; i>=1;i--){
+            let resMult =app4Solopunto.checked?".".repeat(tabla*i):tabla*i;
+            /* if(app4Solopunto.checked){
+                resMult=".",repeat(tabla*i);
+            }
+            else{
+                resMult= tabla*i;
+            } */
+            let mult=tabla + "x"+i+"="+ resMult;
             let item=document.createElement("li");
             item.innerHTML=mult;
             lista.appendChild(item);
-    }
+        }
     }
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
 }
+app4BtnVer.addEventListener("click", (e) => {
+    e.preventDefault()
+    mostrartabla()
 });
+app4Inv.addEventListener("click", (e) => {
+    mostrartabla()
+});
+app4Solopunto.addEventListener("click", (e) => {
+    mostrartabla()
+})

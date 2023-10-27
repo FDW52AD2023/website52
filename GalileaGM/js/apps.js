@@ -143,3 +143,54 @@ app4Inv.addEventListener("change", (e) =>{
 app4SoloPunto.addEventListener("change", (e) =>{
     mostrarTabla()
 })
+
+/*App5*/
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById ("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5Res = document.getElementById("app5Res");
+const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+
+app5BtnAplicar.addEventListener("click", (e) =>{
+    e.preventDefault();
+    let borde = app5Borde.value;
+    let color = app5Color.value;
+    let grosor = parseInt(app5Grosor.value);
+    let tipo = app5Tipo.value;
+    let prueba;
+
+    switch(borde){
+        case "T": prueba.style.border="border";
+            break;
+        case "BT" :prueba.style.borderTop="border-top";
+            break;
+        case "BB":prueba.style.borderBottom="border-bottom";
+            break;
+        case "L": prueba.style.borderLeft="border-left";
+            break;
+        case "R": prueba.style.borderRight="border-right";
+            break;
+    }
+    prueba.style.backgroundColor= app5Color.value;
+    prueba.style.borderRadius=app5Grosor.value;
+
+    switch(tipo){
+        case "Do": tipo.style.border="border";
+            break;
+        case "BT" :tipo.style.borderTop="border-top";
+            break;
+        case "BB":tipo.style.borderBottom="border-bottom";
+            break;
+        case "L": tipo.style.borderLeft="border-left";
+            break;
+        case "R": tipo.style.borderRight="border-right";
+            break;
+    }
+
+
+
+    app5Res.value=prueba;
+
+
+});

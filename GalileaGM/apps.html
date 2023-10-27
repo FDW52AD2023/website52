@@ -129,24 +129,36 @@
             </select>
         </div>
         <div class="row">
-            <input type="checkbox"  name="app4Inv" id="app4Inv">
-            <label for="app4Inv">Tabla Invertida :</label>
+            <label for="app5Color">Color:</label>
+            <input type="color" id="app5Color">
         </div>
 
         <div class="row">
-            <input type="checkbox" name="app4SoloPunto" id="app4SoloPunto">
-            <label for="app4SoloPunto">Mostrar resultados con el simbolo (.)</label>
+            <label for="app5Grosor">Grosor</label>
+            <input type="text" name="app5Grosor" id="app5Grosor">
+        </div>
+
+        <div class="row">
+            <label for="app5Tipo">Tipo:</label>
+            <select name="app5Tipo" id="app5Tipo">
+                <option value="Do">Dotted</option>
+                <option value="Da">Dashed</option>
+                <option value="S">Solid</option>
+                <option value="Db">Double</option>
+                <option value="G">Groove</option>
+                <option value="R">Ridge</option>
+                <option value="I">Inset</option>
+                <option value="O">Outset</option>
+            </select>
         </div>
 
         <div class="row"> 
-            <label for="app4Res">Resultado:</label>
-
-            <div id="app4Res">
-
-            </div>
+            <label for="app5Res">Resultado:</label>
+            <input id="app5Res" class="btn1" type="submit" value="Div Prueba">
         </div>
+
         <div >
-            <input id="app4BtnVer" class="btn" type="submit" value="Ver Tabla">
+            <input id="app5BtnAplicar" class="btn" type="submit" value="Aplicar Borde">
         </div>        
     </form>
 

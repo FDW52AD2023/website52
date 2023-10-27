@@ -12,19 +12,19 @@ app5Btn.addEventListener("click", (e) =>{
 
 
     if (app5Borde == "todos"){
-        app5Prueba.style.border = `${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+        app5Prueba.style.cssText == `border: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
     else if (app5Prueba == "superior") {
-        app5Borde.style.borderTop = `${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+        app5Borde.style.cssText == `border-top == ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
     else if (app5Prueba == "inferior") {
-        app5Borde.style.borderBottom = `${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+        app5Borde.style.cssText == `border-bottom: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
     else if (app5Prueba == "izquiero") {
-        app5Borde.style.borderLef = `${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+        app5Borde.style.cssText == `border-left: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
     else if (app5Prueba == "derecho") {
-        app5Borde.style.borderRight = `${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+        app5Borde.style.cssText ==  `border-right: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
 
  

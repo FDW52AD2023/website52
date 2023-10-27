@@ -18,6 +18,7 @@ input[type="text"]{
 
 #app5Prueba {
     padding: 10px;
-    height: 10px;
+    height: 50px;
     border: 1px solid;
+    width: 500px;
 }

@@ -156,41 +156,39 @@ app5BtnAplicar.addEventListener("click", (e) =>{
     e.preventDefault();
     let borde = app5Borde.value;
     let color = app5Color.value;
-    let grosor = parseInt(app5Grosor.value);
+    let grosor = app5Grosor.value;
     let tipo = app5Tipo.value;
-    let prueba;
-
     switch(borde){
-        case "T": prueba.style.border="border";
+        case "T":
+            app5Res.style.border= borde;
+            app5Res.style.borderColor= color;
+            app5Res.style.borderWidth= grosor;
+            app5Res.style.borderStyle = tipo;
             break;
-        case "BT" :prueba.style.borderTop="border-top";
+        case "BT" :
+            app5Res.style.border=borde;
+            app5Res.style.borderTopColor=color;
+            app5Res.style.borderTopWidth=grosor;
+            app5Res.style.borderTopStyle=tipo;
             break;
-        case "BB":prueba.style.borderBottom="border-bottom";
+        case "BB":
+            app5Res.style.border=borde;
+            app5Res.style.borderBottomColor=color;
+            app5Res.style.borderBottomWidth=grosor;
+            app5Res.style.borderBottomStyle =tipo;
             break;
-        case "L": prueba.style.borderLeft="border-left";
+        case "L": 
+            app5Res.style.border=borde;
+            app5Res.style.borderLeftColor=color;
+            app5Res.style.borderLeftWidth=grosor;
+            app5Res.style.borderLeftStyle =tipo;
             break;
-        case "R": prueba.style.borderRight="border-right";
+        case "R": 
+            app5Res.style.border=borde;
+            app5Res.style.borderLeftColor=color;
+            app5Res.style.borderLeftWidth=grosor;
+            app5Res.style.borderLeftStyle=tipo;
             break;
     }
-    prueba.style.backgroundColor= app5Color.value;
-    prueba.style.borderRadius=app5Grosor.value;
-
-    switch(tipo){
-        case "Do": tipo.style.border="border";
-            break;
-        case "BT" :tipo.style.borderTop="border-top";
-            break;
-        case "BB":tipo.style.borderBottom="border-bottom";
-            break;
-        case "L": tipo.style.borderLeft="border-left";
-            break;
-        case "R": tipo.style.borderRight="border-right";
-            break;
-    }
-
-
-
-    app5Res.value=prueba;
-
-
 });
+

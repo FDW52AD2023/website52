@@ -89,16 +89,24 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener("click", (e) =>{
-    e.preventDefault();
-
+function mostrarTabla(){
     let tabla = parseInt(app4Tabla.value);
 
     let lista = document.createElement("ul");
 
     if(!app4Inv.checked){
         for(let i=1 ; i <=10 ; i++){
-            let mult = tabla + " x " + i + " = " + tabla*i;
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla *i;
+            /* let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla*i)
+            }
+            else{
+                resMult = tabla * i
+            } */
+
+            let mult = tabla + " x " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
 
@@ -107,7 +115,17 @@ app4BtnVer.addEventListener("click", (e) =>{
     }
     else{
         for(let i=10 ; i >=1 ; i--){
-            let mult = tabla + " x " + i + " = " + tabla*i;
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla  * i) : tabla * i;
+
+            /* let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla*i)
+            }
+            else{
+                resMult = tabla * i
+            } */
+            let mult = tabla + " x " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
     
@@ -117,4 +135,20 @@ app4BtnVer.addEventListener("click", (e) =>{
     
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
+}
+
+app4BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+
+    mostrarTabla();
+}); 
+
+app4Inv.addEventListener("change", (e) => {
+
+    mostrarTabla();
+});
+
+app4SoloPunto.addEventListener("change", (e) => {
+
+    mostrarTabla();
 });

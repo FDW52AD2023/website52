@@ -155,38 +155,39 @@ app4SoloPunto.addEventListener("change", () => {
 
 /* App 5 */
 
-const app5Borde = document.getElementById("app5Borde").value;
-const app5Grosor = document.getElementById("app5Grosor").value + "px";
-const app5Color = document.getElementById("app5Color").value;
-const app5Tipo = document.getElementById("app5Tipo").value;
 const app5BtnAplicar = document.getElementById("app5BtnAplicar");
 
-const divPrueba = document.getElementById("divPrueba");
+function actualizarBorde(){
+    const app5Borde = document.getElementById("app5Borde").value;
+    const app5Grosor = document.getElementById("app5Grosor").value + "px";
+    const app5Color = document.getElementById("app5Color").value;
+    const app5Tipo = document.getElementById("app5Tipo").value;
+    const divPrueba = document.getElementById("divPrueba");
 
-const estiloDiv = app5Grosor + " " + app5Tipo + " " + app5Color;
- 
+    const estiloDiv = app5Grosor + " " + app5Tipo + " " + app5Color;
+    
+    switch (app5Borde){
+        case "todos" : 
+            divPrueba.style.border = estiloDiv
+            break;
+        case "superior" : 
+            divPrueba.style.borderTop = estiloDiv;
+            break;
+        case "inferior" : 
+            divPrueba.style.borderBottom = estiloDiv;
+            break;
+        case "izquierdo" : 
+            divPrueba.style.borderLeft = estiloDiv;
+            break;
+        case "derecho" : 
+            divPrueba.style.borderRight = estiloDiv;
+            break;
+        default:
+            break;
+    }}
+
 app5BtnAplicar.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if(divPrueba){
-        switch (app5Borde){
-            case "todos" : 
-                divPrueba.style.border = estiloDiv
-                break;
-            case "superior" : 
-                divPrueba.style.borderTop = estiloDiv;
-                break;
-            case "inferior" : 
-                divPrueba.style.borderBottom = estiloDiv;
-                break;
-            case "izquierdo" : 
-                divPrueba.style.borderLeft = estiloDiv;
-                break;
-            case "derecho" : 
-                divPrueba.style.borderRight = estiloDiv;
-                break;
-            default:
-                break;
-        }
-    }
-});
+    actualizarBorde();
+})

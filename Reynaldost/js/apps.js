@@ -121,12 +121,7 @@ app4BtnVer.addEventListener("click", (e) =>{
         for(let i=10 ; i >=1 ; i--){
 
             let resMult = app4SoloPunto.checked ? ".".repeat (tabla*1) : tabla*i;
-           /*  if(app4SoloPunto.checked){
-                resMult = ".".repeat(tabla*i);
-            }
-            else{
-                resMult = tabla*i;
-            } */
+            
 
             let mult = tabla + " x " + i + " = " + resMult;
             let item = document.createElement("li");
@@ -138,4 +133,8 @@ app4BtnVer.addEventListener("click", (e) =>{
     
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
-});t 
+});
+
+
+/* App 5 */
+

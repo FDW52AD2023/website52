@@ -164,7 +164,7 @@ const app5BtnAplicar = document.getElementById("app5BtnAplicar");
 const divPrueba = document.getElementById("divPrueba");
 
 const estiloDiv = app5Grosor + " " + app5Tipo + " " + app5Color;
-
+ 
 app5BtnAplicar.addEventListener("click", (e) => {
     e.preventDefault();
 

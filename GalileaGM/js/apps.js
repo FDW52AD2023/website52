@@ -143,3 +143,52 @@ app4Inv.addEventListener("change", (e) =>{
 app4SoloPunto.addEventListener("change", (e) =>{
     mostrarTabla()
 })
+
+/*App5*/
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById ("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5Res = document.getElementById("app5Res");
+const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+
+app5BtnAplicar.addEventListener("click", (e) =>{
+    e.preventDefault();
+    let borde = app5Borde.value;
+    let color = app5Color.value;
+    let grosor = app5Grosor.value;
+    let tipo = app5Tipo.value;
+    switch(borde){
+        case "T":
+            app5Res.style.border= borde;
+            app5Res.style.borderColor= color;
+            app5Res.style.borderWidth= grosor;
+            app5Res.style.borderStyle = tipo;
+            break;
+        case "BT" :
+            app5Res.style.border=borde;
+            app5Res.style.borderTopColor=color;
+            app5Res.style.borderTopWidth=grosor;
+            app5Res.style.borderTopStyle=tipo;
+            break;
+        case "BB":
+            app5Res.style.border=borde;
+            app5Res.style.borderBottomColor=color;
+            app5Res.style.borderBottomWidth=grosor;
+            app5Res.style.borderBottomStyle =tipo;
+            break;
+        case "L": 
+            app5Res.style.border=borde;
+            app5Res.style.borderLeftColor=color;
+            app5Res.style.borderLeftWidth=grosor;
+            app5Res.style.borderLeftStyle =tipo;
+            break;
+        case "R": 
+            app5Res.style.border=borde;
+            app5Res.style.borderLeftColor=color;
+            app5Res.style.borderLeftWidth=grosor;
+            app5Res.style.borderLeftStyle=tipo;
+            break;
+    }
+});
+

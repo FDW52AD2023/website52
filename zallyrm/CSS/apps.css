@@ -15,3 +15,10 @@ input[type="text"] {
 .btn {
     padding: 8px 50px;
 }
+
+#Test {
+    width: 25%;
+    border: solid black 3px;
+    text-align: center;
+    margin: 25px 0px;
+}

@@ -1,21 +1,124 @@
-* {
-    font-family:'Courier New', Courier, monospace;
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
+    background-color: whitesmoke;
 }
 
+#app1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 18px;
+    border: 5px solid black;
+    padding-right: 83px;
+    padding-left: 50px;
+    padding-top: 29px;
+    padding-bottom: 36px;
+    width: 494px;
+    height: 200px;
+}
+#app2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 18px;
+    border: 5px dotted gold;
+    padding-right: 83px;
+    padding-left: 50px;
+    padding-top: 29px;
+    padding-bottom: 36px;
+    width: 494px;
+    height: 200px;
+}
+#app3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 18px;
+    border: 5px dashed lightgreen;
+    padding-right: 83px;
+    padding-left: 50px;
+    padding-top: 29px;
+    padding-bottom: 36px;
+    width: 494px;
+    height: 220px;
+}
+#app4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 18px;
+    border: 5px double lightpink;
+    padding-right: 83px;
+    padding-left: 50px;
+    width: 494px;
+    height: 500px;
+}
+#app5 {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content:center;
+    margin: 15px;
+    border: 5px groove lightskyblue;
+    padding-right: 83px;
+    padding-left: 50px;
+    padding-top: 29px;
+    padding-bottom: 36px;
+    width: 494px;
+    height: 240px;
+}
 input[type="text"]{
-    padding: 8px;
+    padding: 5px;
     border: none;
-    border-bottom: 2px solid black;
+    background-color:lightgray;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .row{
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-.btn{
+.btn , .btn1 {
+    font-family: 'Courier New', Courier, monospace;
     padding: 8px 50px;
     margin-left: 50px;
-    background-color: lightblue;    
+
+}
+#app1 .btn{
+    border:5px double whitesmoke;
+    background-color: black;  
+    color: white;
+}
+
+#app2 .btn{
+    border:5px inset rgb(245, 245, 94);
+    background-color: lightyellow;  
+}
+#app3 .btn{
+    border:5px outset lightgreen ;
+    background-color: greenyellow;  
+}
+
+#app4 .btn{
+    border:5px inset lightpink ;
+    background-color: pink;  
+}
+
+#app5 .btn{
+    background-color: lightblue; 
+    border:5px ridge skyblue; 
+}
+#app6 .btn{
+    background-color: coral; 
+    border:5px inset lightcoral; 
 }

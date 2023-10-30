@@ -116,30 +116,72 @@
     </form>
     <form action="APP 5">
         <h2>Aplicacion de Bordes</h2>
+        <label for="app5Borde">Borde:</label>
+        <select name="app5Borde" id="app5Borde" >
+            <option value="S">Superior</option>
+            <option value="I">Inferior</option>
+            <option value="Iz">Izquierda</option>
+            <option value="D">Derecha</option>
+        </select>
+
         <div class="row">
-            <label for="app4Borde">tabla:</label>
-        <input type="text" name="app4Borde" id="app4Borde">
+            <label for="app5Color">Color</label>
+            <input type="color" name="app5Color" id="app5Color">
         </div>
 
         <div class="row">
-            <input type="checkbox" name="app4Inv" id="app4Inv">
-            <label for="app4Inv">tabla invertida</label>
+            <label for="app5Grosor">Grosor</label>
+            <input type="text" name="app5Grosor" id="app5Grosor">
         </div>
+        <label for="app5Tipo">Tipo:</label>
+        <select name="app5Tipo" id="app5Tipo" >
+            <option value="Do">Dotted</option>
+            <option value="Da">Dashed</option>
+            <option value="So">Solid</option>
+            <option value="Dou">Double</option>
+            <option value="Gro">Groove</option>
+            <option value="Ri">Ridge</option>
+            <option value="In">Inset</option>
+            <option value="Out">Outser</option>
+        </select>
 
         <div class="row">
-            <input type="checkbox" name="app4Solopunto" id="app4Solopunto">
-            <label for="app4Solopunto">Mostrar resultados con el simbolo (.)</label>
-        </div>
+            <label for="app5Prueba"></label>
+            <div  class="row">
+                <input id="app5Prueba" class="btn1" type="submit" value="Div de prueba">
 
-        <div class="row">
-            <label for="app4Res">Resultado</label>
-            <div id="app4Res">
 
             </div>
         </div>
 
-        <div><input class="btn" id="app4BtnVer" type="submit" value="Ver Tabla"></div>
+        <div class="row"><input class="btn" id="app5BtnAplicar" type="submit" value="Aplicar"></div>
     </form>
+
+
+    <form id="App6" action="">
+        <h2>Numeros Perfectos</h2>
+
+        <div class="row">
+            <label for="app6Ini">Numero inicial:</label>
+        <input type="text" name="app6Ini" id="app6Ini">
+        </div>
+
+        <div class="row">
+            <label for="app6Fin">Numero Final</label>
+            <input type="text" name="app6Fin" id="app6Fin">
+            
+        </div>
+        <div class="row">
+            <label for="app6Res">Resultado</label>
+            <div id="app6Res">
+
+            </div>
+        </div>
+
+        <div><input class="btn" id="app6BtnVer" type="submit" value="Numeros"></div>
+
+    </form>
+
     <script src="js/apps.js"></script>
 </body>
 </html>

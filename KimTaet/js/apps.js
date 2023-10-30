@@ -135,3 +135,45 @@ app4Inv.addEventListener("change", (e) => {
 app4SoloPunto.addEventListener("change", (e) => {
     mostrarTabla()
 });
+
+/* App5 */
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5BtnPrueba = document.getElementById("app5BtnPrueba");
+const app5Res = document.getElementById("app5Res");
+
+app5BtnPrueba.addEventListener("click", (e) => {
+    e.preventDefault();
+    let opciones = app5Borde.value;
+    let color = app5Color.value;
+    let grosor = app5Grosor.value + "px";
+    let tipo = app5Tipo.value;
+
+    if(opciones == "t"){
+        app5Res.style.borderColor =  color;
+        app5Res.style.borderWidth = grosor;
+        app5Res.style.borderStyle = tipo;
+    }
+    else if(opciones == "s"){
+        app5Res.style.borderTopColor =  color;
+        app5Res.style.borderTopWidth = grosor;
+        app5Res.style.borderTopStyle = tipo;
+    }
+    else if(opciones == "i"){
+        app5Res.style.borderBottomColor =  color;
+        app5Res.style.borderBottomWidth = grosor;
+        app5Res.style.borderBotoomStyle = tipo;
+    }
+    else if(opciones == "iz"){
+        app5Res.style.borderLeftColor =  color;
+        app5Res.style.borderLeftWidth = grosor;
+        app5Res.style.borderLeftStyle = tipo;
+    }
+    else if(opciones == "de"){
+        app5Res.style.borderRightColor =  color;
+        app5Res.style.borderRightWidth = grosor;
+        app5Res.style.borderRightStyle = tipo;
+    }
+});

@@ -1,3 +1,58 @@
+/* App5 */
+
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5Prueba = document.getElementById("app5Prueba");
+const app5Btn = document.getElementById("app5Btn");
+
+app5Btn.addEventListener("click", (e) =>{
+    e.preventDefault();
+
+
+    if (app5Borde.value == "todos"){
+        app5Prueba.style.cssText = `border: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    }
+    else if (app5Prueba.value == "superior") {
+        app5Borde.style.cssText = `border-top: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    }
+    else if (app5Prueba.value == "inferior") {
+        app5Borde.style.cssText = `border-bottom: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    }
+    else if (app5Prueba.value == "izquiero") {
+        app5Borde.style.cssText = `border-left: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    }
+    else if (app5Prueba.value == "derecho") {
+        app5Borde.style.cssText =  `border-right: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    }
+
+ 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* App4 */
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
@@ -9,15 +64,6 @@ const app4BtnVer = document.getElementById("app4BtnVer");
 
 app4BtnVer.addEventListener("click", (e) => {
     e.preventDefault();
-
-    
-    app4Inv.addEventListener("change", (e) => {
-        mostrarTabla();
-    });
-
-    app4SoloPunto.addEventListener("change", (e) =>{
-        mostrarTabla();
-    });
 
     let tabla = parseInt(app4Tabla.value);
 
@@ -54,6 +100,7 @@ app4BtnVer.addEventListener("click", (e) => {
 
         }
     }
+
 
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);

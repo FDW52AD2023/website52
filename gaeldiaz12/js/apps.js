@@ -11,19 +11,19 @@ app5Btn.addEventListener("click", (e) =>{
     e.preventDefault();
 
 
-    if (app5Borde == "todos"){
+    if (app5Borde.value == "todos"){
         app5Prueba.style.cssText = `border: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
-    else if (app5Prueba == "superior") {
+    else if (app5Prueba.value == "superior") {
         app5Borde.style.cssText = `border-top: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
-    else if (app5Prueba == "inferior") {
+    else if (app5Prueba.value == "inferior") {
         app5Borde.style.cssText = `border-bottom: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
-    else if (app5Prueba == "izquiero") {
+    else if (app5Prueba.value == "izquiero") {
         app5Borde.style.cssText = `border-left: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
-    else if (app5Prueba == "derecho") {
+    else if (app5Prueba.value == "derecho") {
         app5Borde.style.cssText =  `border-right: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
 

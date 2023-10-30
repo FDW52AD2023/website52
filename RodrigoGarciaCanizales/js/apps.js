@@ -88,7 +88,17 @@ app4BtnVer.addEventListener("click", (e) => {
 
     if( !app4Inv.checked ){
         for(let i=1; i <= 10 ; i++ ){
-            let mult = tabla + " X " + i + " = " + tabla * i;
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+            /*let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }*/
+
+            let mult = tabla + " X " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);
@@ -96,7 +106,17 @@ app4BtnVer.addEventListener("click", (e) => {
     }
     else{
         for(let i=10; i >= 1 ; i-- ){
-            let mult = tabla + " X " + i + " = " + tabla * i;
+            
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+            /*let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }*/
+
+            let mult = tabla + " X " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);
@@ -105,3 +125,44 @@ app4BtnVer.addEventListener("click", (e) => {
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
 })
+
+/*app5 de los bordes */
+const app5BtnVer = document.getElementById("app5BtnVer");
+
+function actualizarBorde(){
+    const borde = document.getElementById("borde").value;
+    const colorBorde = document.getElementById("colorBorde").value;
+    const app5Grosor = document.getElementById("app5Grosor").value + "px";
+    const tipo = document.getElementById("tipo").value;
+    const divPrueba = document.getElementById("divPrueba");
+
+    const estilo = app5Grosor + " " + tipo + " " + colorBorde;
+   
+    switch(borde){
+        case "n" : 
+            divPrueba.style.border = "none";
+            break;
+        case "t" : 
+            divPrueba.style.border = estilo;
+            break;
+        case "s" : 
+            divPrueba.style.borderTop = estilo;
+            break;
+        case "in" : 
+            divPrueba.style.borderBottom = estilo;
+            break;
+        case "iz" : 
+            divPrueba.style.borderLeft = estilo;
+            break;
+        case "d" : 
+            divPrueba.style.borderRight = estilo;
+            break;
+        default:
+            break;
+    }}
+
+    app5BtnVer.addEventListener("click", (e) => {
+        e.preventDefault();
+    
+        actualizarBorde();
+    })

@@ -133,7 +133,7 @@ appBtnVer.addEventListener("click", (e) => {
 });
 
 
-/*  APP 5  */
+/*  APP 5  
 const app5Borde = document.getElementById("app5Borde");
 const app5Color = document.getElementById("app5Color");
 const app5Grosor = document.getElementById("app5Grosor");
@@ -174,4 +174,63 @@ app5BtnVer.addEventListener("click", (e) => {
     const colorElegido = app5Color.value;
        
         resultado5.style.backgroundColor = colorElegido;
+});
+*/
+
+/* App6 */
+function Perfecto(numero){
+    let divisor = 1
+    let suma = 0;
+    do{
+        if(numero % divisor == 0){
+            suma += divisor;
+        }
+        divisor++;
+
+    }while( divisor < numero);
+    if(numero == suma){
+        return true;
+
+    }
+    else{
+        return false;
+    }
+}
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+
+    let numero = ini;
+
+    if(ini > fin){
+        ini = parseInt(app6Fin.value);
+        fin = parseInt(app6Ini.value);
+    }
+    else{
+
+    }
+
+    while( numero <= fin){
+                console.log(numero);
+
+        /* Checar si es perfecto */
+        if(Perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }      
+        numero++;
+    }
+    app6Res.innerHTML="";
+    app6Res.appendChild(lista);
+
 });

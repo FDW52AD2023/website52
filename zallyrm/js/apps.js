@@ -138,3 +138,112 @@ app4BtnVer.addEventListener("click", (e) => {
 app4Inv.addEventListener("change", (e) => {
     mostrarTabla();
 });
+
+/* App 5 */
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+const app5Div = document.getElementById("Test");
+
+function AplicarBorde(){
+    /* variables para guardar la opción introducida por el usuario */
+    let opcionBorde = app5Borde.value;
+    let color = app5Color.value;
+    let grosor = parseInt(app5Grosor.value) + "px ";
+    let opcionTipo = app5Tipo.value;
+
+    /* variable para el tipo de borde */
+    let tipoCSS;
+
+    /* para cambiar la variable tipoCSS dependiendo de la opción escogida */
+    switch (opcionTipo){
+        case "v": tipoCSS = "solid";
+                  break;
+        case "w": tipoCSS = "dotted";
+                  break;
+        case "x": tipoCSS = "groove";
+                  break;
+        case "y": tipoCSS = "dashed";
+                  break;
+        case "z": tipoCSS = "double";
+                  break;
+    };
+
+    /* para cambiar el borde de cierto lado del div dependiendo de la opción escogido, ya aplicando los valores de color, grosor y tipo */
+    switch (opcionBorde){
+        case "a": app5Div.style.setProperty("border", `${color} ${grosor} ${tipoCSS}`);
+                  break;
+        case "b": app5Div.style.setProperty("border-top", `${color} ${grosor} ${tipoCSS}`);
+                  break;
+        case "c": app5Div.style.setProperty("border-bottom", `${color} ${grosor} ${tipoCSS}`);
+                  break;
+        case "d": app5Div.style.setProperty("border-left", `${color} ${grosor} ${tipoCSS}`);
+                  break;
+        case "e": app5Div.style.setProperty("border-right", `${color} ${grosor} ${tipoCSS}`);
+                  break;
+    };
+}
+
+app5BtnAplicar.addEventListener("click", (e) => {
+    e.preventDefault();
+    AplicarBorde();
+})
+
+/* App 6 */
+function perfecto(numero){
+    let divisor = 1
+    let suma = 0;
+    do{
+        if(numero % divisor == 0) { /* el % es para regresar el residuo de la división */
+            suma += divisor;
+        }
+        divisor++;
+    }while(divisor < numero);
+    return numero == suma;
+};
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();  /* para botones de tipo submit */
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    /* if block for switching the values in case the first is greater than the second */
+    if(ini > fin){
+        let aux = ini   /* aux variable to temporarily saving a value and not losing it when manipulating it*/
+        ini = fin
+        fin = aux
+    }
+    else {
+        
+    }
+
+    /* this if block does the same thing but with a different method, it re-asigns the values taken directly from the objects considering that the first is greater than the second */
+    /* if (ini > fin){
+        ini = parseInt(app6Fin.value);
+        fin = parseInt(app6Ini.value);
+    } */
+
+    let numero = ini;
+    while(numero <= fin){
+
+        /* checar si es perfecto */
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        };
+
+        numero++;
+    }
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
+});

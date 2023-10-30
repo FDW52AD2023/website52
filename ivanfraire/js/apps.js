@@ -119,3 +119,114 @@ app4BtnVer.addEventListener("click", (e) => {
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
 });
+
+app4BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+
+    mostrarTabla();
+}); 
+
+app4Inv.addEventListener("change", () => {
+
+    mostrarTabla();
+});
+
+app4SoloPunto.addEventListener("change", () => {
+
+    mostrarTabla();
+});
+
+// App5
+
+const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+
+function actualizarBorde(){
+    const app5Borde = document.getElementById("app5Borde").value;
+    const app5Grosor = document.getElementById("app5Grosor").value + "px";
+    const app5Color = document.getElementById("app5Color").value;
+    const app5Tipo = document.getElementById("app5Tipo").value;
+    const divPrueba = document.getElementById("divPrueba");
+
+    const estiloDiv = app5Grosor + " " + app5Tipo + " " + app5Color;
+    
+    switch (app5Borde){
+        case "ninguno":
+            divPrueba.style.border = "none";
+            break
+        case "todos" : 
+            divPrueba.style.border = estiloDiv;
+            break;
+        case "superior" : 
+            divPrueba.style.borderTop = estiloDiv;
+            break;
+        case "inferior" : 
+            divPrueba.style.borderBottom = estiloDiv;
+            break;
+        case "izquierdo" : 
+            divPrueba.style.borderLeft = estiloDiv;
+            break;
+        case "derecho" : 
+            divPrueba.style.borderRight = estiloDiv;
+            break;
+        default:
+            break;
+    }}
+
+app5BtnAplicar.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    actualizarBorde();
+})
+
+// App6
+
+function perfecto(numero){
+    let divisor = 1;
+    let suma = 0;
+    do{
+        if(numero % divisor == 0) {
+            suma += divisor;
+        }
+        divisor++;
+    }while( divisor < numero );
+    return numero == suma;
+
+}
+
+const app6Ini = document.getElementById("app6Ini").value;
+const app6Fin = document.getElementById("app6Fin").value;
+const app6Res = document.getElementById("app6Res").value;
+const app6BtnVer = document.getElementById("app6BtnVer").value;
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(App6Ini.value);
+    let fin = parseInt(App6Fin.value);
+
+    if(ini > fin){
+        let aux = ini
+      ini = fin
+      fin = aux
+    }
+
+    let numro = ini;
+    //if(ini > fin){
+   // ini = parseInt(app6Fin.value);
+   // fin = parseInt(app6Ini.value);
+    while( numero <= fin ){
+        console.log(numero);
+
+        // checar si es perfecto
+        if( perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+
+        }
+        numero++;
+    }
+    app6Res.appendChild(lista);
+});
+

@@ -167,8 +167,11 @@ function actualizarBorde(){
     const estiloDiv = app5Grosor + " " + app5Tipo + " " + app5Color;
     
     switch (app5Borde){
+        case "ninguno":
+            divPrueba.style.border = "none";
+            break
         case "todos" : 
-            divPrueba.style.border = estiloDiv
+            divPrueba.style.border = estiloDiv;
             break;
         case "superior" : 
             divPrueba.style.borderTop = estiloDiv;

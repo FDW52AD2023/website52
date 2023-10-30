@@ -151,3 +151,49 @@ app5VerDiv.addEventListener("click", (e) => {
         app5Prueba.style.cssText = `border-right: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
 })
+
+/* App 6 */
+function perfecto(num){
+    let divisor = 1
+    let suma = 0
+    do {
+        if (num % divisor == 0){
+            suma += divisor
+        }
+        divisor++
+    }while(divisor < num);
+    return num == suma;
+}
+
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6Btn = document.getElementById("app6Btn");
+const lista = document.createElement("ol");
+
+app6Btn.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    if (ini > fin){
+        ini = parseInt(app6Fin.value);
+        fin = parseInt(app6Ini.value);
+    }
+
+    let num = ini;
+
+    while (num <= fin) {
+        if(perfecto(num)){
+            let item = document.createElement("li");
+            item.innerHTML = num;
+            lista.appendChild(item);
+        }
+        num++
+    }
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
+    
+})

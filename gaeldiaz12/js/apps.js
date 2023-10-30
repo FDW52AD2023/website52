@@ -1,3 +1,97 @@
+/* App 6 */
+function perfecto(numero){
+    let divisor = 1
+    let suma = 0;
+    do{
+        if(numero % divisor == 0){
+            suma += divisor;
+        }
+        divisor++;
+    }while(divisor < numero );
+        return numero == suma;
+    }
+
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    /* if (ini > fin) {
+        let aux = ini 
+        ini = fin
+        fin = ini
+    } */
+
+    if (ini > fin) {
+        ini = parseInt(app6Fin.value);
+        fin = parseInt(app6Ini.value);
+    }
+
+    let numero = ini;
+    
+    while (numero <= fin) {
+
+        /* Checar si es perfecto */
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+    }
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
+})
+
+
+
+
+
+
+
+/* App5 */
+
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5Prueba = document.getElementById("app5Prueba");
+const app5Btn = document.getElementById("app5Btn");
+
+app5Btn.addEventListener("click", (e) =>{
+    e.preventDefault();
+
+
+    if (app5Borde.value == "todos"){
+        app5Prueba.style.cssText = `border: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    }
+    else if (app5Prueba.value == "superior") {
+        app5Borde.style.cssText = `border-top: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    }
+    else if (app5Prueba.value == "inferior") {
+        app5Borde.style.cssText = `border-bottom: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    }
+    else if (app5Prueba.value == "izquiero") {
+        app5Borde.style.cssText = `border-left: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    }
+    else if (app5Prueba.value == "derecho") {
+        app5Borde.style.cssText =  `border-right: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    }
+
+ 
+});
+
+
+
+
 /* App4 */
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
@@ -9,15 +103,6 @@ const app4BtnVer = document.getElementById("app4BtnVer");
 
 app4BtnVer.addEventListener("click", (e) => {
     e.preventDefault();
-
-    
-    app4Inv.addEventListener("change", (e) => {
-        mostrarTabla();
-    });
-
-    app4SoloPunto.addEventListener("change", (e) =>{
-        mostrarTabla();
-    });
 
     let tabla = parseInt(app4Tabla.value);
 
@@ -54,6 +139,7 @@ app4BtnVer.addEventListener("click", (e) => {
 
         }
     }
+
 
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);

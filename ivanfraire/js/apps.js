@@ -119,3 +119,61 @@ app4BtnVer.addEventListener("click", (e) => {
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
 });
+
+app4BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+
+    mostrarTabla();
+}); 
+
+app4Inv.addEventListener("change", () => {
+
+    mostrarTabla();
+});
+
+app4SoloPunto.addEventListener("change", () => {
+
+    mostrarTabla();
+});
+
+// App5
+
+const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+
+function actualizarBorde(){
+    const app5Borde = document.getElementById("app5Borde").value;
+    const app5Grosor = document.getElementById("app5Grosor").value + "px";
+    const app5Color = document.getElementById("app5Color").value;
+    const app5Tipo = document.getElementById("app5Tipo").value;
+    const divPrueba = document.getElementById("divPrueba");
+
+    const estiloDiv = app5Grosor + " " + app5Tipo + " " + app5Color;
+    
+    switch (app5Borde){
+        case "ninguno":
+            divPrueba.style.border = "none";
+            break
+        case "todos" : 
+            divPrueba.style.border = estiloDiv;
+            break;
+        case "superior" : 
+            divPrueba.style.borderTop = estiloDiv;
+            break;
+        case "inferior" : 
+            divPrueba.style.borderBottom = estiloDiv;
+            break;
+        case "izquierdo" : 
+            divPrueba.style.borderLeft = estiloDiv;
+            break;
+        case "derecho" : 
+            divPrueba.style.borderRight = estiloDiv;
+            break;
+        default:
+            break;
+    }}
+
+app5BtnAplicar.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    actualizarBorde();
+})

@@ -8,7 +8,6 @@
 </head>
 <body>
     <h1>Apps</h1>
-
     <div class="container">
         <form id="app1" action="">
             <h2>Programa suma numeros</h2>
@@ -96,8 +95,51 @@
                 <input class="btn" id="app4BtnVer" type="submit" value="Ver tabla">
             </div>
         </form>
+        <form id="app5">
+          <h2>Borde de un elemento div</h2>
+          <div class="row">
+            <label for="app5Borde">Borde</label>
+            <select name="app5Borde" id="app5Borde" required>
+                <option value="">Elige una opción</option>
+              <option value="all">todos</option>
+              <option value="top">arriba</option>
+              <option value="bottom">inferior</option>
+              <option value="left">izquierda</option>
+              <option value="right">derecha</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="app5Color">Color</label>
+            <input type="color" id="app5Color" required>
+          </div>
+          <div class="row">
+            <label for="app5Grosor">Grosor</label>
+            <input type="text" name="app5Grosor" id="app5Grosor" required>
+          </div>
+          <div class="row">
+            <label for="app5Tipo">Tipo</label>
+            <select name="app5Tipo" id="app5Tipo" required>
+                <option value="">Elige una opción</option>
+              <option value="dotted">dotted</option>
+              <option value="dashed">dashed</option>
+              <option value="solid">solid</option>
+              <option value="double">double</option>
+              <option value="groove">groove</option>
+              <option value="ridge">ridge</option>
+              <option value="inset">inset </option>
+              <option value="outset">outset</option>
+            </select>
+          </div>
+          <div class="row">
+            <div id="app5Prueba">
+                Prueba
+            </div>
+          </div>
+          <div class="boton">
+            <input class="btn" id="app5VerDiv" type="submit" value="Ver Div">
+        </div>
+        </form>
     </div>
-
     <script src="js/apps.js"></script>
 </body>
 </html>

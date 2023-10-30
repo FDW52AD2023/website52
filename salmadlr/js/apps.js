@@ -17,7 +17,7 @@ app1BtnCalcular.addEventListener("click", (e) => {
 
 /* App 2 */
 
-const app2Texto1 = document.getElementById("app2Texto1");
+const app2Texto = document.getElementById("app2Texto");
 const app2Veces = document.getElementById("app2Veces");
 const app2Res = document.getElementById("app2Res");
 const app2BtnRepetir = document.getElementById("app2BtnRepetir");
@@ -25,11 +25,11 @@ const app2BtnRepetir = document.getElementById("app2BtnRepetir");
 app2BtnRepetir.addEventListener("click", (e) => {
     e.preventDefault();
 
-    let txt1 = app2Texto1.value;
+    let text = app2Texto.value;
     let veces = parseInt(app2Veces.value);
-    let resul = txt1.repeat(veces);
+    let res = text.repeat(veces);
 
-    app2Res.value = resul;
+    app2Res.value = res;
 });
 
 /* App 3 */
@@ -89,32 +89,49 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener("click", (e) =>{
-    e.preventDefault();
-
+function mostrarTabla(){
     let tabla = parseInt(app4Tabla.value);
-
     let lista = document.createElement("ul");
 
     if(!app4Inv.checked){
-        for(let i=1 ; i <=10 ; i++){
-            let mult = tabla + " x " + i + " = " + tabla*i;
+        for(let i=1 ; i<=10 ; i++){
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * 1;
+
+
+            /*let resMult;
+
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i);
+            }
+            else{
+                resMult = tabla * i;
+            } */
+
+            let mult = tabla + " X " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
-
             lista.appendChild(item);
         }
     }
     else{
-        for(let i=10 ; i >=1 ; i--){
-            let mult = tabla + " x " + i + " = " + tabla*i;
+        for(let i=10 ; i>=1 ; i--){
+            let mult = tabla + " X " + i + " = " + tabla*i;
             let item = document.createElement("li");
             item.innerHTML = mult;
-
             lista.appendChild(item);
         }
     }
 
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
+};
+
+app4BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+});
+
+app4Inv.addEventListener("change", (e) => {
+    mostrarTabla();
 });

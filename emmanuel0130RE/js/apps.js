@@ -133,3 +133,38 @@ app4Inv.addEventListener("click", (e) => {
 app4Solopunto.addEventListener("click", (e) => {
     mostrartabla()
 })
+/* App 5 */
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5Prueba = document.getElementById("app5Prueba");
+const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+
+/* app5Borde.addEventListener("select", (e) => {
+    Border()
+})
+function Borde(){
+    app5Prueba.style.border = app5Borde.value;
+}
+
+app5Color.addEventListener("click", (e) => {
+    cambiarColor()
+});
+function cambiarColor() {
+    app5Prueba.style.backgroundColor = app5Color.value;
+}
+
+app5Grosor.addEventListener("input", (e) => {
+    cambiarGrosor()
+});
+function cambiarGrosor() {
+    app5Prueba.style.fontSize = `${app5Grosor.value}px`;
+}
+
+app5Tipo.addEventListener("input", (e) => {
+    cambiarBorde()
+});
+function cambiarBorde() {
+    app5Prueba.style.border = app5Tipo.value;
+} */

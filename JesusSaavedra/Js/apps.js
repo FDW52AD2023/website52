@@ -161,6 +161,50 @@ app4SoloPunto.addEventListener("change", (e) =>{
 });
 
 
+//App 5//
+const app5Color = document.getElementById("app5Color");
+const app5Borde = document.getElementById("app5Borde");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const resultado5 = document.getElementById("resultado5");
+const app5BtnVer = document.getElementById("app5BtnVer");
+
+function actualizarborde() {
+    const posicion = app5Borde.value;
+    const grosor = app5Grosor.value;
+    const tipo = app5Tipo.value;
+    const borde = `${grosor} ${tipo} black`;
+
+    // Reiniciar las propiedades de borde antes de aplicar el nuevo estilo//
+    resultado5.style.border = 'none';
+    resultado5.style.borderTop = 'none';
+    resultado5.style.borderRight = 'none';
+    resultado5.style.borderBottom = 'none';
+    resultado5.style.borderLeft = 'none';
+
+
+    if (posicion === 'all') {
+        resultado5.style.border = borde;
+         // Construye el nombre de la propiedad de estilo de borde de manera dinámica//
+    } else {
+        resultado5.style['border' + posicion.charAt(0).toUpperCase() + posicion.slice(1)] = borde;
+    }
+}
+
+app5BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+    actualizarborde()
+});
+app5BtnVer.addEventListener("click" , (e) => {
+    actualizarborde()
+});
+
+app5BtnVer.addEventListener("click", (e) => {
+    const colorElegido = app5Color.value;
+        // Actualiza el color de fondo del rectángulo para reflejar la selección del usuario
+        resultado5.style.backgroundColor = colorElegido;
+});
+
 
 
 

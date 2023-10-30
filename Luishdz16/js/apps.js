@@ -125,3 +125,29 @@ app4BtnVer.addEventListener("click", (e) => {
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
 })
+
+/* App 5 */
+
+const app5Borde = document.getElementById("app5Borde");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Prueba = document.getElementById("app5Prueba");
+const app5VerDiv = document.getElementById("app5VerDiv");
+
+
+app5VerDiv.addEventListener("click", (e) => {
+    e.preventDefault()
+    
+    if (app5Borde.value == "all") {
+        app5Prueba.style.cssText = `border: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    } else if (app5Borde.value == "top") {
+        app5Prueba.style.cssText = `border-top: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    } else if (app5Borde.value == "bottom") {
+        app5Prueba.style.cssText = `border-bottom: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    } else if (app5Borde.value == "left") {
+        app5Prueba.style.cssText = `border-left: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    } else if (app5Borde.value == "right") {
+        app5Prueba.style.cssText = `border-right: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    }
+})

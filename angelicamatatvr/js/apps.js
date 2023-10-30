@@ -91,23 +91,67 @@ app4BtnVer.addEventListener("click", (e)=> {
     let lista = document.createElement("ul");
 
     /* el ! niega, no esta checado*/
-    if( !app4Inv.checked){
-        for (let i=1; i <=10 ; i++ ){
-            let mult = tabla + "X" + i + "=" + tabla*i;
+    if( !app4Inv.checked  ){
+        for(let i=1; i <=10 ; i++ ){
+            
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i ;
+
+            /*let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }*/
+
+            let mult = tabla + " X " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);
         }
     }
     else{
-        for (let i=10; i >=1 ; i-- ){
-        let mult = tabla + "X" + i + "=" + tabla*i;
-        let item = document.createElement("li");
-        item.innerHTML = mult;
-        lista.appendChild(item);
+        for(let i=10; i >=1 ; i-- ){
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i ; 
+
+            /*let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }*/
+
+            let mult = tabla + "X" + i + "=" + resMult;
+            let item = document.createElement("li");
+            item.innerHTML = mult;
+            lista.appendChild(item);
     }
 }
 
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
-})
+});
+
+/* App5 */
+const miBoton = document.getElementById("miBoton");
+const entradaColor = document.getElementById("color");
+const entradaTamaño = document.getElementById("size");
+const entradaBorde = document.getElementById("border");
+
+entradaColor.addEventListener("input", cambiarColor);
+entradaTamaño.addEventListener("input", cambiarTamaño);
+entradaBorde.addEventListener("input", cambiarBorde);
+
+function cambiarColor() {
+  miBoton.style.backgroundColor = entradaColor.value;
+}
+
+function cambiarTamaño() {
+  miBoton.style.fontSize = `${entradaTamaño.value}px`;
+}
+
+function cambiarBorde() {
+  miBoton.style.border = entradaBorde.value;
+}

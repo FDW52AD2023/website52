@@ -3,62 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apss</title>
-    <link rel="stylesheet" href="css/apss.css">
+    <title>apps</title>
+    <link rel="stylesheet" href="css/apps.css">
 </head>
 <body>
     <h1>Apps</h1>
-    <form id="app1" action="">
-        <h2>Programa suma numeros</h2>
 
+    <div class="container">
+        <form id="app1" action="">
+            <h2>Programa suma numeros</h2>
+            <div class="row">
+                <label for="app1Num1">Numero</label>
+                <input type="text" name="app1Num1" id="app1Num1">
+            </div>
+            <div class="row">
+                <label for="app1Num2">Numero</label>
+                <input type="text" name="app1Num2" id="app1Num2">
+            </div>
+            <div class="row">
+                <label for="app1Res">Resultado</label>
+                <input readonly type="text" name="app1Res" id="app1Res">
+            </div>
+            <div class="boton">
+                <input class="btn" id="app1BtnCalcular" type="submit" value="Calcular">
+            </div>
+        </form>
+        <form id="app2" action="">
+            <h2>Programa repite palabras</h2>
+            <div class="row">
+                <label for="app2Texto">Texto</label>
+                <input type="text" name="app2Texto" id="app2Texto">
+            </div>
+            <div class="row">
+                <label for="app2Veces">Veces</label>
+                <input type="text" name="app2Veces" id="app2Veces">
+            </div>
+            <div class="row">
+                <label for="app2Res">Resultado</label>
+                <input readonly type="text" name="app2Res" id="app2Res">
+            </div>
+            <div class="boton">
+                <input class="btn" id="app2BtnRepetir" type="submit" value="repetir">
+            </div>
+        </form>
+        <form id="app3" action="">
+            <h2>Programa Operaciones Aritmeticas</h2>
+            <div class="row">
+                <label for="app3Num1">Numero</label>
+                <input type="text" name="app3Num1" id="app3Num1">
+            </div>
+            <div class="row">
+                <label for="app3Num2">Numero 2</label>
+                <input type="text" name="app3Num2" id="app3Num2">
+            </div>
+            <div class="row">
+                <label for="app3Operacion">Operacion</label>
+                <select name="app3Operacion" id="app3Operacion">
+                    <option value="s">Suma</option>
+                    <option value="r">Resta</option>
+                    <option value="m">Multiplicacion</option>
+                    <option value="d">Division</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="app3Res">Resultado: </label>
+                <input readonly type="text" name="app3Res" id="app3Res">
+            </div>
+            <div class="boton">
+                <input class="btn" id="app3BtnCalcular" type="submit" value="Calcular">
+            </div>
+        </form>
+        <form id="app4" action="">
+            <h2>Tabla de multiplicar</h2>
+            <div class="row">
+                <label for="app4Tabla">Tabla</label>
+                <input type="text" name="app4Tabla" id="app4Tabla">
+            </div>
+            <div class="row">
+                <label for="app4Inv">Tabla Invertida</label>
+                <input type="checkbox" name="app4Inv" id="app4Inv">
+            </div>
+            <div class="row">
+                <label for="app4SoloPunto">Mostrar resultados con el simbolo punto</label>
+                <input type="checkbox" name="app4SoloPunto" id="app4SoloPunto">
+            </div>
+            <div class="row">
+                <label for="app4Res">Resultado</label>
+                <div id="app4Res">
+                </div>
+            </div>
+            <div class="boton">
+                <input class="btn" id="app4BtnVer" type="submit" value="Ver tabla">
+            </div>
+        </form>
+    </div>
+
+
+    
+    <form id="app6" action="">
+        <h2>Programa Numeros perfectos</h2>
 
         <div class="row">
-            <label for="app1Num1">Numero</label>
-            <input type="text" name="app1Num1" id="app1Num1">  
+            <label for="appIni">Numero Inicial</label>
+            <input type="text" name="app6Ini" id="app6Ini">
         </div>
-
         <div class="row">
-            <label for="app1Num1">Numero</label>
-            <input type="text" name="app1Num1" id="app1Num2">
+            <label for="app6Fin">Numero Final</label>
+            <input type="text" name="app6Fin" id="app6Fin">
         </div>
 
-        <div class="row">
-            <label for="app1Num1">Resultado</label>
-            <input type="text" name="app1Num1" id="app1Res">
+        <div class="boton">
+            <input class="btn" id="app6btnVer" type="submit" value="Calcular">
         </div>
 
-        <div class="Boton">
-            <input class="btn" id="app1btnCalcular" type="submit" value="Calcular">
-        </div>
+        <div class="container">
 
+        </div>
     </form>
+
     <script src="js/apps.js"></script>
-
-
-    <form id="app2" action="">
-        <h2>Programa Repite cadena</h2>
-
-
-        <div class="row">
-            <label for="app2Texto">Numero</label>
-            <input type="text" name="app2Texto" id="app2Texto">  
-        </div>
-
-        <div class="row">
-            <label for="app2Veces">Numero</label>
-            <input type="text" name="app2Veces" id="app2Veces">
-        </div>
-
-        <div class="row">
-            <label for="app2Res">Resultado</label>
-            <input type="text" name="app2Res" id="app2Res">
-        </div>
-
-        <div class="Boton">
-            <input class="btn" id="app2BtnRepetir" type="submit" value="Repetir">
-        </div>
-
-    </form>
-
 </body>
 </html>

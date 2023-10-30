@@ -17,7 +17,7 @@ app1BtnCalcular.addEventListener("click", (e) => {
 
 /* App 2 */
 
-const app2Texto1 = document.getElementById("app2Texto1");
+const app2Texto = document.getElementById("app2Texto");
 const app2Veces = document.getElementById("app2Veces");
 const app2Res = document.getElementById("app2Res");
 const app2BtnRepetir = document.getElementById("app2BtnRepetir");
@@ -25,11 +25,11 @@ const app2BtnRepetir = document.getElementById("app2BtnRepetir");
 app2BtnRepetir.addEventListener("click", (e) => {
     e.preventDefault();
 
-    let txt1 = app2Texto1.value;
+    let text = app2Texto.value;
     let veces = parseInt(app2Veces.value);
-    let resul = txt1.repeat(veces);
+    let res = text.repeat(veces);
 
-    app2Res.value = resul;
+    app2Res.value = res;
 });
 
 /* App 3 */
@@ -89,32 +89,102 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener("click", (e) =>{
-    e.preventDefault();
-
+function mostrarTabla(){
     let tabla = parseInt(app4Tabla.value);
-
     let lista = document.createElement("ul");
 
     if(!app4Inv.checked){
-        for(let i=1 ; i <=10 ; i++){
-            let mult = tabla + " x " + i + " = " + tabla*i;
+        for(let i=1 ; i<=10 ; i++){
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * 1;
+
+
+            /*let resMult;
+
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i);
+            }
+            else{
+                resMult = tabla * i;
+            } */
+
+            let mult = tabla + " X " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
-
             lista.appendChild(item);
         }
     }
     else{
-        for(let i=10 ; i >=1 ; i--){
-            let mult = tabla + " x " + i + " = " + tabla*i;
+        for(let i=10 ; i>=1 ; i--){
+            let mult = tabla + " X " + i + " = " + tabla*i;
             let item = document.createElement("li");
             item.innerHTML = mult;
-
             lista.appendChild(item);
         }
     }
 
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
+};
+
+app4BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+});
+
+app4Inv.addEventListener("change", (e) => {
+    mostrarTabla();
+});
+
+/* APP 6 */
+function perfecto(numero){
+    let divisor = 1
+    let suma = 0;
+    do{
+        if(numero % divisor == 0){
+            suma += divisor;
+        }
+        divisor++;
+
+    }while(divisor < numero);
+    if(numero == suma){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    if(ini > fin){
+        let aux = ini
+        ini = fin
+        fin = aux
+    }
+
+    let numero = ini;
+
+    while( numero <= fin ){
+
+        //checar si es perfecto//
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+    }
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
 });

@@ -1,5 +1,105 @@
 
+/* App6 */
+
+function perfecto(numero) {
+
+    let divisor = 1;
+    let suma = 0;
+
+    do {
+        if (numero % divisor == 0) {
+            suma += divisor;
+        }
+        divisor++;
+    } while ( divisor < numero );
+
+    return numero == suma;
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+    
+    if (ini > fin) {
+        let aux = ini
+        ini = fin
+        fin = aux
+    }
+    
+    let numero = ini;
+
+    while ( numero <= fin) {
+        
+        /* Checar si es perfecto */
+
+        if ( perfecto(numero)) {
+            
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+
+        numero++;
+    }
+
+    app6Res.innerHTML = '';
+
+    app6Res.appendChild(lista)
+
+});
+
 /* Práctica */
+
+function aplicarBorde() {
+    var borde = document.getElementById("borde").value;
+    var color = document.getElementById("color").value;
+    var grosor = document.getElementById("grosor").value + "px";
+    var tipo = document.getElementById("tipo").value;
+
+    var estiloBorde = grosor + " " + tipo + " " + color;
+
+    switch(borde) {
+        case "todos":
+            document.getElementById("pruebaDiv").style.border = estiloBorde;
+            break;
+        case "superior":
+            document.getElementById("pruebaDiv").style.borderTop = estiloBorde;
+            break;
+        case "inferior":
+            document.getElementById("pruebaDiv").style.borderBottom = estiloBorde;
+            break;
+        case "izquierdo":
+            document.getElementById("pruebaDiv").style.borderLeft = estiloBorde;
+            break;
+        case "derecho":
+            document.getElementById("pruebaDiv").style.borderRight = estiloBorde;
+            break;
+        default:
+            break;
+    }
+}
+
+function restablecerDiv() {
+    document.getElementById("pruebaDiv").style.border = "none";
+    document.getElementById("pruebaDiv").style.borderTop = "none";
+    document.getElementById("pruebaDiv").style.borderBottom = "none";
+    document.getElementById("pruebaDiv").style.borderLeft = "none";
+    document.getElementById("pruebaDiv").style.borderRight = "none";
+    
+    document.getElementById("borde").value = "todos";
+    document.getElementById("color").value = "#000000";
+    document.getElementById("grosor").value = "";
+    document.getElementById("tipo").value = "punteado";
+}
 
 
 

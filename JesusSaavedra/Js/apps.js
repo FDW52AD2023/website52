@@ -93,15 +93,30 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener("click", (e) => {
-    e.defaultPrevented();
+    /*
+    app4BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();*/
 
+
+    function mostrarTabla(){
     let tabla = parseInt(app4Tabla.value);
     let lista = document.createElement("ul");
 
     if( !app4Inv.checked ){
         for (let i=1; i <= 10; i++){
-            let mult = tabla + "X" + i +"="+ tabla * i;
+            
+            let resMult =app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+
+            /*let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }
+            */
+
+            let mult = tabla + "X" + i +"="+ resMult;
             let item = document.createElement("li");
             item.innerHTML=mult;
             lista.appendChild(item);
@@ -110,18 +125,195 @@ app4BtnVer.addEventListener("click", (e) => {
     }
     else {
         for (let i=10; i >= 1; i--){
-            let mult = tabla + "X" + i +"="+ tabla * i;
+
+            let resMult= app4SoloPunto.checked ? ".".repeat(tabla*i) : tabla*i;
+            /*let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }
+            */
+            let mult = tabla + "X" + i +"="+ resMult;
             let item = document.createElement("li");
             item.innerHTML=mult;
             lista.appendChild(item);
         }
 
-
     }
     app4Res.innerHTML="";
     app4Res.appendChild(lista);
 
-})
+    
+}
+
+app4BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+    mostrarTabla()
+});
+
+app4Inv.addEventListener("change", (e) =>{
+    mostrarTabla()
+});
+app4SoloPunto.addEventListener("change", (e) =>{
+    mostrarTabla()
+});
+
+
+//App 5//
+const app5Color = document.getElementById("app5Color");
+const app5Borde = document.getElementById("app5Borde");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const resultado5 = document.getElementById("resultado5");
+const app5BtnVer = document.getElementById("app5BtnVer");
+
+function actualizarborde() {
+    const posicion = app5Borde.value;
+    const grosor = app5Grosor.value;
+    const tipo = app5Tipo.value;
+    const borde = `${grosor} ${tipo} black`;
+
+    // Reiniciar las propiedades de borde antes de aplicar el nuevo estilo//
+    resultado5.style.border = 'none';
+    resultado5.style.borderTop = 'none';
+    resultado5.style.borderRight = 'none';
+    resultado5.style.borderBottom = 'none';
+    resultado5.style.borderLeft = 'none';
+
+
+    if (posicion === 'all') {
+        resultado5.style.border = borde;
+         // Construye el nombre de la propiedad de estilo de borde de manera dinámica//
+    } else {
+        resultado5.style['border' + posicion.charAt(0).toUpperCase() + posicion.slice(1)] = borde;
+    }
+}
+
+app5BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+    actualizarborde()
+});
+app5BtnVer.addEventListener("click" , (e) => {
+    actualizarborde()
+});
+
+app5BtnVer.addEventListener("click", (e) => {
+    const colorElegido = app5Color.value;
+        // Actualiza el color de fondo del rectángulo para reflejar la selección del usuario
+        resultado5.style.backgroundColor = colorElegido;
+});
+
+
+//App 6//
+function perfecto(numero){
+    let divisor = 1
+    let suma = 0;
+    do{
+        if(numero % divisor == 0){
+            suma += divisor; 
+        }
+        divisor++;
+    }while(divisor < numero);
+    return numero == suma;
+    }
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click" , (e) =>{
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+    
+
+    if(ini > fin){
+        let aux = ini
+        ini = fin
+        fin = aux
+    }
+
+    
+    /*if(ini > fin){
+        ini = parseInt(app6Fin.value);
+        fin = parseInt(app6Ini.value);
+    }*/
+
+    let numero = ini;
+
+    
+    while(numero <= fin){
+
+        /*si es perfecto o no*/
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+    }
+    app6Res.innerHTML="";
+    app6Res.appendChild(lista);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

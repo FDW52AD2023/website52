@@ -133,3 +133,25 @@ app4BtnVer.addEventListener("click", (e)=> {
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
 });
+
+/* App5 */
+const miBoton = document.getElementById("miBoton");
+const entradaColor = document.getElementById("color");
+const entradaTamaño = document.getElementById("size");
+const entradaBorde = document.getElementById("border");
+
+entradaColor.addEventListener("input", cambiarColor);
+entradaTamaño.addEventListener("input", cambiarTamaño);
+entradaBorde.addEventListener("input", cambiarBorde);
+
+function cambiarColor() {
+  miBoton.style.backgroundColor = entradaColor.value;
+}
+
+function cambiarTamaño() {
+  miBoton.style.fontSize = `${entradaTamaño.value}px`;
+}
+
+function cambiarBorde() {
+  miBoton.style.border = entradaBorde.value;
+}

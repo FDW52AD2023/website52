@@ -138,7 +138,7 @@ app4BtnVer.addEventListener("click", (e) =>{
     
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
-});t 
+});
 
 
 /* App5 */

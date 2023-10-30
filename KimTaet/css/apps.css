@@ -16,3 +16,10 @@ input[type="text"]{
     padding: 8px 50px;
     margin-left: 50px;
 }
+
+#app5Res {
+    margin : 15px 80% 0px 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}

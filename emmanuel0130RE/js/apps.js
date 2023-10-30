@@ -82,28 +82,89 @@ const app4Solopunto = document.getElementById("app4Solopunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener("click", (e) => {
-    e.preventDefault();
+function mostrartabla(){
+
 
     let tabla = parseInt(app4Tabla.value);
+
     let lista = document.createElement("ul");
 
     if(!app4Inv.checked){
-        for(let i=1; i<=10;i++){
-            let mult=tabla + "x"+i+"="+ tabla*i;
-            let item=document.createElement("li");
-            item.innerHTML=mult;
-            lista.appendChild(item);
+        for(let i=1; i <=10;i++){
+
+            let resMult =app4Solopunto.checked?".".repeat(tabla*i):tabla*i;
+            /* if(app4Solopunto.checked){
+                resMult=".",repeat(tabla*i);
+            }
+            else{
+                resMult= tabla*i;
+            } */
+        let mult=tabla + "x"+i+"="+ resMult;
+        let item=document.createElement("li");
+        item.innerHTML=mult;
+        lista.appendChild(item);
+        }
     }
     else{
-        for(let i=1; i>=10;i++){
-            let mult=tabla + "x"+i+"="+ tabla*i;
+        for(let i=10; i>=1;i--){
+            let resMult =app4Solopunto.checked?".".repeat(tabla*i):tabla*i;
+            /* if(app4Solopunto.checked){
+                resMult=".",repeat(tabla*i);
+            }
+            else{
+                resMult= tabla*i;
+            } */
+            let mult=tabla + "x"+i+"="+ resMult;
             let item=document.createElement("li");
             item.innerHTML=mult;
             lista.appendChild(item);
-    }
+        }
     }
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
 }
+app4BtnVer.addEventListener("click", (e) => {
+    e.preventDefault()
+    mostrartabla()
 });
+app4Inv.addEventListener("click", (e) => {
+    mostrartabla()
+});
+app4Solopunto.addEventListener("click", (e) => {
+    mostrartabla()
+})
+/* App 5 */
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5Prueba = document.getElementById("app5Prueba");
+const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+
+/* app5Borde.addEventListener("select", (e) => {
+    Border()
+})
+function Borde(){
+    app5Prueba.style.border = app5Borde.value;
+}
+
+app5Color.addEventListener("click", (e) => {
+    cambiarColor()
+});
+function cambiarColor() {
+    app5Prueba.style.backgroundColor = app5Color.value;
+}
+
+app5Grosor.addEventListener("input", (e) => {
+    cambiarGrosor()
+});
+function cambiarGrosor() {
+    app5Prueba.style.fontSize = `${app5Grosor.value}px`;
+}
+
+app5Tipo.addEventListener("input", (e) => {
+    cambiarBorde()
+});
+function cambiarBorde() {
+    app5Prueba.style.border = app5Tipo.value;
+} */

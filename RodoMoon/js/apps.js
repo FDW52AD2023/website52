@@ -139,3 +139,42 @@ app4BtnVer.addEventListener("click", (e) =>{
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
 });t 
+
+
+/* App5 */
+
+const app5BtnAplicarBorde = document.getElementById("app5BtnAplicarBorde");
+
+function CreadorBorde(){
+    const app5Borde = document.getElementById("app5Borde").value;
+    const app5Grosor = document.getElementById("app5Grosor").value + "px";
+    const app5Color = document.getElementById("app5Color").value;
+    const app5Tipo = document.getElementById("app5Tipo").value;
+    const app5Prueba = document.getElementById("app5Prueba");
+
+    const estilo = app5Grosor + " " + app5Color + " " + app5Tipo;
+
+    switch (app5Borde){
+        case "t" : 
+            app5Prueba.style.border = estilo;
+            break;
+        case "a" : 
+            app5Prueba.style.borderTop = estilo;
+            break;
+        case "ab" : 
+            app5Prueba.style.borderBottom = estilo;
+            break;
+        case "i" : 
+            app5Prueba.style.borderLeft = estilo;
+            break;
+        case "d" : 
+            app5Prueba.style.borderRight = estilo;
+            break;
+        default:
+            break;
+    }}
+    app5BtnAplicarBorde.addEventListener("click", (e) => {
+        e.preventDefault();
+    
+        CreadorBorde();
+    })

@@ -131,3 +131,39 @@ app4BtnVer.addEventListener("click", (e) => {
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
 })
+
+/* App6 */
+
+function Perfecto(numero){
+
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const appfin = document.getElementById("app6fin");
+const app6Res = document.getElementById("app6Res");
+const app6btnVer = document.getElementById("app6btnVer");
+const list = document.createElement("ol")
+
+
+app6btnVer.addEventListener("click", {e} => {
+    e.preventDefault()
+
+    let Ini = parseInt(app6Ini.value)
+    let fin = parseInt(app6fin.value)
+    
+
+    if (Ini > fin) {
+        let aux = Ini
+        Ini = fin
+        Fin = aux
+    }
+
+    let numero  = Ini
+
+    while (numero <= fin) {
+        console.log(numero);
+        numero++;
+    }
+
+    if 
+});

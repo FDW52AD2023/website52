@@ -133,3 +133,92 @@ app4Inv.addEventListener("click", (e) => {
 app4Solopunto.addEventListener("click", (e) => {
     mostrartabla()
 })
+/* App 5 */
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5Prueba = document.getElementById("app5Prueba");
+const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+
+/* app5Borde.addEventListener("select", (e) => {
+    Border()
+})
+function Borde(){
+    app5Prueba.style.border = app5Borde.value;
+}
+
+app5Color.addEventListener("click", (e) => {
+    cambiarColor()
+});
+function cambiarColor() {
+    app5Prueba.style.backgroundColor = app5Color.value;
+}
+
+app5Grosor.addEventListener("input", (e) => {
+    cambiarGrosor()
+});
+function cambiarGrosor() {
+    app5Prueba.style.fontSize = `${app5Grosor.value}px`;
+}
+
+app5Tipo.addEventListener("input", (e) => {
+    cambiarBorde()
+});
+function cambiarBorde() {
+    app5Prueba.style.border = app5Tipo.value;
+} */
+
+
+/* app 6 */
+function Perfecto(Numero){
+    let divisor = 1
+    let suma = 0;
+    do{
+        if(Numero%divisor==0){
+            suma += divisor;
+        }
+        divisor++;
+    }while( divisor < Numero);
+    return Numero==suma;
+}
+
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fi = document.getElementById("app6Fi");
+const app6Res= document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    
+    let Ini = parseInt(app6Ini.value);
+    let Fin = parseInt(app6Fin.value);
+
+    if(Ini>Fin){
+        let aux = Ini;
+        Ini=Fin;
+        Fin=aux;
+    }
+    
+    /* if(Ini>Fin){
+        Ini=parseInt(app6Fin.value);
+        Fin=parseInt(app6Ini.value);
+    } */
+    let Numero = Ini;
+
+
+    while(Numero <= Fin ){
+        /* checar ai es perfecto */
+        if(Perfecto(Numero)){
+            let item= document.createElement("li");
+            item.innerHTML= Numero;
+            lista.appendChild(item);
+        }
+        Numero++;
+    }
+    app6Res.innerHTML="";
+    app6Res.appendChild(lista);
+
+});

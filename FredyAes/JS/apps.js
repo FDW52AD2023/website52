@@ -1,6 +1,48 @@
 
 /* Práctica */
 
+function aplicarBorde() {
+    var borde = document.getElementById("borde").value;
+    var color = document.getElementById("color").value;
+    var grosor = document.getElementById("grosor").value + "px";
+    var tipo = document.getElementById("tipo").value;
+
+    var estiloBorde = grosor + " " + tipo + " " + color;
+
+    switch(borde) {
+        case "todos":
+            document.getElementById("pruebaDiv").style.border = estiloBorde;
+            break;
+        case "superior":
+            document.getElementById("pruebaDiv").style.borderTop = estiloBorde;
+            break;
+        case "inferior":
+            document.getElementById("pruebaDiv").style.borderBottom = estiloBorde;
+            break;
+        case "izquierdo":
+            document.getElementById("pruebaDiv").style.borderLeft = estiloBorde;
+            break;
+        case "derecho":
+            document.getElementById("pruebaDiv").style.borderRight = estiloBorde;
+            break;
+        default:
+            break;
+    }
+}
+
+function restablecerDiv() {
+    document.getElementById("pruebaDiv").style.border = "none";
+    document.getElementById("pruebaDiv").style.borderTop = "none";
+    document.getElementById("pruebaDiv").style.borderBottom = "none";
+    document.getElementById("pruebaDiv").style.borderLeft = "none";
+    document.getElementById("pruebaDiv").style.borderRight = "none";
+    
+    document.getElementById("borde").value = "todos";
+    document.getElementById("color").value = "#000000";
+    document.getElementById("grosor").value = "";
+    document.getElementById("tipo").value = "punteado";
+}
+
 
 
 /* App4 */

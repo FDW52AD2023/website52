@@ -122,3 +122,8 @@ input[type="text"]{
     background-color: coral; 
     border:5px inset lightcoral; 
 }
+
+#app7 .btn{
+    background-color:cornflowerblue; 
+    border:5px inset darkcyan; 
+}

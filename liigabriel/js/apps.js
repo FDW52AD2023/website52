@@ -1,3 +1,55 @@
+/* App6 */
+function perfecto(numero){
+    let divisor = 1
+    let suma = 0;
+    do{
+        if(numero % divisor == 0) {
+            suma += divisor;
+        }
+        divisor++;
+    }while( divisor  < numero );
+    return numero == suma;
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    if(ini > fin){
+        let aux = ini
+        ini = fin
+        fin = aux
+    }
+
+    /* if(ini > fin){
+        ini = parseInt(app6Fin.value);
+        fin = parseInt(app6Ini.value);
+    }
+ */
+
+    let numero = ini;
+
+    while( numero <= fin  ){
+    
+        /* checar si es perfecto */
+        if( perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+    }
+    lista.innerHTML = "";
+    app6Res.appendChild(lista);
+});
 
 /* App4 */
 const app4Tabla = document.getElementById("app4Tabla");
@@ -6,9 +58,7 @@ const app4SoloPunto = document.getElementById("app4SoloPunto")
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener("click", (e) => {
-    e.preventDefault();
-
+function mostrarTabla(){
     let tabla = parseInt(app4Tabla.value);
 
     let lista = document.createElement("ul");
@@ -32,6 +82,14 @@ app4BtnVer.addEventListener("click", (e) => {
 
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
+}
+
+app4BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    /* crear un objeto XMLHttpRequest */
+    mostrarTabla();
+    
 });
 
 

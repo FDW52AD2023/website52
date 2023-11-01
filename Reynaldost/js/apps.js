@@ -121,12 +121,7 @@ app4BtnVer.addEventListener("click", (e) =>{
         for(let i=10 ; i >=1 ; i--){
 
             let resMult = app4SoloPunto.checked ? ".".repeat (tabla*1) : tabla*i;
-           /*  if(app4SoloPunto.checked){
-                resMult = ".".repeat(tabla*i);
-            }
-            else{
-                resMult = tabla*i;
-            } */
+            
 
             let mult = tabla + " x " + i + " = " + resMult;
             let item = document.createElement("li");
@@ -138,4 +133,70 @@ app4BtnVer.addEventListener("click", (e) =>{
     
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
-});t 
+});
+
+
+/* App 5 */
+
+
+
+/* App6 */
+
+function perfect (numero){
+    let divisor = 1
+    let suma = 0;
+
+    do{
+        if(numero % divisor==0){
+            suma+=divisor;
+        }
+        divisor++;
+    }while( divisor < numero );
+    return numero == suma;
+
+/*     if( numero == suma ){
+        return true;
+    }
+    else{
+        return false;
+    } */
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+
+app6BtnVer.addEventListener("click",(e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+
+    if(ini > fin){
+        let aux = ini
+        ini = fin
+        fin = aux
+    }
+    else {
+
+    }
+
+
+    let numero = ini;
+    while(numero <= fin ){
+        console.log(numero);
+        /* Es perfecto? */
+        if(perfect(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+    }
+    app6Res.innerHTML="";
+    app6Res.appendChild(lista);
+});

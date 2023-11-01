@@ -3,6 +3,102 @@
     console.log(cont);
 }
  */
+
+/* App7 */
+const app7Id = document.getElementById("app7Id");
+const app7Nombre = document.getElementById("app7Nombre");
+const app7Altura = document.getElementById("app7Altura");
+const app7Peso = document.getElementById("app7Peso");
+const app7Imagen = document.getElementById("app7Imagen");
+const app7BtnBuscar = document.getElementById("app7BtnBuscar");
+
+app7BtnBuscar.addEventListener("click", e => {
+    e.preventDefault();
+    let id = app7Id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => mostrarDatos(data));
+});
+
+function mostrarDatos(data){
+    app7Nombre.innerHTML = "Nombre: " + data.name;
+    app7Altura.innerHTML = "Altura: " + data.height;
+    app7Peso.innerHTML = "Peso: " + data.weight;
+    app7Imagen.src = data.sprites.other.home.front_default;
+}
+
+
+
+/* App6 */
+function perfecto(numero){
+    let divisor = 1
+    let suma = 0;
+
+    do{
+        if(numero % divisor == 0){
+            suma += divisor;
+        }
+
+        divisor++;
+    }while(divisor < numero);
+
+    return numero == suma;
+}
+
+ 
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    let numero = ini;
+
+    if(ini > fin){
+        let aux = ini
+        ini = fin
+        fin = aux
+    }
+    else {
+
+    }
+
+
+
+    while(numero <= fin){
+        /* Checar si es perfecto */
+        if( perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        
+
+        numero++;
+        app6Res.innerHTML = " ";
+        app6Res.appendChild(lista);
+    }
+
+});
+
+
+
+
+
+/* App5 */
+
+
+
 /* App4 */
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
@@ -21,7 +117,18 @@ app4BtnVer.addEventListener("click", (e) => {
 
     if( !app4Inv.checked ){
         for(let i=1; i <= 10; i++){
-            let mult = tabla + "x" + i + "=" + tabla * i; 
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+
+/*             let resMult;
+            if (app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            }
+ */
+            let mult = tabla + "x" + i + "=" + resMult; 
             let item = document.createElement("li");
             item.innerHTML = mult; 
     
@@ -32,7 +139,11 @@ app4BtnVer.addEventListener("click", (e) => {
     }
     else{
         for(let i=10; i >= 1; i--){
-            let mult = tabla + "x" + i + "=" + tabla * i; 
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+
+
+            let mult = tabla + "x" + i + "=" + resMult; 
             let item = document.createElement("li");
             item.innerHTML = mult; 
     
@@ -46,6 +157,7 @@ app4BtnVer.addEventListener("click", (e) => {
     app4Res.appendChild(lista);
 
 });
+
 
 
 

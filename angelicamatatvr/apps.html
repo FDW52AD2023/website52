@@ -33,7 +33,7 @@
 
     </form>
 
-    <form id="app1" action="">
+    <form id="app2" action="">
         <h2>Programa repite cadenas</h2>
 
         <div class="row">
@@ -56,6 +56,115 @@
         </div>
 
     </form>
+
+    <form id="app3" action="">
+        <h2>Programa Operaciones Artimeticas</h2>
+            <div class="row">
+                <label for="app3Num1">Numero:</label>
+                <input type="text" name="app3Num1" id="app3Num1">
+            </div>
+    
+            <div class="row">
+                <label for="app3Num2">Numero:</label>
+                <input type="text" name="app3Num2" id="app3Num2">
+            </div>
+    
+            <div class="row">
+                <label for="app3Operacion">Operacion:</label>
+                <select name="app3Operacion" id="app3Operacion">
+                    <option value="s">Suma</option>
+                    <option value="r">Resta</option>
+                    <option value="m">Multiplicacion</option>
+                    <option value="d">Division</option>
+                </select>
+            </div>
+    
+            <div class="row">
+                <label for="app3Res">Resultado</label>
+                <input readonly type="text" name="app3Res" id="app3Res">
+            </div>
+    
+            <div>
+                <input class="btn" id="app3BtnCalcular" type= "submit" value="Calcular">
+            </div>
+    
+        </form>
+    
+    
+        <form id="app4" action="">
+        <h2>Programa Tabla de Multiplicar</h2>
+            <div class="row">
+                <label for="app4Tabla">Tabla:</label>
+                <input type="text" name="app4Tabla" id="app4Tabla">
+            </div>
+    
+            <div class="row">
+                <label for="app4Inv">Tabla Invertida</label>
+                <input type="checkbox" name="app4Inv" id="app4Inv">
+            </div>
+    
+            <div class="row">
+                <input type="checkbox" name="app4SoloPunto" id="app4SoloPunto">
+                <label for="app4SoloPunto">Mostrar resultados con el simbolo punto (.)</label>
+            </div>
+    
+            <div class="row">
+                <label for="app4Res" id="app4Res"></label>
+            </div>
+    
+            <div>
+                <input class="btn" id="app4BtnVer" type= "submit" value="Ver">
+            </div>
+    
+        </form>
+
+        <form id="app5" action="">
+            <h1>Tarea de paint 30.10</h1>
+            <div class="row">
+                  <label for="color">Color:</label>
+                  <input type="color" id="color" name="color">
+            </div>
+                  <br>
+            <div>
+                <label for="size">Tamaño:</label>
+                <input type="number" id="size" name="size">
+            </div>
+                  <br>
+            <div>
+                <label for="border">Borde:</label>
+                <input type="text" id="border" name="border" placeholder="ej. solid 5px">
+            </div>
+                  <br>
+            <div>
+                <button id="miBoton" class="btn">Div de prueba</button>
+            </div>          
+
+        </form>
+
+        <form id="app6" action="">
+            <h2>Programa Numeros perfectos</h2>
+    
+            <div class="row">
+                <label for="app6Ini">Numero Inicial:</label>
+                <input type="text" name="app6Ini" id="app6Ini">
+            </div>
+
+            <div class="row">
+                <label for="app6Fin">Numero Inicial:</label>
+                <input type="text" name="app6Fin" id="app6Fin">
+            </div>
+    
+            <div class="row">
+                <label for="app6Res" id="app6Res"></label>
+                <div id="app6Res">Resultado:</div>
+            </div>
+    
+            <div>
+                <input class="btn" id="app6BtnVer" type= "submit" value="Numeros">
+            </div>
+    
+        </form>
+
 
     <script src="js/apps.js"></script>
 </body>

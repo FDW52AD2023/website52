@@ -89,16 +89,24 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener("click", (e) =>{
-    e.preventDefault();
-
+function mostrarTabla(){
     let tabla = parseInt(app4Tabla.value);
 
     let lista = document.createElement("ul");
 
     if(!app4Inv.checked){
         for(let i=1 ; i <=10 ; i++){
-            let mult = tabla + " x " + i + " = " + tabla*i;
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla *i;
+            /* let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla*i)
+            }
+            else{
+                resMult = tabla * i
+            } */
+
+            let mult = tabla + " x " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
 
@@ -107,7 +115,17 @@ app4BtnVer.addEventListener("click", (e) =>{
     }
     else{
         for(let i=10 ; i >=1 ; i--){
-            let mult = tabla + " x " + i + " = " + tabla*i;
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla  * i) : tabla * i;
+
+            /* let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla*i)
+            }
+            else{
+                resMult = tabla * i
+            } */
+            let mult = tabla + " x " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
     
@@ -117,4 +135,140 @@ app4BtnVer.addEventListener("click", (e) =>{
     
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
+}
+
+app4BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+
+    mostrarTabla();
+}); 
+
+app4Inv.addEventListener("change", () => {
+
+    mostrarTabla();
 });
+
+app4SoloPunto.addEventListener("change", () => {
+
+    mostrarTabla();
+});
+
+/* App 5 */
+
+const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+
+function actualizarBorde(){
+    const app5Borde = document.getElementById("app5Borde").value;
+    const app5Grosor = document.getElementById("app5Grosor").value + "px";
+    const app5Color = document.getElementById("app5Color").value;
+    const app5Tipo = document.getElementById("app5Tipo").value;
+    const divPrueba = document.getElementById("divPrueba");
+
+    const estiloDiv = app5Grosor + " " + app5Tipo + " " + app5Color;
+    
+    switch (app5Borde){
+        case "ninguno":
+            divPrueba.style.border = "none";
+            break
+        case "todos" : 
+            divPrueba.style.border = estiloDiv;
+            break;
+        case "superior" : 
+            divPrueba.style.borderTop = estiloDiv;
+            break;
+        case "inferior" : 
+            divPrueba.style.borderBottom = estiloDiv;
+            break;
+        case "izquierdo" : 
+            divPrueba.style.borderLeft = estiloDiv;
+            break;
+        case "derecho" : 
+            divPrueba.style.borderRight = estiloDiv;
+            break;
+        default:
+            break;
+    }}
+
+app5BtnAplicar.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    actualizarBorde();
+})
+
+/* App 6 */
+function perfect(numero){
+    let divisor = 1
+    let suma = 0;
+    do{
+        if(numero % divisor == 0){
+            suma += divisor;
+        }
+        divisor++;
+    }while(divisor < numero);
+    return numero == suma;
+
+};
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+
+    if(ini > fin){
+        let aux = ini
+        ini = fin
+        fin = aux
+    }
+    else{
+         
+    }
+    
+    let numero = ini;
+    while(numero <= fin ){
+        console.log(numero);
+        /* Checar si es perfecto */
+        if(perfect(numero)){
+            let item = document.createElement("li")
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++
+    }
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
+});
+
+/* App 7 */
+
+const app7Id = document.getElementById("app7Id");
+const app7Nombre = document.getElementById("app7Nombre");
+const app7Altura = document.getElementById("app7Altura");
+const app7Peso = document.getElementById("app7Peso");
+const app7Imagen = document.getElementById("app7Imagen");
+const app7BtnBuscar = document.getElementById("app7BtnBuscar");
+
+app7BtnBuscar.addEventListener("click", e => {
+    e.preventDefault();
+    let id = app7Id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => mostrarDatos(data));
+
+});
+
+function mostrarDatos(data){
+    app7Nombre.innerHTML = "Nombre: " + data.name;
+    app7Altura.innerHTML = "Altura: " + data.height;
+    app7Peso.innerHTML = "Peso: " + data.weight;
+    app7Imagen.src = data.sprites.other.home.front_default;
+}

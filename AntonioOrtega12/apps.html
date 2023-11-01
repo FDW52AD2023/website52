@@ -70,7 +70,7 @@
 
         <div class="row">
             <label for="app3Op">Operación:</label>
-            <select name="app3Operacion" id="app3Operacion">
+            <select name="app3Op" id="app3Op">
                 <option value="S">Suma</option>
                 <option value="R">Resta</option>
                 <option value="M">Multiplicación</option>
@@ -108,14 +108,68 @@
 
         <div class="row">
             <label for="app4Res">Resultado:</label>
-            <div id="app4Res">
-                
-            </div>
+            <input readonly type="text" name="app4Res" id="app4Res">
         </div>
 
         <div class="Ver">
             <input class="btn" id="app4BtnVer" type="submit" value="Ver">
         </div>
+    </form>
+
+    <!-- <form id="app5" action="">
+        <h2>Programa para colocar bordes</h2>
+
+        <div class="row">
+            <input class="switch" type="swtich">
+        </div>
+
+    </form> -->
+
+    <form id="app6" action="">
+        <h2>Programa Numeros perfectos</h2>
+
+        <div class="row">
+            <label for="app6Ini">Número inicial:</label>
+            <input type="text" name="app6Ini" id="app6Ini">
+        </div>
+
+        <div class="row">
+            <label for="app6Fin">Número inicial:</label>
+            <input type="text" name="app6Fin" id="app6Fin">
+        </div>
+
+        <div class="row">
+            <label for="">Ver Números:</label>
+            <div id="app6Res"></div>
+        </div>
+
+        <div class="Ver">
+            <input class="btn" id="app6BtnVer" type="submit">
+        </div>
+    </form>
+
+    <form id="app7" action="">
+        <h2>Buscar Pokemon</h2>
+
+        <div class="row">
+            <label for="app7Id">Id o nombre:</label>
+            <input type="text" name="app7Id" id="app7Id">
+        </div>
+
+        <div class="row">
+            <label for="">Resultado:</label>
+            <ul>
+                <li><h2 id="app7Nombre"></h2></li>
+                <li><h3 id="app7Peso"></h3></li>
+                <li><h3 id="app7Altura"></h3></li>
+                <li><img id="app7Imagen" src="" alt=""></li>
+            </ul>
+        </div>
+
+        <div>
+            <input class="btn" id="app7BtnBuscar" type="submit">
+        </div>
+
     </form>
     <script src="js/apps.js"></script>
 

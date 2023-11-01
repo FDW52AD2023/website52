@@ -167,3 +167,32 @@ app6btnVer.addEventListener("click", {e} => {
 
     if 
 });
+
+/*  App 7  */
+
+const app7id = document.getElementById("app7id")
+const app7nombre = document.getElementById("app7nombre")
+const app7altura = document.getElementById("app7altura")
+const app7peso = document.getElementById("app7peso")
+const app7imagen = document.getElementById("app7imagen")
+const app7buscar = document.getElementById("app7buscar")
+
+app7buscar.addEventListener("click", e => {
+    let id = app7id.value
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id
+
+    fetch(url)
+        .then(Response => Response.json())
+        .then(data => mostrarDatos(data));
+
+
+function mostrarDatos(data){
+    app7nombre.innerHTML = "Nombre" + data.name
+    app7altura.innerHTML = "altura" + data.height
+    app7peso.innerHTML = "Nombre" + data.name
+
+
+
+
+}
+    

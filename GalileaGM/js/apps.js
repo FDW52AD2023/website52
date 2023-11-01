@@ -245,3 +245,31 @@ app6BtnVer.addEventListener("click", (e) =>{
     app6Res.appendChild(lista);
 
 });
+
+/*App7*/
+
+const app7Id =document.getElementById("app7Id");
+const app7Nombre=document.getElementById("app7Nombre");
+const app7Altura=document.getElementById("app7Altura");
+const app7Peso=document.getElementById("app7Peso");
+const app7Img=document.getElementById("app7Img");
+const app7BtnBuscar=document.getElementById("app7BtnBuscar");
+
+app7BtnBuscar.addEventListener("click", e => {
+    e.preventDefault();
+    let id =app7Id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url) 
+        .then(response => response.json())
+        //.then(data => console.log(data));
+        .then(data => mostrarDatos(data));
+})
+
+function mostrarDatos(data){
+    app7Nombre.innerHTML= "Nombre:  " + data.name;
+    app7Altura.innerHTML= "Altura:  "+ data.height;
+    app7Peso.innerHTML="Peso:  "+data.weight;
+    app7Img.src = data.sprites.other.home.front_default;
+
+}

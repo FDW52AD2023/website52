@@ -190,3 +190,60 @@ app5BtnAplicar.addEventListener("click", (e) => {
     e.preventDefault();
     AplicarBorde();
 })
+
+/* App 6 */
+function perfecto(numero){
+    let divisor = 1
+    let suma = 0;
+    do{
+        if(numero % divisor == 0) { /* el % es para regresar el residuo de la división */
+            suma += divisor;
+        }
+        divisor++;
+    }while(divisor < numero);
+    return numero == suma;
+};
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();  /* para botones de tipo submit */
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    /* if block for switching the values in case the first is greater than the second */
+    if(ini > fin){
+        let aux = ini   /* aux variable to temporarily saving a value and not losing it when manipulating it*/
+        ini = fin
+        fin = aux
+    }
+    else {
+        
+    }
+
+    /* this if block does the same thing but with a different method, it re-asigns the values taken directly from the objects considering that the first is greater than the second */
+    /* if (ini > fin){
+        ini = parseInt(app6Fin.value);
+        fin = parseInt(app6Ini.value);
+    } */
+
+    let numero = ini;
+    while(numero <= fin){
+
+        /* checar si es perfecto */
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        };
+
+        numero++;
+    }
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
+});

@@ -192,3 +192,84 @@ app5BtnAplicar.addEventListener("click", (e) =>{
     }
 });
 
+/*App6*/
+function perfecto(numero){
+    let divisor = 1 ;
+    let suma =0;
+    do{
+        //si el numero se divide entre el divisor entonces se le suma el divisor
+        if(numero%divisor==0){
+            suma+=divisor;
+        }
+        divisor++;
+    }while(divisor < numero);// el numero siempre debe ser menor al numero para que sea perfecto
+    return numero==suma; // si son iguales se manda un true y sino un false dentro de las comparaciones
+}
+
+const app6Ini = document.getElementById("app6Ini"); 
+const app6Fin =document.getElementById("app6Fin");
+const app6Res= document.getElementById ("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista =document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+    // se aplica un ciclo es un while
+
+    if (ini > fin){
+        let aux = ini ;//creamos una copia del principal
+        ini= fin ;
+        fin =aux;
+    } 
+/*     if (ini > fin){
+        ini = parseInt(app6Fin.value);
+        fin = parseInt(app6Ini .value);
+    }  */
+
+    let numero =ini;
+    while(numero <= fin){ //condicion
+        /**Checar si es perfecto */
+        //Si el numero es perfecto
+        if (perfecto (numero)){
+            let item= document.createElement("li")
+            item.innerHTML=numero;
+            lista.appendChild(item);
+        }
+
+        console.log(numero);//comienza en el numero inicial
+        numero++;//incremento
+    }
+    app6Res.innerHTML= "";
+    app6Res.appendChild(lista);
+
+});
+
+/*App7*/
+
+const app7Id =document.getElementById("app7Id");
+const app7Nombre=document.getElementById("app7Nombre");
+const app7Altura=document.getElementById("app7Altura");
+const app7Peso=document.getElementById("app7Peso");
+const app7Img=document.getElementById("app7Img");
+const app7BtnBuscar=document.getElementById("app7BtnBuscar");
+
+app7BtnBuscar.addEventListener("click", e => {
+    e.preventDefault();
+    let id =app7Id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url) 
+        .then(response => response.json())
+        //.then(data => console.log(data));
+        .then(data => mostrarDatos(data));
+})
+
+function mostrarDatos(data){
+    app7Nombre.innerHTML= "Nombre:  " + data.name;
+    app7Altura.innerHTML= "Altura:  "+ data.height;
+    app7Peso.innerHTML="Peso:  "+data.weight;
+    app7Img.src = data.sprites.other.home.front_default;
+
+}

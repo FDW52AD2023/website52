@@ -1,37 +1,42 @@
-/* APP7*/
-const app7Id = document.getElementById("app7id")
-const app7Nombre = document.getElementById("app7Nombre")
-const app7Peso = document.getElementById("app7Peso")
-const app7Altura = document.getElementById("app7Altura")
-const app7Imagen = document.getElementById("app7Imagen")
-const app7Buscar = document.getElementById("app7BtnBuscar")
+// /* APP7*/
+// const app7Id = document.getElementById("app7id")
+// const app7Nombre = document.getElementById("app7Nombre")
+// const app7Peso = document.getElementById("app7Peso")
+// const app7Altura = document.getElementById("app7Altura")
+// const app7Imagen = document.getElementById("app7Imagen")
+// const app7Buscar = document.getElementById("app7BtnBuscar")
 
-app7BtnBuscar.addEventListener("click", e => {
-    e.preventDefault();
-    let id = app7Id.value;
-    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+// app7BtnBuscar.addEventListener("click", e => {
+//     e.preventDefault();
+//     let id = app7Id.value;
+//     let url = "https://pokeapi.co/api/v2/pokemon/" + id;
 
-    fetch(url)
-        .then(Response => Response.json())
-        .then(data => mostrarDatos(data));
-});
-function mostrarDatos(data){
-    console.log(data)
-    app7Nombre.innerHTML = "Nombre: " + data.name;
-    app7Peso.innerHTML = "Peso: " + data.weight;
-    app7Altura.innerHTML = "Altura: " + data.height;
-    app7Imagen.src = data.sprites.other.home.front_default
-};
+//     fetch(url)
+//         .then(Response => Response.json())
+//         .then(data => mostrarDatos(data));
+// });
+// function mostrarDatos(data){
+//     console.log(data)
+//     app7Nombre.innerHTML = "Nombre: " + data.name;
+//     app7Peso.innerHTML = "Peso: " + data.weight;
+//     app7Altura.innerHTML = "Altura: " + data.height;
+//     app7Imagen.src = data.sprites.other.home.front_default
+// };
+
+
 /* App6 */
-function perfecto(numero){
-    let divisor = 1
+function perfecto(numero) {
+
+    let divisor = 1;
     let suma = 0;
-    do{
-        if(numero % divisor == 0) {
+
+    do {
+        if (numero % divisor == 0) {
             suma += divisor;
         }
         divisor++;
-    }while( divisor  < numero );
+    } while ( divisor < numero );
+
     return numero == suma;
 }
 
@@ -42,38 +47,36 @@ const app6BtnVer = document.getElementById("app6BtnVer");
 const lista = document.createElement("ol");
 
 app6BtnVer.addEventListener("click", (e) => {
+
     e.preventDefault();
-    
+
     let ini = parseInt(app6Ini.value);
     let fin = parseInt(app6Fin.value);
 
-    if(ini > fin){
+    if (ini > fin) {
         let aux = ini
         ini = fin
         fin = aux
     }
 
-    /* if(ini > fin){
-        ini = parseInt(app6Fin.value);
-        fin = parseInt(app6Ini.value);
-    }
- */
-
     let numero = ini;
 
-    while( numero <= fin  ){
-    
-        /* checar si es perfecto */
-        if( perfecto(numero)){
+    while ( numero <= fin) {
+
+        if ( perfecto(numero)) {
+
             let item = document.createElement("li");
             item.innerHTML = numero;
             lista.appendChild(item);
         }
+
         numero++;
     }
-    lista.innerHTML = "";
-    app6Res.appendChild(lista);
+    app6Res.innerHTML = '';
+    app6Res.appendChild(lista)
+
 });
+
 
 /* App4 */
 const app4Tabla = document.getElementById("app4Tabla");

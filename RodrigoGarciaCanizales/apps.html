@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="css/apps.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ir a evidencias </a></li>
+        </ul>
+    </nav>
+    
     <h1>Apps</h1>
 
     <form id="app1" action="">
@@ -144,23 +150,22 @@
         <div class="row">
             <label for="tipo">Tipo:</label>
             <select name="tipo" id="tipo">
-                <option value="do">dotted</option>
-                <option value="da">dashed</option>
-                <option value="s">solid</option>
-                <option value="dou">double</option>
-                <option value="g">groove</option>
-                <option value="r">ridge</option>
-                <option value="i">inset</option>
-                <option value="ou">outset</option>
+                <option value="dotted">dotted</option>
+                <option value="dashed">dashed</option>
+                <option value="solid">solid</option>
+                <option value="double">double</option>
+                <option value="groove">groove</option>
+                <option value="ridge">ridge</option>
+                <option value="inset">inset</option>
+                <option value="outset">outset</option>
             </select>
         </div>
-
-        <br>
-        <div id="divPrueba" style="width: 300px; height: 100px; border: 2px solid black;">
-            <h1>Div de prueba</h1>
+        <p>
+        <p>
+        <div id="divPrueba">
+            <h2>Div de prueba</h2>
         </div>
-        <br>
-
+        <p>
         <div class="boton">
             <input class="btn" id="app5BtnVer" type="submit" value="Aplicar Borde">
         </div>
@@ -185,6 +190,27 @@
 
         <div>
             <input class="btn" id="app6BtnVer" type="submit" value="Ver Numeros">
+        </div>
+    </form>
+
+    <form id="app7" action="">
+        <h2>Programa Buscar Pokemon</h2>
+
+        <div class="row">
+            <label for="app7Id">id o nombre:</label>
+            <input type="text" name="app7Id" id="app7Id">
+        </div>
+        
+        <div class="row">
+            <label for="">Resultado:</label>
+            <ul>
+                <li><h2 id="app7Nombre"></h2></li>
+                <li><h3 id="app7Peso"></h3></li>
+                <li><h3 id="app7Altura"></h3></li>
+                <li><img id="app7Imagen" src="" alt=""></li>
+            </ul>
+        <div>
+            <input class="btn" id="app7BtnBuscar" type="submit" value="Buscar">
         </div>
     </form>
     <script src="js/apps.js"></script>

@@ -1,0 +1,131 @@
+
+.boton1{
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+#header-main h2 {
+    color: white;
+}
+
+#header-main{
+    background-color: #0a0a23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+#header-main input{
+    width: 40%;
+}
+
+#header-main h2{
+    margin-right: 10px;
+    margin-left: 20px;
+    width: 40%;
+}
+
+.titulo{
+    flex-direction: column;
+    display: flex;
+    padding: 0 30vw;
+    width: 50%;
+    justify-content: center;
+}
+
+.info {
+    line-height: 1.1;
+    font-size: 1.5;
+    font-weight: 500;
+    height: 50%;
+}
+
+.redes img{
+    width: auto;
+    height: 3rem;
+}
+
+#Boton{
+    width: 40vw;
+    margin: 0 auto 20px auto;
+    border: 3px solid #feac32;
+    background-color: #feac32;
+    color: black;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.see-in{
+    padding: 5vw;
+    background-color: darkgrey;
+    text-align: center;
+    font-size: 2.5;
+}
+
+.informacion{
+    padding: 30px 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.alumni {
+    text-align: center;
+    font-size: 2.5;
+    padding: 30px 0;
+}
+
+.info-alumno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-alumno h2{
+    padding: 20px 0;
+}
+
+.info-alumno p{
+    padding: 0 30px 20px 30px;
+    line-height: 1.5;
+}
+
+.imagenes{
+    width: 300px;
+    height: 300px;
+    float: left;
+    display: flex;
+    height: 320px;
+    margin-bottom: 50px;
+}
+
+.titulo-verificaciones{
+    flex-direction: column;
+    display: flex;
+    padding: 0 30vw;
+    width: 50%;
+    justify-content: center;
+}
+
+.verificaciones{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+    background-color: #d0d0d5;
+    border: 3px solid #1b1b32;
+    color: #1b1b32;
+    text-decoration: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preguntas{
+    padding: 0 8vw;
+}

@@ -1,3 +1,29 @@
+/* App7 */
+const app7ID = document.getElementById("app7ID");
+const app7Nombre = document.getElementById("app7Nombre");
+const app7Altura = document.getElementById("app7Altura");
+const app7Peso = document.getElementById("app7Peso");
+const app7Imagen = document.getElementById("app7Imagen");
+const app7BtnBuscar = document.getElementById("app7BtnBuscar")
+
+app7BtnBuscar.addEventListener("click", e => {
+    e.preventDefault();
+    let id = app7ID.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => mostrarDatos(data));
+})
+
+function mostrarDatos(data){
+    app7Nombre.innerHTML = "Nombre: "+ data.name;
+    app7Altura.innerHTML = "Altura: " + data.height;
+    app7Peso.innerHTML = "Peso: "+ data.weight;
+    app7Imagen.src = data.sprites.other.home.front_default;
+
+}
+
 /* App 1*/
 /* Obtener las referencias de los elementos a programar*/
 const app1Num1 = document.getElementById("app1Num1");

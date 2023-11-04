@@ -90,7 +90,7 @@ const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
 app4BtnVer.addEventListener("click", (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     let tabla = parseInt(app4Tabla.value);
 
@@ -144,17 +144,11 @@ function perfecto(numero){
     let suma = 0
     do{
         if(numero % divisor == 0){
-            suma += divisor;
+            suma += divisor
         }
-        divisor++;
+        divisor++
     }while(divisor < numero);
     return numero == suma;
-    /* if(numero == suma){
-        return true;
-    }
-    else{
-        return false;
-    } */
 }
 
 const app6Ini = document.getElementById("app6Ini");
@@ -177,15 +171,40 @@ app6BtnVer.addEventListener("click", (e) => {
     let numero = inicio;
 
     while(numero <= fin){
-
-        /* Checar si el numero es perfecto */
         if(perfecto(numero)){
-            let item = document.createElement("li")
+            let item = document.createElement("li");
             item.innerHTML = numero;
             lista.appendChild(item);
         }
 
-        numero++;
+        numero++
     }
+    app6Res.innerHTML = "";
     app6Res.appendChild(lista);
 })
+
+/* App 7 */
+const app7Id = document.getElementById("app7Id");
+const app7Nombre = document.getElementById("app7Nombre");
+const app7Altura = document.getElementById("app7Altura");
+const app7Peso = document.getElementById("app7Peso");
+const app7Imagen = document.getElementById("app7Imagen");
+const app7BtnBuscar = document.getElementById("app7BtnBuscar");
+
+app7BtnBuscar.addEventListener("click", e => {
+    e.preventDefault();
+    let id = app7Id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => mostrarDatos(data));
+
+})
+
+function mostrarDatos(data){
+    app7Nombre.innerHTML = "Nombre: " + data.name;
+    app7Altura.innerHTML = "Altura: " + data.height;
+    app7Peso.innerHTML = "Peso: " + data.weight;
+    app7Imagen.src = data.sprites.other.home.front_default;
+}

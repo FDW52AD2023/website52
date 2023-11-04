@@ -8,30 +8,51 @@
 </head>
 <body>
     <h1>Apps</h1>
-    <form id="app6" action="">
-        <h2>Pragrama numeros perfectos</h2>
+    <form id="app7" action="">
+        <h2>Pragrama Buscar pokemon</h2>
 
         <div class="row">
-            <label for="app6Ini">Numero inicial:</label>
-            <input type="text" name="app6Ini" id="app6Ini">
+            <label for="app7ID">Numero inicial:</label>
+            <input type="text" name="app7ID" id="app7ID">
         </div>
 
         <div class="row">
-            <label for="app6Fin">Numero inicial:</label>
-            <input type="text" name="app6Fin" id="app6Fin">
-        </div>
-        <div class="row">
-            <label for="app6Res">Resultado:</label>
-            <div id="app6Res"></div>
+            <label for="app7Res">Resultado:</label>
+            <ul>
+                <li><h2 id="app7Nombre"></h2></li>
+                <li><h2 id="app7Peso"></h2></li>
+                <li><h2 id="app7Altura"></h2></li>
+                <li><img id="app7Imagen" src="" alt=""></li>
+            </ul>
         </div>
         
         <div>
+            <input class="btn" id="app7BtnBuscar" type="submit" value="Buscar">
+        </div>
+    </form>
+
+    <form id="app6" action="">
+        <h2>Programa Numeros perfectos</h2>
+            <div class="row">
+            <label for="app6Ini">Numero incial: </label>
+            <input type="text" name="app6Ini" id="app6Ini">
+        </div>
+    
+        <div class="row">
+            <label for="app6Fin">Numero Final: </label>
+            <input type="text" name="app6Fin" id="app6Fin">
+            </div>
+    
+        <div class="row">
+            <label for="app6Res">Resultado: </label>
+            <div id="app6Res"></div>
+        </div>
+    
+        <div>
             <input class="btn" id="app6BtnVer" type="submit" value="Ver numeros">
         </div>
-
-
-
     </form>
+
     <form id="app5" action="">
         <h2>BORDE SOLICITADOO</h2>
         
@@ -77,7 +98,7 @@
         <div id="app5Resultados" style="width: 300px; height: 100px;"></div>
     </form>
 
-    <form id="app3" action="">
+    <form id="app4" action="">
         <h2>Tabla de multiplicar</h2>
 
         
@@ -108,32 +129,39 @@
                        
         </div>
 
-
+    </form>
     <form id="app3" action="">
-        <h2>Programa operaciones aritmetica</h2>
+        <h2>Programa operaciones aritmeticas</h2>
 
-        
         <div class="row">
-            <label for="app3Num1">Numero</label>
+            <label for="app3Num1">Numero: </label>
             <input type="text" name="app3Num1" id="app3Num1">
         </div>
 
         <div class="row">
-            <label for="app3Num2">Numero</label>
+            <label for="app3Num2">Numero: </label>
             <input type="text" name="app3Num2" id="app3Num2">
         </div>
 
-
+        <div class="row">
+            <label for="app30operacion">Operacion: </label>
+            <select name="app30operacion" id="app30operacion">
+                <option value="s">Suma</option>
+                <option value="r">Resta</option>
+                <option value="m">Multiplicacion</option>
+                <option value="d">División</option>
+            </select>
+        </div>
 
         <div class="row">
-            <label for="app3Res">Resultado</label>
+            <label for="app3Res">Resultado: </label>
             <input readonly type="text" name="app3Res" id="app3Res">
         </div>
-        
+
         <div>
             <input class="btn" id="app3BtnCalcular" type="submit" value="Calcular">
-                       
         </div>
+    </form>
 
 
 
@@ -186,6 +214,7 @@
         <div>
             <input class="btn" id="app2BtnRepetir" type="submit" value="Repetir">          
         </div>
+    </form>
 
     <script src="js/apps.js"></script>
 </body>

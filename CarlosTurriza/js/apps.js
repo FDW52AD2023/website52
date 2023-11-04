@@ -116,8 +116,8 @@ function actualizarBorde(){
     const tipo = document.getElementById("tipo").value;
     const divPrueba = document.getElementById("divPrueba");
 
-    const estilo = app5Grosor + " " + tipo + " " + colorBorde;
-   
+    const estilo = app5Grosor + " " + colorBorde + " " + tipo;
+
     switch(borde){
         case "n" : 
             divPrueba.style.border = "none";

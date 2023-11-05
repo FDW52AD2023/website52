@@ -46,32 +46,3 @@ footer {
 #Contenedor section{
     margin: 20px;
 }
-
-.boton1{
-    border: 1px solid white;
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-}
-
-#header-main h2 {
-    color: white;
-}
-
-#header-main{
-    background-color: #0a0a23;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-}
-
-#header-main input{
-    width: 40%;
-}
-
-#header-main h2{
-    margin-right: 10px;
-    margin-left: 20px;
-    width: 40%;
-}

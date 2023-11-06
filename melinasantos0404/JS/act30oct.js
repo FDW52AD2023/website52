@@ -1,11 +1,11 @@
 
 /*APP6*/
-function perfecto ( numero){
+function perfect ( numero){
     let divisor = 1
     let suma = 0;
-    do {
-        if (numero % divisor ==0) {
-            suma += divisor;
+    do{
+        if (numero % divisor==0) {
+            suma+=divisor;
         }
         divisor++;
     }while (divisor < numero );
@@ -19,30 +19,34 @@ const lista = document.createElement("ol");
 
 app6BtnVer.addEventListener( "click", (e) => {
     e.preventDefaul();
-    let ini = parseInt(app6Ini-Value);
-    let fin = parseInt(app6Fin-Value);
+    let ini = parseInt(app6Ini.Value);
+    let fin = parseInt(app6Fin.Value);
 
 
-    if (ini > fin) {
+    if(ini > fin){
         let aux = ini 
         ini = fin 
         fin = aux 
     }
+    else {
+
+    }
      
      let numero = ini;  
-    while ( numero <= fin ){
+    while(numero <= fin ){
+        console.log(numero);
         /*checar si es perfect*/
 
         if (perfecto (numero)){
             let item = document.createElement("li");
             item.innerHTML = numero;
-            lista. appendChild (item)
+            lista.appendChild(item);
 
         }
 
         
         numero++;
     }
-    app6Res.innerHTML = " ";
+    app6Res.innerHTML = "";
     app6Res.appendChild( lista);
 }); 

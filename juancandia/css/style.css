@@ -1,0 +1,113 @@
+@font-face {
+    font-family:letraperra ;
+    src: url(../letraencabezado.ttf);
+}
+@font-face {
+    font-family:letraencabezado1;
+    src: url(../EnglishTowne.ttf);
+}
+
+
+body {
+    background-color: #f5f5dc;
+}
+
+#textoencabezado {
+    font-family:letraencabezado1 ;
+    text-align: center;
+    font-size: 80px;
+}
+
+#lista-horizontal {
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 26px;
+}
+
+/* Estilos para la lista horizontal que cubre todo el ancho de la pantalla */
+#lista-horizontal {
+    list-style: none; /* Quita los marcadores de lista */
+    padding: 0; /* Quita el relleno predeterminado de la lista */
+    width: 100%; /* La lista ocupa todo el ancho disponible */
+    display: flex; /* Muestra los elementos en una fila horizontal */
+    justify-content: space-around; /* Espacio equitativo entre elementos */
+}
+
+#lista-horizontal li {
+    display: inline; /* Muestra los elementos en línea */
+}
+
+/* Cambia el estilo al pasar el cursor sobre las opciones */
+#lista-horizontal a:hover {
+    color: #837925; /* Cambia el color del texto al pasar el cursor */
+}
+
+
+
+#contenedor {
+    border-top: 2px solid #000; /* Añade un borde superior de 2px en color negro */
+    border-bottom: 2px solid #000; /* Añade un borde inferior de 2px en color negro */
+    padding: 0px; /* Agrega relleno al contenedor */
+    width: 90%;
+}
+
+ol {
+    margin: 5px;
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+
+#contenedordelcontenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr1 {
+    border: 2px solid black;
+    width: 95%;
+    
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 80%; 
+}
+
+
+.aside-derecho {
+    width: 30%; /* Ancho del aside derecho */
+    margin-left: 10%;
+}
+
+
+.stylearticle {
+    width: 70%;
+    padding: 0 10rem;
+
+}
+
+.stylediv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulodelarticle {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.estilotextohtml {
+    
+}

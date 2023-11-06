@@ -1,3 +1,7 @@
+.cuerpo{
+    background-color: lightslategray;
+}
+
 
 .boton1{
     border: 1px solid white;
@@ -59,11 +63,20 @@
     text-align: center;
 }
 
-.see-in{
+.as-see-in{
     padding: 5vw;
     background-color: darkgrey;
     text-align: center;
     font-size: 2.5;
+}
+
+.imagenes-as-see-in{
+    padding: 0 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .informacion{

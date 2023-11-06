@@ -1,0 +1,36 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+h1{
+    border: 2px dashed lightblue;
+    padding: 5px;
+
+}
+
+h2{
+    border: 2px dotted lightpink;;
+    padding: 3px;
+
+}
+
+a{
+    background-color: lightblue; 
+    border:5px inset skyblue; 
+    padding: 5px;
+    text-decoration: none;
+}
+
+div{
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    gap:1px;
+}

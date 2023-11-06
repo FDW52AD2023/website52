@@ -1,0 +1,45 @@
+header {
+    background-color: magenta;
+}
+
+main {
+    background-color: goldenrod;
+}
+
+aside {
+    background-color: lawngreen;
+}
+
+footer {
+    background-color: saddlebrown;
+}
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;  /* especifica el espacio y tamaño que ocupara cada elemento del grid */
+    grid-template-areas: "h h"     /* para definir la estructura de los elementos en la página (el grid) */
+                         "a m"
+                         "f f";
+    margin: 5px;
+}
+
+#mp1 header {
+    grid-area: h;  /* grid-area para darle un nombre (h) al elemento en cuestión (header) */
+}
+
+#mp1 main {
+    grid-area: m;
+}
+
+#mp1 aside {
+    grid-area: a;
+}
+
+#mp1 footer {
+    grid-area: f;
+}
+
+#contenedor {
+    display: flex;
+    margin: 0px;
+}

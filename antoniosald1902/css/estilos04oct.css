@@ -21,32 +21,26 @@ img {
     margin-right: 1em;
 }
 
-/* colores de los articulos
-azul,verde,tomate,peru,oro,gris */
+/*colores de los articulos
+azul,verde,tomate,peru,oro,gris*/
 .azul {
     background-color: blue;
 }
-
 .verde {
     background-color: green;
 }
-
 .tomate {
     background-color: tomato;
 }
-
 .peru {
     background-color: peru;
 }
-
 .oro {
     background-color: gold;
 }
-
 .gris {
     background-color: gray;
 }
-
 #header3 article {
     float: left;
     width: 16.66%;

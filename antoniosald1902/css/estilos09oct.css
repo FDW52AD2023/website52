@@ -2,8 +2,8 @@ header {
     border: 5px solid black;
 }
 
-/* colores de los articulos
-azul,verde,tomate,peru,oro,gris */
+/*colores de los articulos
+azul,verde,tomate,peru,oro,gris*/
 .azul {
     background-color: blue;
 }
@@ -39,8 +39,8 @@ azul,verde,tomate,peru,oro,gris */
 }
 
 #header2 {
-    display: flex;   /* para que todo se acomode en un renglón, en fila y no en columna por default */
-    justify-content: space-evenly;   /* justify content "justifica" el texto del flex */
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #header3 {
@@ -50,21 +50,21 @@ azul,verde,tomate,peru,oro,gris */
 
 #header4 {
     display: flex;
-    flex-flow: column nowrap;  /* flex-flow define la dirección del flujo del texto (como renglón o como columa) */
+    flex-flow: column nowrap;
     height: 200px;
     justify-content: space-between;
 }
 
 #header5 {
     display: flex;
-    flex-flow: wrap;   /* wrap para que el bloque sea multi línea */
+    flex-flow: wrap;
     height: 200px;
     align-content: space-between;
 }
 
-#header5 article {
+#header5 article{
     width: 50%;
-    padding: 10px 0px;  /* primer numero es para arriba y abajo, segundo numero es para izq y der */
+    padding: 10px 0px;
     text-align: center;
 }
 
@@ -73,7 +73,7 @@ azul,verde,tomate,peru,oro,gris */
 }
 
 #header6 #a1 {
-    order: 1;  /* orden en que aparece este elemento del contenedor */
+    order: 1;
 }
 
 #header7 {
@@ -105,7 +105,7 @@ azul,verde,tomate,peru,oro,gris */
     order: 5;
 }
 
-#header8 {
+#header8{
     display: flex;
 }
 
@@ -131,7 +131,7 @@ azul,verde,tomate,peru,oro,gris */
     width: 200px;
 }
 
-#header9 #a6 {
+#header9 #a6{
     flex-shrink: 0;
     flex-grow: 1;
 }
@@ -153,7 +153,7 @@ azul,verde,tomate,peru,oro,gris */
 #header11 {
     display: flex;
     height: 200px;
-    align-items: center;   /* align items para todos los elementos */
+    align-items: center;
     justify-content: center;
 }
 
@@ -162,7 +162,7 @@ azul,verde,tomate,peru,oro,gris */
 }
 
 #header11 #a6 {
-    align-self: flex-start;   /* align self para un solo elemento */
+    align-self: flex-start;
 }
 
 #mp1 header {
@@ -184,14 +184,13 @@ azul,verde,tomate,peru,oro,gris */
 
 #mp1 {
     display: grid;
-    grid-template-columns: 4fr 1fr;   /* para definir las columnas del grid, la cantidad de nfr indica cuántas columnas se quieren además de su medida*/
+    grid-template-columns: 4fr 1fr;
     font-family: sans-serif;
 }
 
 #mp1 header {
-    grid-column: 1 / -1;   /* para definir cuántas columna del grid ocupa el contenedor, -1 significa que llega hasta la última columna*/
+    grid-column: 1 / -1;
 }
-
 #mp1 footer {
     grid-column: 1 / -1;
 }

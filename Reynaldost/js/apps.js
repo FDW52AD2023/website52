@@ -111,16 +111,13 @@ app4BtnVer.addEventListener("click", (e) =>{
 
 
 /* App 5 */
-
 const app5BtnModificar = document.getElementById("app5BtnModificar");
-
 function changeBorder(){
     const app5Borde = document.getElementById("app5Borde").value;
     const app5Color = document.getElementById("app5Color").value;
     const app5Grosor = document.getElementById("app5Grosor").value + "px";
     const app5Tipo = document.getElementById("app5Tipo").value;
     const divPrueba = document.getElementById("divTest");
-
     const estiloDiv = app5Grosor + " " + app5Tipo + " " + app5Color;
 
     if (app5Borde == "Todos"){
@@ -141,7 +138,6 @@ function changeBorder(){
     else {
         divPrueba.style.border = "none";
     }};
-
 
 app5BtnModificar.addEventListener("click", (e) => {
     e.preventDefault();

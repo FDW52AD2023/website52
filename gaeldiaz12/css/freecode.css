@@ -110,6 +110,37 @@
     justify-content: center;
 }
 
+#certificaciones{
+    margin: 100px 0 50px 0;
+}
+
+.certificaciones-tarjeta{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+    background-color: #d0d0d5;
+    border: 3px solid #1b1b32;
+    color: #1b1b32;
+    text-decoration: none;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.boton-certificaciones{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+}
+
+.certificaciones-izquierda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .verificaciones{
     font-size: 1rem;
     margin-bottom: 10px;
@@ -128,4 +159,67 @@
 
 .preguntas{
     padding: 0 8vw;
+}
+
+.pregunta{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.respuesta {
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+footer{
+    padding: 40px 15px;
+    background: #dfdfe2;
+    color: darkblue;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.pie {
+    align-self: center;
+    margin-bottom: 30px;
+    padding-inline: 15px;
+}
+
+.link-pie{
+    padding: 2px;
+    text-decoration: underline;
+}
+
+.pie2{
+    margin: 0 0 3rem;
+}
+
+.pie-titulo{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 0 15px 15px;
+    text-align: center;
+    color: black;
+}
+
+.info-pie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    border-top: 1px solid #d7d7db;
+    padding: 30px 10px 0 10px;
+}
+
+.pie-botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    border-top: 1px solid #d7d7db;
+    padding: 30px 10px 0 10px;
 }

@@ -1,0 +1,37 @@
+ /* Estilos para la página principal. Index.*/ 
+
+ body {
+    background-image: url("palitos.jpg");
+    background-color: #b0e9fa;
+}
+
+/* header {
+    margin: 5px 0;
+    padding: 5px 0;
+    background-color: #d8f8e1;
+    background-image: linear-gradient(rgb(219, 238, 174), rgb(155, 198, 238));
+    text-align: center;
+}*/
+
+header {
+    padding: 10px;
+    background: url(planta.jpg);
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+  }
+
+article {
+    background-color: #ffffffb6;
+    margin: 10px auto;
+    padding: 20px;
+    width: 50vw;
+    border-radius: 20px;
+}
+
+footer {
+    background: url(planta.jpg);
+    background-color: #ddec9b;
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
+}

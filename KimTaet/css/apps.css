@@ -1,0 +1,25 @@
+* {
+    font-family: sans-serif;
+}
+
+input[type="text"]{
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.row {
+    margin-bottom: 8px;
+}
+
+.btn {
+    padding: 8px 50px;
+    margin-left: 50px;
+}
+
+#app5Res {
+    margin : 15px 80% 0px 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}

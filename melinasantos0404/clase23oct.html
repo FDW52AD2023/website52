@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CLASE 23 Y 25 OCT </title>
+</head>
+<body>
+    <form id="app3" action="">
+        <h2>Programa Operaciones </h2>
+
+        <div class="row">
+        <label for="app3Num1">Numero 1</label>
+        <input type="text" name="app3Num1" id="app3Num1">
+        </div>
+
+        <div class="row">
+        <label for="app3Num2">Numero 2</label>
+        <input type="text" name="app3Num2" id="app3Num2">
+        </div>
+
+        <div class="row">
+        <label for="app3Operacion">Opercacion</label>
+        <select name="app3Operacion" id="app3Operacion">
+        <option value="s">Suma</option>
+        <option value="r">Resta</option>
+        <option value="m">Multiplicacion</option>
+        <option value="d">Division</option>
+        </select>
+        </div>
+    
+
+        <div class="row">
+        <label for="app3Res">Resultado</label>
+        <input readonly type="text" name="app3Res" id="app3Res">
+        </div>
+
+        <div class="row">
+        <input class ="btn" id ="app3BtnCalcular" type="submit" value="Calcular">
+        </div>
+
+    </form>
+
+    <form id="app4" action="">
+        <h2> Tabla de multiplicar</h2>
+
+        <div class="row">
+            <label for="app4Tabla">Tabla:</label>
+            <input type="text" name="app4Tabla" id="app4Tabla">
+        </div>
+
+        <div class="row">
+            <input type="checkbox" name="app4Inv" id="app4Inv">
+            <label for="app4Inv">Tabla Invertida</label>
+        </div>
+
+        <div class="row">
+            <input type="checkbox" name="app4SoloPunto" id="app4SoloPunto">
+            <label for="app4SoloPunto">Mostrar resultados con  solo puntos</label>
+        </div>
+
+        <div class="row">
+            <label for="app4Res">Resultado:</label>
+            <div id="app4Res">
+
+            </div>
+        </div>  
+
+        <div>
+            <input class="btn" id="app4BtnVer" type="submit" value="Ver tabla">
+        </div>
+    </form>
+
+
+    <form id="app5" action="">
+        <h2>ejercicio 25 octubre</h2>
+
+        <div class="row">
+        <label for="app5Color">Elige un color:</label>
+        <input type="color" id="app5Color">
+        </div>
+        
+        <div class="row">
+        <label for="app5Borde">Selecciona la posición del borde:</label>
+        <select id="app5Borde">
+            <option value="top">Superior</option>
+            <option value="right">Derecha</option>
+            <option value="bottom">Inferior</option>
+            <option value="left">Izquierda</option>
+            <option value="all">Todos</option>
+        </select>
+        </div>
+    
+        <div class="row">
+        <label for="app5Grosor">Selecciona el grosor (px):</label>
+        <input type="text" id="app5Grosor" placeholder="px">
+        </div>
+
+        <div class="row">
+        <label for="app5Tipo">Selecciona el tipo de borde:</label>
+        <select id="app5Tipo">
+            <option value="none">Ninguno</option>
+            <option value="solid">Sólido</option>
+            <option value="dotted">Punteado</option>
+            <option value="dashed">Discontinuo</option>
+            <option value="double">Double</option>
+            <option value="groove">Groove</option>
+            <option value="ridge">Ridge</option>
+            <option value="inset">Inset</option>
+            <option value="outset">Outset</option>
+        </select>
+        </div>
+        
+        <div class="row">
+        <button id="app5BtnVer">VER</button>
+        </div>
+    
+        <div id="resultado5" style="width: 300px; height: 100px; border: 2px solid black;"></div>
+    </form>
+ <script src="JS/clase23oct.js"> </script>
+
+  
+</body>
+</html>

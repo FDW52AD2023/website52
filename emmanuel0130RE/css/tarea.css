@@ -1,0 +1,213 @@
+.boton1{
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+header h2{
+    color: white;
+}
+#header-main {
+    background-color: #0a0a23;
+    display: flex;
+    align-items: center;
+    height:80px ;
+}
+#header-main input{
+    width: 40%;
+}
+#header-main h2{
+    margin-left: 5px;
+    width: 40%;
+}
+#intro {
+    padding: 50px 100px;
+    text-align: center;
+}
+#referencias {
+    padding: 50px 100px;
+}
+#alm1 {
+    padding: 40px 100px;
+    font-family: Arial;
+}
+#alm1 h2{
+    text-align: center;
+}
+#alm2 {
+    padding: 40px 100px;
+    font-family: arial;
+}
+#alm2 h2{
+    text-align: center;
+}
+#alm3 {
+    padding: 40px 100px;
+    font-family: arial;
+}
+#alm3 h2{
+    text-align: center;
+}
+img{
+    width: 100px;
+    height: 50px;
+    justify-content: baseline;
+}
+.botonAmarillo {
+    background-color: orange;
+    text-decoration: none;
+    color: black;
+    border: black;
+}
+.botonamarillo2 {
+    background-color: orange;
+    text-decoration: none;
+    color: black;
+    display:flexbox;
+    left: 45%;
+    place-items: center;
+    position: absolute;
+    padding: 5px 20px;
+    text-decoration: none;
+    border: 1px solid;
+}
+#cuadro_gris {
+    background-color: grey;
+    padding: 50px;
+}
+#cuadro_gris h1 {
+    color: black;
+    text-align: center;
+    font-family: Arial;
+}
+#cuadro_gris div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 350px 5px 350px;
+}
+#cuadro_gris #div2 {
+    justify-content: space-evenly;
+    padding-top: 8px;
+    align-items: center;
+}
+
+img.img1{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+#logo {
+    float: left;
+    margin: .5rem 1rem;
+}
+#flechas{
+    float:right;
+    margin: .5rem 1rem;
+}
+
+#cuadros_grises {
+    background-color: gray;
+    border: 3px solid #1b1b32;
+    margin: .5rem 17rem;
+    font-size: 20px;
+    font-family: Arial;
+}
+#cuadros_grises:hover{
+    background-color: #1b1b32;
+    color: white;
+}
+#certificaciones {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-size: 42px;
+    font-family: Arial;
+    margin: 8rem 17rem 2rem;
+}
+#Preguntas {
+    padding: 5px 248px 0px 240px;
+    font-family: arial;
+}
+
+footer {
+    background-color:rgb(58, 57, 57);
+}
+
+#trending_guides {
+    padding: 40px 10px 20px 40px;
+    display: flex;
+    align-items: center;
+}
+
+#trending_guides #texto {
+    width: 40%;
+}
+#trending_guides p, #listas a {
+    font-family: sans-serif;
+    color: #d0d0d5;
+    line-height: 1.9;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+#listas h4 {
+    font-size: 17px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    grid-area: t;
+}
+
+#listas li {
+    padding: 2px 0px 2px 0px;
+}
+
+#listas ul {
+    list-style: none;
+}
+#listas {
+    width: 54%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "t t"
+                         "a b";
+}
+
+#links_footer hr {
+    width: 95%;
+    color: white;
+}
+
+#links_footer {
+    padding-bottom: 30px;
+}
+
+#links_footer a {
+    font-size: 14px;
+    font-family: Arial;
+    color: white;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+#img2 img{
+    width: 500px;
+    height: 250px;
+    }
+#img2{
+    text-align: center;
+}
+#img2 p{
+    font-family: arial;
+    font-size: large;
+}
+
+
+

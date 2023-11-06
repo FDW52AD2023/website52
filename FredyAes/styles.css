@@ -1,0 +1,92 @@
+body {
+    background-image: url('https://www.xtrafondos.com/wallpapers/one-piece-artwork-4011.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #01165096;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para las secciones de evidencia */
+.evidence {
+    background-color: rgba(0, 0, 0, 0.432);
+    color: beige;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px rgb(226, 212, 80);
+}
+
+.evidence-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+}
+
+.evidence ul {
+    list-style: none;
+    padding: 0;
+}
+
+.evidence ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1012854d;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos para las etiquetas <a> cuando se hace hover */
+a:hover {
+    background-color: yellow; /* Fondo amarillo al pasar el mouse */
+    color: black; /* Texto negro al pasar el mouse */
+}
+
+nav {
+    font-family: sans-serif;
+    color: rgb(255, 230, 6);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas adicionales si no caben en una sola línea */
+}
+
+nav div {
+    flex-basis: calc(33.33% - 20px); /* Ajusta el tamaño de cada elemento para ocupar aproximadamente un tercio del contenedor */
+    margin: 10px;
+}
+
+nav p, nav a {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 10px;
+}
+
+a {
+    color: rgb(1, 255, 115);
+    padding: 10px;
+}

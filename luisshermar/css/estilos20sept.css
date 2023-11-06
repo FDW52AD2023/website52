@@ -1,0 +1,27 @@
+/* #mp1 .s2 ~ section {
+    background-color: rebeccapurple;
+} */
+
+
+
+#mp1 h2 + section {
+    border-top: 5px double brown;
+}
+
+
+#mp1 .s4.s4:hover {
+    background-color: rgb(255, 0, 217);
+}
+
+#lista1 li:first-child, #lista1 li:last-child{
+    background-color: black;
+    color: white;
+}
+
+#lista1 li:nth-child(even){
+    text-decoration: line-through;
+}
+
+#lista1 li:nth-child(3n){
+    background-color: blueviolet;
+}

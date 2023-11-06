@@ -1,0 +1,76 @@
+
+/* * {
+    border: 3px double blue;
+} */
+
+
+/* selector de tipo */
+li {
+    background-color: gold;
+    color: black;
+    border: 4px dashed lime;
+    border-radius: 2px;
+}
+
+/* selector por id */
+
+#mp1 {
+    border-top: 5px groove gray;
+}
+
+/* selector de clase */
+.sombra {
+    box-shadow: 5px 5px 5px gray;
+}
+
+main.sombra {
+    font-size: 10px;
+}
+
+/* selector por atributos */
+
+[lang] {
+    font-size: 30px;
+}
+
+[lang="es"] {
+    background-color: gray;
+}
+
+[href ="htpps"]{
+    background-color: green;
+}
+
+[href $="mx"]{
+    background-color: red;
+}
+
+[href *="h"]{
+    background-color: black;
+    color: white;
+}
+
+/* selector con desendiente*/
+
+main p{
+    border: 2px dotted blue;
+    border-radius: 5px;
+}
+
+/* selector hijos directos */
+
+main > p {
+    box-sizing: 5px 5px 5px lime;
+}
+
+
+
+
+
+
+
+
+
+
+
+

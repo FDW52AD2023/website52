@@ -1,0 +1,134 @@
+
+/* Selector hermano general */
+
+/* #mp1 .s2 ~ section{
+    background-color: aqua;
+} */
+
+
+/* La sección que sea hermano adyacente de h2 */
+
+/* #mp1 h2 + section {
+    border-top: 5px double green;
+} */
+
+#mp1 .s4:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+#lista1 li:nth-child(6) {
+    background-color: black;
+    color: white;
+}
+
+#lista1 li:nth-child(odd) { /* odd --- son impares */
+    font-size: 5px;
+}
+
+#lista1 li:nth-child(even) { /* odd --- son pares */
+    text-decoration: line-through;
+}
+
+#lista1 li:nth-child(3n) {  /* Cada 3 */
+    background-color: brown;
+}
+
+body {
+    background-image: url('https://free4kwallpapers.com/uploads/originals/2021/06/26/makima-wallpaper.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 8px 8px 8px rgb(226, 212, 80);
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para la sección principal */
+#mp1 {
+    margin: 20px;
+    box-shadow: 8px 8px 8px rgb(226, 212, 80);
+}
+
+.sombra {
+    box-shadow: 8px 8px 8px rgb(226, 212, 80);
+    padding: 20px;
+}
+
+#lista1 {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista1 li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para el artículo */
+article {
+    margin-top: 20px;
+    box-shadow: 8px 8px 8px rgb(226, 212, 80);
+}
+
+/* Estilos para las secciones dentro del artículo */
+article section {
+    margin-bottom: 10px;
+}
+
+.s2 {
+    background-color: #eee;
+}
+
+.s4 {
+    background-color: #f0f0f0;
+}
+
+/* Estilos para el pie de página */
+footer {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 8px 8px 8px rgb(226, 212, 80);
+}
+
+/* Estilos para el aside */
+aside {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-shadow: 8px 8px 8px rgb(226, 212, 80);
+}

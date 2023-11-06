@@ -1,69 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,300;1,500;1,600&family=Roboto&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
-    background-color: #FFFFFF;
+    font-family: sans-serif;
 }
 
-header, footer{
-    background-color: #404040;
-    margin: 10px 0;
-    padding: 10px 0;
+body > header {
+    padding: 2.5rem;
     text-align: center;
-    color: #FFFFFF;
+    background-color: #423152;
+    color: white;
+}
+main {
+    background-color: #F8F8F5;
 }
 
-article {
-    background-color: #E6E6E6;
-    margin: 20px auto;
+.contenedor-evidencia {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.evidencias-article {
+    margin-top: 60px;
+}
+
+.encabezado-evidencia {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.practicas-section {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
     width: 500px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px gray;
 }
 
-h2 {
+.practicas-section > h3 {
     text-align: center;
-    padding: 10px;
+    padding: 1rem;
 }
 
-section {
-    padding: 10px;
-    border-top: 1px solid black;
+.practicas-contenedor {
+    padding: 0 1rem 1rem 1rem;
+    line-height: 1.5;
 }
 
-a {
-    text-decoration: none;
-    padding: 2px 1px 0;
-  }
-  
-a:link {
-    color: #265301;
-  }
-  
-a:visited {
-    color: #437a16;
-}
-  
-a:focus {
-    border-bottom: 1px solid;
-    background: #bae498;
-}
-  
 a:hover {
-    border-bottom: 1px solid;
-    background: #cdfeaa;
-}
-  
-a:active {
-    background: #265301;
-    color: #cdfeaa;
+    color: red;
 }

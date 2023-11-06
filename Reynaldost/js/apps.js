@@ -1,6 +1,5 @@
 /* App1 */
 
-
 /* Obtener las referencias de los elementos a programar */
 const app1Num1 = document.getElementById("app1Num1");
 const app1Num2 = document.getElementById("app1Num2");
@@ -52,20 +51,6 @@ app3BtnCalcular.addEventListener("click", (e) => {
     let operacion = app3Operacion.value;
     let resultado;
 
-    /* checar que operacion seleccione el usuario */
-    /* if(operacion == "s" ){
-        resultado = n1 + n2 ;
-    }
-    else if ( operacion == "r"){
-        resultado = n1 - n2;
-    }
-    else if ( operacion == "m"){
-        resultado = n1 * n2;
-    }
-    else if ( operacion == "d"){
-        resultado = n1 / n2;
-    } */
-
     switch(operacion){
         case "s": resultado = n1 + n2;
             break;
@@ -83,7 +68,6 @@ app3BtnCalcular.addEventListener("click", (e) => {
 
 
 /* App4 */
-
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
 const app4SoloPunto = document.getElementById("app4SoloPunto");
@@ -92,14 +76,11 @@ const app4BtnVer = document.getElementById("app4BtnVer");
 
 app4BtnVer.addEventListener("click", (e) =>{
     e.preventDefault();
-
     let tabla = parseInt(app4Tabla.value);
-
     let lista = document.createElement("ul");
 
     if(!app4Inv.checked){
         for(let i=1 ; i <=10 ; i++){
-
             let resMult;
             if(app4SoloPunto.checked){
                 resMult = ".".repeat(tabla*i);
@@ -107,9 +88,6 @@ app4BtnVer.addEventListener("click", (e) =>{
             else{
                 resMult = tabla*i;
             }
-
-
-
             let mult = tabla + " x " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
@@ -121,24 +99,51 @@ app4BtnVer.addEventListener("click", (e) =>{
         for(let i=10 ; i >=1 ; i--){
 
             let resMult = app4SoloPunto.checked ? ".".repeat (tabla*1) : tabla*i;
-            
-
             let mult = tabla + " x " + i + " = " + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
-    
             lista.appendChild(item);
         }
     }
-    
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
 });
 
 
 /* App 5 */
+const app5BtnModificar = document.getElementById("app5BtnModificar");
+function changeBorder(){
+    const app5Borde = document.getElementById("app5Borde").value;
+    const app5Color = document.getElementById("app5Color").value;
+    const app5Grosor = document.getElementById("app5Grosor").value + "px";
+    const app5Tipo = document.getElementById("app5Tipo").value;
+    const divPrueba = document.getElementById("divTest");
+    const estiloDiv = app5Grosor + " " + app5Tipo + " " + app5Color;
 
+    if (app5Borde == "Todos"){
+        divPrueba.style.border = estiloDiv;
+    }
+    else if (app5Borde == "Superior") {
+        divPrueba.style.borderTop = estiloDiv;
+    }
+    else if (app5Borde == "Inferior") {
+        divPrueba.style.borderBottom = estiloDiv;
+    }
+    else if (app5Borde == "Izquierdo") {
+        divPrueba.style.borderLeft = estiloDiv;
+    }
+    else if (app5Borde == "Derecho") {
+        divPrueba.style.borderRight = estiloDiv;
+    }
+    else {
+        divPrueba.style.border = "none";
+    }};
 
+app5BtnModificar.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    changeBorder();
+});
 
 /* App6 */
 
@@ -185,7 +190,6 @@ app6BtnVer.addEventListener("click",(e) => {
 
     }
 
-
     let numero = ini;
     while(numero <= fin ){
         console.log(numero);
@@ -200,3 +204,30 @@ app6BtnVer.addEventListener("click",(e) => {
     app6Res.innerHTML="";
     app6Res.appendChild(lista);
 });
+
+/* App7 */
+
+const app7Id = document.getElementById("app7Id");
+const app7Nombre = document.getElementById("app7Nombre");
+const app7Altura = document.getElementById("app7Altura");
+const app7Peso = document.getElementById("app7Peso");
+const app7Imagen = document.getElementById("app7Imagen");
+const app7BtnBuscar = document.getElementById("app7BtnBuscar");
+
+app7BtnBuscar.addEventListener("click", e => {
+    e.preventDefault();
+    let id = app7Id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => mostrarDato(data));
+});
+
+function mostrarDato(data){
+    console.log(data);
+    app7Nombre.innerHTML = "Nombre: " + data.name;
+    app7Altura.innerHTML = "Altura: " + data.height;
+    app7Peso.innerHTML = "Peso: " + data.weight;
+    app7Imagen.src = data.sprites.other.home.front_default;
+}

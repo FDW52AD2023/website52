@@ -8,7 +8,12 @@
 </head>
 <body>
 
-    <h1>Apps</h1>
+    <h1>Aplicacion Java Script</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Regresar a Evidencias</a></li>
+        </ul>
+    </nav>
 
     <form id="app1" action="">
         <h2>Programa suma numeros</h2>
@@ -114,15 +119,18 @@
         <div><input class="btn" id="app4BtnVer" type="submit" value="Ver Tabla"></div>
 
     </form>
-    <form action="APP 5">
+    <form id="APP 5">
         <h2>Aplicacion de Bordes</h2>
-        <label for="app5Borde">Borde:</label>
+        <div>
+            <label for="app5Borde">Borde:</label>
         <select name="app5Borde" id="app5Borde" >
+            <option value="T">Todos</option>
             <option value="S">Superior</option>
             <option value="I">Inferior</option>
             <option value="Iz">Izquierda</option>
             <option value="D">Derecha</option>
         </select>
+        </div>
 
         <div class="row">
             <label for="app5Color">Color</label>
@@ -133,28 +141,28 @@
             <label for="app5Grosor">Grosor</label>
             <input type="text" name="app5Grosor" id="app5Grosor">
         </div>
-        <label for="app5Tipo">Tipo:</label>
-        <select name="app5Tipo" id="app5Tipo" >
-            <option value="Do">Dotted</option>
-            <option value="Da">Dashed</option>
-            <option value="So">Solid</option>
-            <option value="Dou">Double</option>
-            <option value="Gro">Groove</option>
-            <option value="Ri">Ridge</option>
-            <option value="In">Inset</option>
-            <option value="Out">Outser</option>
-        </select>
 
         <div class="row">
-            <label for="app5Prueba"></label>
-            <div  class="row">
-                <input id="app5Prueba" class="btn1" type="submit" value="Div de prueba">
-
-
-            </div>
+            <label for="app5Tipo">Tipo:</label>
+        <select name="app5Tipo" id="app5Tipo" >
+            <option value="Dotted">Dotted</option>
+            <option value="Dashed">Dashed</option>
+            <option value="Solid">Solid</option>
+            <option value="Double">Double</option>
+            <option value="Groove">Groove</option>
+            <option value="Ridge">Ridge</option>
+            <option value="Inset">Inset</option>
+            <option value="Outset">Outset</option>
+        </select>
         </div>
 
-        <div class="row"><input class="btn" id="app5BtnAplicar" type="submit" value="Aplicar"></div>
+        <div id="app5res">
+            <h3>Prueba</h3>
+        </div>
+
+        <div>
+            <input class="btn" id="app5BtnAplicar" type="submit" value="Aplicar">
+        </div>
     </form>
 
 

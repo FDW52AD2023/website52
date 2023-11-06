@@ -183,6 +183,7 @@ app3BtnCalcular.addEventListener("click", (e) => {
 
 /* App 5 */
 
+
 /* App 6 */
 function perfecto(numero){
     let divisor = 1

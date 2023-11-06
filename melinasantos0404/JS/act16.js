@@ -7,7 +7,7 @@ console.warn("soy de mensaje tipo warning");
 console.error("soy mensaje tipo error");
 console.info("soy un mensaje tipo info");
 
-alert("Hola bienvenido!!! ");
+alert("HELLOU BIENVENIDO!!! ");
 
 prompt("¿Cuantos años tienes?");
 

@@ -159,49 +159,42 @@ appBtnVer.addEventListener("click", (e) => {
 });
 
 
-/*  APP 5  
-const app5Borde = document.getElementById("app5Borde");
-const app5Color = document.getElementById("app5Color");
-const app5Grosor = document.getElementById("app5Grosor");
-const app5Tipo = document.getElementById("app5Tipo");
-const app5BtnVer = document.getElementById("app5BtnVer");
-const app5Resultados = document.getElementById("app5Resultados");
+/*  APP 5  */
+const app5BtnAplicarBorde = document.getElementById("app5BtnAplicarBorde");
 
-function cambiarborde() {
-    const lugar = app5Borde.value;
-    const grosor = app5Grosor.value;
-    const tipo = app5Tipo.value;
-    const borde = `${grosor} ${tipo} black`;
+function CreadorBorde(){
+    const app5Borde = document.getElementById("app5Borde").value;
+    const app5Grosor = document.getElementById("app5Grosor").value + "px";
+    const app5Color = document.getElementById("app5Color").value;
+    const app5Tipo = document.getElementById("app5Tipo").value;
+    const app5Prueba = document.getElementById("app5Prueba");
 
-    app5Resultados.style.border = 'none';
-    app5Resultados.style.borderSup = 'none';
-    app5Resultados.style.borderDerecha = 'none';
-    app5Resultados.style.borderBoton = 'none';
-    app5Resultados.style.borderIzquierda = 'none';
+    const estilo = app5Grosor + " " + app5Color + " " + app5Tipo;
 
-
-    if (lugar === 'all') {
-        app5Resultados.style.border = borde;
-        
-    } else {
-        app5Resultados.style['border' + lugar.charAt(0).toUpperCase() + lugar.slice(1)] = borde;
-    }
-}
-
-app5BtnVer.addEventListener("click", (e) =>{
-    e.preventDefault();
-    actualizarborde()
-});
-app5BtnVer.addEventListener("click" , (e) => {
-    actualizarborde()
-});
-
-app5BtnVer.addEventListener("click", (e) => {
-    const colorElegido = app5Color.value;
-       
-        resultado5.style.backgroundColor = colorElegido;
-});
-*/
+    switch (app5Borde){
+        case "t" : 
+            app5Prueba.style.border = estilo;
+            break;
+        case "a" : 
+            app5Prueba.style.borderTop = estilo;
+            break;
+        case "ab" : 
+            app5Prueba.style.borderBottom = estilo;
+            break;
+        case "i" : 
+            app5Prueba.style.borderLeft = estilo;
+            break;
+        case "d" : 
+            app5Prueba.style.borderRight = estilo;
+            break;
+        default:
+            break;
+    }}
+    app5BtnAplicarBorde.addEventListener("click", (e) => {
+        e.preventDefault();
+    
+        CreadorBorde();
+    })
 
 /* App6 */
 function Perfecto(numero){

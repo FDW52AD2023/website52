@@ -1,0 +1,189 @@
+body {
+    background-color: #f5f6f7;
+}
+header button {
+    background-color: #0a0a23;
+    color: white;
+    border: solid white 1px;
+    font-size: 16px;
+    margin-right: 10px ;
+}
+
+.amarillos{
+    border-color: #feac32;
+    background-color: #feac32;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    width: 60%;
+}
+header h2 {
+    color: white;
+}
+#header_main {
+    background-color: #0a0a23;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    width: 100%;
+}
+input{
+    margin-left: -80px;
+    width: 35%;
+    font-size: 16px;
+}
+
+#botones_navegacion{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#primera {
+    margin-top: 80px;
+}
+
+#primera h1 {
+    font-size: 40px;
+    text-align: center;
+}
+#primera p {
+    font-size: 21px;
+    text-align: center;
+    margin: auto;
+}
+
+#primera div{
+    text-align: center;
+    margin-top: 15px;
+}
+#primera_boton{
+    margin: auto;
+    width: 50%;
+}
+#primera img{
+    margin-top: 15px;
+}
+
+#primera_fotos2 {
+    background-color: #3b3b4f;
+    text-align: center;
+}
+#primera_fotos2 h2 {
+    color: white;
+    font-size: 40px;
+}
+
+#segunda {
+    text-align: center;
+}
+
+#segunda h2 {
+    font-size: 40px;
+}
+#segunda #shawn, #sarah, #emma {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+#segunda #texto {
+    font-size: 20px;
+    width: 70%;
+}
+
+#tercera, #prepare_for {
+    text-align: center;
+}
+
+#tercera h2{
+    font-size: 40px;
+}
+.tercera_boton{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+#tercera button{
+    width: 50%;
+    border: solid black;
+    margin-bottom: 10px;
+}
+#tercera_amarillo{
+    font-size: 25px;
+    text-align: center;
+    border-color: #feac32;
+    background-color: #feac32;
+    color: black;
+}
+#cuarta{
+    text-align: center;
+}
+#cuarta h2{
+    width: 60%;
+    margin: auto;
+    font-size: 40px;
+}
+
+#cuarta div {
+    font-size: 20px;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+#cuarta button{
+    margin: auto;
+    width: 40%;
+}
+
+
+footer {
+    background-color: #dfdfe2;
+}
+
+#div_footer {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+#div_footer_1 {
+    width: 50%;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+#div_footer_2 h2 {
+    font-size: 15px;
+    text-decoration: none;
+}
+#div_footer_2 {
+    width: 25%;
+    padding-top: 20px;
+}
+#div_footer_2 p{
+    text-decoration: underline;
+}
+#div_footer_3 {
+    width: 25%;
+    padding-top: 40px;
+    text-decoration: underline;
+}
+
+#nav_footer hr {
+    width: 95%;
+    color: #d0d0d5;
+}
+
+nav {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    justify-content: space-between;
+}
+
+nav a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}

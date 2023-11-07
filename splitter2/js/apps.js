@@ -142,6 +142,63 @@ app4Inv.addEventListener
 
 /*app 5*/
 
+document.addEventListener("DOMContentLoaded", function() {
+    const app5Borde = document.getElementById("app5Borde");
+    const app5Color = document.getElementById("app5Color");
+    const app5Grosor = document.getElementById("app5Grosor");
+    const app5Tipo = document.getElementById("app5Tipo");
+    const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+    const app5Div = document.getElementById("Test");
+
+    function AplicarBorde() {
+        let opcionBorde = app5Borde.value;
+        let color = app5Color.value;
+        let grosor = parseInt(app5Grosor.value) + "px ";
+        let opcionTipo = app5Tipo.value;
+        let tipoCSS;
+
+        switch (opcionTipo) {
+            case "v":
+                tipoCSS = "solid";
+                break;
+            case "w":
+                tipoCSS = "dotted";
+                break;
+            case "x":
+                tipoCSS = "groove";
+                break;
+            case "y":
+                tipoCSS = "dashed";
+                break;
+            case "z":
+                tipoCSS = "double";
+                break;
+        }
+
+        switch (opcionBorde) {
+            case "a":
+                app5Div.style.setProperty("border", `${color} ${grosor} ${tipoCSS}`);
+                break;
+            case "b":
+                app5Div.style.setProperty("border-top", `${color} ${grosor} ${tipoCSS}`);
+                break;
+            case "c":
+                app5Div.style.setProperty("border-bottom", `${color} ${grosor} ${tipoCSS}`);
+                break;
+            case "d":
+                app5Div.style.setProperty("border-left", `${color} ${grosor} ${tipoCSS}`);
+                break;
+            case "e":
+                app5Div.style.setProperty("border-right", `${color} ${grosor} ${tipoCSS}`);
+                break;
+        }
+    }
+
+    app5BtnAplicar.addEventListener("click", function(e) {
+        e.preventDefault();
+        AplicarBorde();
+    });
+});
 
 /*app6*/
 

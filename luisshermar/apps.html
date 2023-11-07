@@ -96,57 +96,88 @@
                 <input class="btn" id="app4BtnVer" type="submit" value="Ver tabla">
             </div>
         </form>
+        <form id="app5">
+          <h2>Borde de un elemento div</h2>
+          <div class="row">
+            <label for="app5Borde">Borde</label>
+            <select name="app5Borde" id="app5Borde" required>
+                <option value="">Elige una opción</option>
+              <option value="all">todos</option>
+              <option value="top">arriba</option>
+              <option value="bottom">inferior</option>
+              <option value="left">izquierda</option>
+              <option value="right">derecha</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="app5Color">Color</label>
+            <input type="color" id="app5Color" required>
+          </div>
+          <div class="row">
+            <label for="app5Grosor">Grosor</label>
+            <input type="text" name="app5Grosor" id="app5Grosor" required>
+          </div>
+          <div class="row">
+            <label for="app5Tipo">Tipo</label>
+            <select name="app5Tipo" id="app5Tipo" required>
+                <option value="">Elige una opción</option>
+              <option value="dotted">dotted</option>
+              <option value="dashed">dashed</option>
+              <option value="solid">solid</option>
+              <option value="double">double</option>
+              <option value="groove">groove</option>
+              <option value="ridge">ridge</option>
+              <option value="inset">inset </option>
+              <option value="outset">outset</option>
+            </select>
+          </div>
+          <div class="row">
+            <div id="app5Prueba">
+                Prueba
+            </div>
+          </div>
+          <div class="boton">
+            <input class="btn" id="app5VerDiv" type="submit" value="Ver Div">
+        </div>
+        </form>
+        <form action="" id="app6">
+            <h2>Programa Numeros perfectos</h2>
+            <div class="row">
+                <label for="app6Ini">Numero inicial:</label>
+                <input type="text" name="app6Ini" id="app6Ini">
+            </div>
+            <div class="row">
+                <label for="app6Fin">Numero Final:</label>
+                <input type="text" name="app6Fin" id="app6Fin">
+            </div>
+            <div class="row">
+                <label for="app6Res">Resultado: </label>
+                <div id="app6Res"></div>
+            </div>
+            <div class="btn">
+                <input type="submit" class="btn" id="app6Btn">
+            </div>
+        </form>
+        <form action="" id="app7">
+                <h2>Programa Buscar Pokemones</h2>
+                <div class="row">
+                    <label for="app7Id">Id:</label>
+                    <input type="text" name="app7Id" id="app7Id">
+                </div>
+                <div class="row">
+                    <label for="app7Res">Resultado: </label>
+                    <ul>
+                        <li><h2 id="app7Nombre"></h2></li>
+                        <li><h3 id="app7Peso"></h3></li>
+                        <li><h3 id="app7Altura"></h3></li>
+                        <li><img id="app7Imagen" src="" alt=""></img></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <input type="submit" class="btn" id="app7Btn">
+                </div>
+        </form>
     </div>
-
-
-    
-    <form id="app6" action="">
-        <h2>Programa Numeros perfectos</h2>
-
-        <div class="row">
-            <label for="appIni">Numero Inicial</label>
-            <input type="text" name="app6Ini" id="app6Ini">
-        </div>
-        <div class="row">
-            <label for="app6Fin">Numero Final</label>
-            <input type="text" name="app6Fin" id="app6Fin">
-        </div>
-
-        <div class="boton">
-            <input class="btn" id="app6btnVer" type="submit" value="Calcular">
-        </div>
-
-        <div class="container">
-
-        </div>
-    </form>
-
-
-    <form id="app6" action="">
-        <h2>Programa Buscar pokemones</h2>
-
-        <div class="row">
-            <label for="app7">id o nombre</label>
-            <input type="text" name="app7id" id="app7id">
-        </div>
-        <div class="row">
-            <label for="app6Fin">Resultado</label>
-        </div>
-
-        <div class="row">
-            <label for="">Resultado</label>
-            <ul>
-                <li><h2 id="app7Nombre"></h2></li>
-                <li><h2 id="app7peso"></h2></li>
-                <li><h2 id="app7altura"></h2></li>
-                <li><img id="app7imagen" src="" alt=""></li>
-            </ul>
-        </div>
-
-        <div>
-            <input class="btn" id="app7buscar" type="submit" >
-        </div>
-    </form>
     <script src="js/apps.js"></script>
 </body>
 </html>

@@ -1,3 +1,94 @@
+/* App7 */
+
+const app7Id = document.getElementById("app7Id");
+const app7Nombre = document.getElementById("app7Nombre");
+const app7Peso = document.getElementById("app7Peso");
+const app7Altura = document.getElementById("app7Altura");
+const app7Imagen = document.getElementById("app7Imagen");
+const app7Buscar = document.getElementById("app7Buscar");
+
+app7Buscar.addEventListener("click", e=>{
+    e.preventDefault();
+    let id = app7Id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => mostrarDatos(data))
+})
+
+function mostrarDatos(data){
+    app7Nombre.innerHTML = "Nombre: " + data.name;
+    app7Altura.innerHTML = "Altura: " + data.height;
+    app7Peso.innerHTML = "Peso: " + data.weight;
+    app7Imagen.src = data.sprites.other.home.front_default;
+}
+
+
+
+
+
+
+
+/* App 6 */
+function perfecto(numero){
+    let divisor = 1
+    let suma = 0;
+    do{
+        if(numero % divisor == 0){
+            suma += divisor;
+        }
+        divisor++;
+    }while(divisor < numero );
+        return numero == suma;
+    }
+
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    /* if (ini > fin) {
+        let aux = ini 
+        ini = fin
+        fin = ini
+    } */
+
+    if (ini > fin) {
+        ini = parseInt(app6Fin.value);
+        fin = parseInt(app6Ini.value);
+    }
+
+    let numero = ini;
+    
+    while (numero <= fin) {
+
+        /* Checar si es perfecto */
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+    }
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
+})
+
+
+
+
+
+
+
 /* App5 */
 
 const app5Borde = document.getElementById("app5Borde");
@@ -11,44 +102,24 @@ app5Btn.addEventListener("click", (e) =>{
     e.preventDefault();
 
 
-    if (app5Borde == "todos"){
+    if (app5Borde.value == "todos"){
         app5Prueba.style.cssText = `border: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
-    else if (app5Prueba == "superior") {
+    else if (app5Prueba.value == "superior") {
         app5Borde.style.cssText = `border-top: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
-    else if (app5Prueba == "inferior") {
+    else if (app5Prueba.value == "inferior") {
         app5Borde.style.cssText = `border-bottom: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
-    else if (app5Prueba == "izquiero") {
+    else if (app5Prueba.value == "izquiero") {
         app5Borde.style.cssText = `border-left: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
-    else if (app5Prueba == "derecho") {
+    else if (app5Prueba.value == "derecho") {
         app5Borde.style.cssText =  `border-right: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
     }
 
  
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -133,3 +133,122 @@ app4Inv.addEventListener("click", (e) => {
 app4Solopunto.addEventListener("click", (e) => {
     mostrartabla()
 })
+/* App 5 */
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5res = document.getElementById("app5res");
+const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+
+app5BtnAplicar.addEventListener("click", (e) => {
+    e.preventDefault();
+    let opciones = app5Borde.value;
+    let color = app5Color.value;
+    let grosor = app5Grosor.value + "px";
+    let tipo = app5Tipo.value;
+
+    if(opciones == "T"){
+        app5res.style.borderColor =  color;
+        app5res.style.borderWidth = grosor;
+        app5res.style.borderStyle = tipo;
+    }
+    else if(opciones == "S"){
+        app5res.style.borderTopColor =  color;
+        app5res.style.borderTopWidth = grosor;
+        app5res.style.borderTopStyle = tipo;
+    }
+    else if(opciones == "I"){
+        app5res.style.borderBottomColor =  color;
+        app5res.style.borderBottomWidth = grosor;
+        app5res.style.borderBotoomStyle = tipo;
+    }
+    else if(opciones == "Iz"){
+        app5res.style.borderLeftColor =  color;
+        app5res.style.borderLeftWidth = grosor;
+        app5res.style.borderLeftStyle = tipo;
+    }
+    else if(opciones == "D"){
+        app5res.style.borderRightColor =  color;
+        app5res.style.borderRightWidth = grosor;
+        app5res.style.borderRightStyle = tipo;
+    }
+});
+
+
+/* app 6 */
+function Perfecto(Numero){
+    let divisor = 1
+    let suma = 0;
+    do{
+        if(Numero%divisor==0){
+            suma += divisor;
+        }
+        divisor++;
+    }while( divisor < Numero);
+    return Numero==suma;
+}
+
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fi = document.getElementById("app6Fi");
+const app6Res= document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    
+    let Ini = parseInt(app6Ini.value);
+    let Fin = parseInt(app6Fin.value);
+
+    if(Ini>Fin){
+        let aux = Ini;
+        Ini=Fin;
+        Fin=aux;
+    }
+    
+    /* if(Ini>Fin){
+        Ini=parseInt(app6Fin.value);
+        Fin=parseInt(app6Ini.value);
+    } */
+    let Numero = Ini;
+
+
+    while(Numero <= Fin ){
+        /* checar ai es perfecto */
+        if(Perfecto(Numero)){
+            let item= document.createElement("li");
+            item.innerHTML= Numero;
+            lista.appendChild(item);
+        }
+        Numero++;
+    }
+    app6Res.innerHTML="";
+    app6Res.appendChild(lista);
+
+});
+/* app 7 */
+const app7Id = document.getElementById("app7Id");
+const app7nombre = document.getElementById("app7nombre");
+const app7altura= document.getElementById("app7altura");
+const app7peso= document.getElementById("app7peso");
+const app7imagen=document.getElementById("app7imagen");
+const app7Btnbuscar = document.getElementById("app7Btnbuscar");
+
+app7Btnbuscar.addEventListener("click", (e) => {
+    e.preventDefault();
+    let id = app7Id.value;
+    let url=  "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => mostrarDatos(data));
+});
+function mostrarDatos(data){
+    console.log(data)
+    app7nombre.innerHTML="Nombre: "+ data.name;
+    app7altura.innerHTML= "Altura: " + data.height;
+    app7peso.innerHTML= "Peso: "+data.weight;
+    app7imagen.src = data.sprites.other.home.front_default;
+}

@@ -1,3 +1,64 @@
+/* App 6 */
+
+function perfecto(numero){
+    let divisor = 1
+    let suma = 0;
+    do{
+        if(numero % divisor == 0){
+            suma += divisor;
+        }
+        divisor++;
+    }while(divisor < numero);
+    return numero == suma;
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let Ini = parseInt(app6Ini.value);
+    let Fin = parseInt(app6Fin.value);
+
+    if(Ini > Fin){
+        Ini = parseInt(app6Fin.value);
+        Fin = parseInt(app6Ini.value);
+    }
+
+     let numero = Ini;
+
+    while(numero <= Fin){
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+    } 
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
+});
+
+
+
+
+
+
+/* App 5 */
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+
+
+
+
+
 /* App 4 */
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
@@ -5,36 +66,54 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
+
 app4BtnVer.addEventListener("click", (e) => {
     e.preventDefault();
-
+    console.log("Ddd");
     let tabla = parseInt(app4Tabla.value);
 
     let lista = document.createElement("ul");
 
     if( !app4Inv.checked ){
-        for(let i = 10 ; i >= 1 ; i-- ){
-            let mult = tabla + "X" + i + "=" + tabla * i;
+        for(let i=1 ; i <= 10 ; i++ ){
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+
+            /* let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            } */
+
+            let mult = tabla + "X" + i + "=" + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);
         }
-
     }
     else{
-        for(let i = 1; i <= 10 ; i++ ){
-            let mult = tabla + "X" + i + "=" + tabla * i;
+        for(let i=10; i>= 1 ; i-- ){
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+
+            /* let resMult;
+            if(app4SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla * i;
+            } */
+            
+            let mult = tabla + "X" + i + "=" + resMult;
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);
         }
-
+    }
     app4Res.innerHTML = "";
     app4Res.appendChild(lista);
-    }
-
-    
-    
 });
 
 

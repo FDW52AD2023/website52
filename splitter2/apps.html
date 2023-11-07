@@ -9,6 +9,112 @@
 <body>
     <h1>Apps</h1>
 
+    <form id="app5" action="">
+        <h2>Programa "Aplicar borde"</h2>
+        
+        <div class="row">
+            <label for="app5Borde">Borde:</label>
+            <select name="app5Borde" id="app5Borde">
+                <option value="a">Todos</option>
+                <option value="b">Superior</option>
+                <option value="c">Inferior</option>
+                <option value="d">Izquierdo</option>
+                <option value="e">Derecho</option>
+            </select>
+        </div>
+    
+        <div class="row">
+            <label for="app5Color">Color:</label>
+            <input type="color" name="app5Color" id="app5Color">
+        </div>
+    
+        <div class="row">
+            <label for="app5Grosor">Grosor (en pixeles):</label>
+            <input type="text" name="app5Grosor" id="app5Grosor">
+        </div>
+    
+        <div class="row">
+            <label for="app5Tipo">Tipo:</label>
+            <select name="app5Tipo" id="app5Tipo">
+                <option value="v">Solid</option>
+                <option value="w">Dotted</option>
+                <option value="x">Groove</option>
+                <option value="y">Dashed</option>
+                <option value="z">Double</option>
+            </select>
+        </div>
+    
+        <div id="Test">
+            <p>Div de prueba</p>
+        </div>
+    
+        <div>
+            <input class="btn" id="app5BtnAplicar" type="submit" value="Aplicar borde">
+        </div>
+        <br>
+        <hr id="separador">
+        <br>
+    </form>
+    
+    <script>
+        const app5Borde = document.getElementById("app5Borde");
+        const app5Color = document.getElementById("app5Color");
+        const app5Grosor = document.getElementById("app5Grosor");
+        const app5Tipo = document.getElementById("app5Tipo");
+        const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+        const app5Div = document.getElementById("Test");
+    
+        function AplicarBorde() {
+            let opcionBorde = app5Borde.value;
+            let color = app5Color.value;
+            let grosor = parseInt(app5Grosor.value) + "px ";
+            let opcionTipo = app5Tipo.value;
+            let tipoCSS;
+    
+            switch (opcionTipo) {
+                case "v":
+                    tipoCSS = "solid";
+                    break;
+                case "w":
+                    tipoCSS = "dotted";
+                    break;
+                case "x":
+                    tipoCSS = "groove";
+                    break;
+                case "y":
+                    tipoCSS = "dashed";
+                    break;
+                case "z":
+                    tipoCSS = "double";
+                    break;
+            }
+    
+            switch (opcionBorde) {
+                case "a":
+                    app5Div.style.setProperty("border", `${color} ${grosor} ${tipoCSS}`);
+                    break;
+                case "b":
+                    app5Div.style.setProperty("border-top", `${color} ${grosor} ${tipoCSS}`);
+                    break;
+                case "c":
+                    app5Div.style.setProperty("border-bottom", `${color} ${grosor} ${tipoCSS}`);
+                    break;
+                case "d":
+                    app5Div.style.setProperty("border-left", `${color} ${grosor} ${tipoCSS}`);
+                    break;
+                case "e":
+                    app5Div.style.setProperty("border-right", `${color} ${grosor} ${tipoCSS}`);
+                    break;
+            }
+        }
+    
+        app5BtnAplicar.addEventListener("click", (e) => {
+            e.preventDefault();
+            AplicarBorde();
+        });
+    </script>
+    
+
     <form id="app4" action="">
         <h2>Programa <i>Tabla de multiplicar</i></h2>
         <div class="row">

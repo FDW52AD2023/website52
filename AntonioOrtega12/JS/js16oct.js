@@ -8,15 +8,12 @@ console.error("No exito")
 console.info("Info")
 
 /* alert("Vete feo -<-")
-
 prompt("Decime tu edad -<-") */
-
 /* Variables */
 let grupo;
 let semestre = 5;
 let pedidoFinalizado = true;
 let estado="Nuevo Leon";
-
 grupo = "Grupo 52";
 semestre = "Sexto";
 

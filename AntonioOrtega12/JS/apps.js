@@ -1,81 +1,74 @@
-/* App 1 */
+/* App1 */
 
-/* Obtener las referencias de los elementos a programar */
+/* Obtener las referencias de los elementos a prgramar */
 const app1Num1 = document.getElementById("app1Num1");
 const app1Num2 = document.getElementById("app1Num2");
 const app1Res = document.getElementById("app1Res");
 const app1BtnCalcular = document.getElementById("app1BtnCalcular");
 
 app1BtnCalcular.addEventListener("click", (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     let num1 = parseInt(app1Num1.value);
     let num2 = parseInt(app1Num2.value);
     let suma = num1 + num2;
- 
+
     app1Res.value = suma;
 });
 
-/* App 2 */
+/* App2 */
+
 const app2Texto = document.getElementById("app2Texto");
 const app2Veces = document.getElementById("app2Veces");
 const app2Res = document.getElementById("app2Res");
-const app2BtnRepetir = document.getElementById("app2BtnRepetir");
+const app2BtnRepetir = document.getElementById("app2BtnRepetir")
 
 app2BtnRepetir.addEventListener("click", (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    let num1 = app2Texto.value;
-    let num2 = parseInt(app2Veces.value);
-    let suma = num1.repeat(num2);
- 
-    app2Res.value = suma;
-});
+    let texto = app2Texto.value;
+    let veces = parseInt(app2Veces.value);
+    let resultado = texto.repeat(veces);
+
+    app2Res.value = resultado;
+})
 
 /* App 3 */
+
 const app3Num1 = document.getElementById("app3Num1");
 const app3Num2 = document.getElementById("app3Num2");
-const app3Operacion = document.getElementById("app3Operacion");
+const app3Op = document.getElementById("app3Op");
 const app3Res = document.getElementById("app3Res");
 const app3BtnCalcular = document.getElementById("app3BtnCalcular");
 
 app3BtnCalcular.addEventListener("click", (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     let n1 = parseInt(app3Num1.value);
     let n2 = parseInt(app3Num2.value);
-
-    let op = (app3Operacion.value);
+    let ope = (app3Op.value);
     let res;
 
-    /* Checar que operacion selecciono el usuario */
-    /* if(op == "S"){
+    /* if (op == "s") {
+        console.log(n1 )
+        console.log(n2) 
         res = n1 + n2;
-    }
-
-    else if (op == "R"){
+    } else if (op == "r"){
         res = n1 - n2;
-    }
-
-    else if (op == "M"){
+    } else if (op == "m") {
         res = n1 * n2;
-    }
-
-    else if (op == "D"){
+    } else {
         res = n1 / n2;
     } */
 
-    switch(op){
-        case "S": res = n1 + n2;
+    switch(ope){
+        case "s": res = n1 + n2;
             break;
-
-        case "R": res = n1 - n2;
+        case "r" : res = n1 - n2;
             break;
-
-        case "M": res = n1 * n2;
+        case "m" : res = n1 * n2;
             break;
-
-        case "D": res = n1 / n2;
+        case "d" : res = n1 / n2;
             break;
     }
 
@@ -83,8 +76,9 @@ app3BtnCalcular.addEventListener("click", (e) => {
 })
 
 /* App 4 */
+
 const app4Tabla = document.getElementById("app4Tabla");
-const app4inv = document.getElementById("app4inv");
+const app4Inv = document.getElementById("app4Inv");
 const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
@@ -93,39 +87,35 @@ app4BtnVer.addEventListener("click", (e) => {
     e.preventDefault();
 
     let tabla = parseInt(app4Tabla.value);
+    
 
     let lista = document.createElement("ul");
 
-    if(!app4inv.checked){
-        for(let i=1; i <= 10; i++){
-
-            let resMult;
-            if(app4SoloPunto.checked){
-                resMult = "°".repeat(tabla * i)
-            }
-            else{
-                resMult = tabla * i;
-            }
-
-            let mult = tabla + " X " + i + " = " + resMult;
+    if (app4Inv.checked && app4SoloPunto.checked){
+        for(let i = 10 ; i >= 1 ; i--) {
+            let mult = tabla + " X " + i + " = " + ".".repeat(tabla * i);
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);
         }
-    }
 
-    else{
-        for(let i=10; i >= 1; i--){
-
-            let resMult;
-            if(app4SoloPunto.checked){
-                resMult = ".".repeat(tabla * i)
-            }
-            else{
-                resMult = tabla * i;
-            }
-
-            let mult = tabla + " X " + i + " = " + resMult;
+    } else if (app4Inv.checked){
+        for(let i = 10 ; i >= 1 ; i--) {
+            let mult = tabla + " X " + i + " = " + tabla * i;
+            let item = document.createElement("li");
+            item.innerHTML = mult;
+            lista.appendChild(item);
+        }
+    } else if (app4SoloPunto.checked) {
+        for(let i = 1 ; i <= 10 ; i++) {
+            let mult = tabla + " X " + i + " = " + ".".repeat(tabla * i);
+            let item = document.createElement("li");
+            item.innerHTML = mult;
+            lista.appendChild(item);
+        }
+    } else {
+        for(let i = 1 ; i <= 10 ; i++) {
+            let mult = tabla + " X " + i + " = " + tabla * i;
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);
@@ -138,73 +128,98 @@ app4BtnVer.addEventListener("click", (e) => {
 
 /* App 5 */
 
+const app5Borde = document.getElementById("app5Borde");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Prueba = document.getElementById("app5Prueba");
+const app5VerDiv = document.getElementById("app5VerDiv");
+
+
+app5VerDiv.addEventListener("click", (e) => {
+    e.preventDefault()
+    
+    if (app5Borde.value == "all") {
+        app5Prueba.style.cssText = `border: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    } else if (app5Borde.value == "top") {
+        app5Prueba.style.cssText = `border-top: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    } else if (app5Borde.value == "bottom") {
+        app5Prueba.style.cssText = `border-bottom: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    } else if (app5Borde.value == "left") {
+        app5Prueba.style.cssText = `border-left: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    } else if (app5Borde.value == "right") {
+        app5Prueba.style.cssText = `border-right: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    }
+})
+
 /* App 6 */
-function perfecto(numero){
+function perfecto(num){
     let divisor = 1
     let suma = 0
-    do{
-        if(numero % divisor == 0){
+    do {
+        if (num % divisor == 0){
             suma += divisor
         }
         divisor++
-    }while(divisor < numero);
-    return numero == suma;
+    }while(divisor < num);
+    return num == suma;
 }
+
 
 const app6Ini = document.getElementById("app6Ini");
 const app6Fin = document.getElementById("app6Fin");
 const app6Res = document.getElementById("app6Res");
-const app6BtnVer = document.getElementById("app6BtnVer");
-const lista = document.createElement("ol")
+const app6Btn = document.getElementById("app6Btn");
+const lista = document.createElement("ol");
 
-app6BtnVer.addEventListener("click", (e) => {
+app6Btn.addEventListener("click", (e) => {
     e.preventDefault()
 
-    let inicio = parseInt(app6Ini.value);
+    let ini = parseInt(app6Ini.value);
     let fin = parseInt(app6Fin.value);
 
-    if(inicio > fin){
-        inicio = parseInt(app6Ini.value);
-        fin = parseInt(app6Fin.value);
+    if (ini > fin){
+        ini = parseInt(app6Fin.value);
+        fin = parseInt(app6Ini.value);
     }
 
-    let numero = inicio;
+    let num = ini;
 
-    while(numero <= fin){
-        if(perfecto(numero)){
+    while (num <= fin) {
+        if(perfecto(num)){
             let item = document.createElement("li");
-            item.innerHTML = numero;
+            item.innerHTML = num;
             lista.appendChild(item);
         }
-
-        numero++
+        num++
     }
     app6Res.innerHTML = "";
     app6Res.appendChild(lista);
+    
 })
 
 /* App 7 */
-const app7Id = document.getElementById("app7Id");
-const app7Nombre = document.getElementById("app7Nombre");
-const app7Altura = document.getElementById("app7Altura");
-const app7Peso = document.getElementById("app7Peso");
-const app7Imagen = document.getElementById("app7Imagen");
-const app7BtnBuscar = document.getElementById("app7BtnBuscar");
 
-app7BtnBuscar.addEventListener("click", e => {
-    e.preventDefault();
-    let id = app7Id.value;
-    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+const app7Id = document.getElementById("app7Id")
+const app7Nombre = document.getElementById("app7Nombre")
+const app7Altura = document.getElementById("app7Altura")
+const app7Peso = document.getElementById("app7Peso")
+const app7Imgaen = document.getElementById("app7Imagen")
+const app7Btn = document.getElementById("app7Btn")
+
+app7Btn.addEventListener("click", (e) => {
+    e.preventDefault()
+    let id = app7Id.value
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id
 
     fetch(url)
         .then(response => response.json())
-        .then(data => mostrarDatos(data));
-
+        .then(data => mostrarDatos(data))
 })
 
 function mostrarDatos(data){
-    app7Nombre.innerHTML = "Nombre: " + data.name;
-    app7Altura.innerHTML = "Altura: " + data.height;
-    app7Peso.innerHTML = "Peso: " + data.weight;
-    app7Imagen.src = data.sprites.other.home.front_default;
+    app7Nombre.innerHTML = "Nombre: " + data.name
+    app7Altura.innerHTML = "Altura " + data.height
+    app7Peso.innerHTML = "Peso: " + data.weight
+    app7Imagen.src = data.sprites.other.home.front_default
 }

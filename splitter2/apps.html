@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps</title>
+    <link rel="stylesheet" href="CSS/apps.css">
+</head>
+<body>
+    <h1>Apps</h1>
+
+    <form id="app5" action="">
+        <h2>Programa "Aplicar borde"</h2>
+        
+        <div class="row">
+            <label for="app5Borde">Borde:</label>
+            <select name="app5Borde" id="app5Borde">
+                <option value="a">Todos</option>
+                <option value="b">Superior</option>
+                <option value="c">Inferior</option>
+                <option value="d">Izquierdo</option>
+                <option value="e">Derecho</option>
+            </select>
+        </div>
+    
+        <div class="row">
+            <label for="app5Color">Color:</label>
+            <input type="color" name="app5Color" id="app5Color">
+        </div>
+    
+        <div class="row">
+            <label for="app5Grosor">Grosor (en pixeles):</label>
+            <input type="text" name="app5Grosor" id="app5Grosor">
+        </div>
+    
+        <div class="row">
+            <label for="app5Tipo">Tipo:</label>
+            <select name="app5Tipo" id="app5Tipo">
+                <option value="v">Solid</option>
+                <option value="w">Dotted</option>
+                <option value="x">Groove</option>
+                <option value="y">Dashed</option>
+                <option value="z">Double</option>
+            </select>
+        </div>
+    
+        <div id="Test">
+            <p>Div de prueba</p>
+        </div>
+    
+        <div>
+            <input class="btn" id="app5BtnAplicar" type="submit" value="Aplicar borde">
+        </div>
+        <br>
+        <hr id="separador">
+        <br>
+    </form>
+    
+    <script>
+        const app5Borde = document.getElementById("app5Borde");
+        const app5Color = document.getElementById("app5Color");
+        const app5Grosor = document.getElementById("app5Grosor");
+        const app5Tipo = document.getElementById("app5Tipo");
+        const app5BtnAplicar = document.getElementById("app5BtnAplicar");
+        const app5Div = document.getElementById("Test");
+    
+        function AplicarBorde() {
+            let opcionBorde = app5Borde.value;
+            let color = app5Color.value;
+            let grosor = parseInt(app5Grosor.value) + "px ";
+            let opcionTipo = app5Tipo.value;
+            let tipoCSS;
+    
+            switch (opcionTipo) {
+                case "v":
+                    tipoCSS = "solid";
+                    break;
+                case "w":
+                    tipoCSS = "dotted";
+                    break;
+                case "x":
+                    tipoCSS = "groove";
+                    break;
+                case "y":
+                    tipoCSS = "dashed";
+                    break;
+                case "z":
+                    tipoCSS = "double";
+                    break;
+            }
+    
+            switch (opcionBorde) {
+                case "a":
+                    app5Div.style.setProperty("border", `${color} ${grosor} ${tipoCSS}`);
+                    break;
+                case "b":
+                    app5Div.style.setProperty("border-top", `${color} ${grosor} ${tipoCSS}`);
+                    break;
+                case "c":
+                    app5Div.style.setProperty("border-bottom", `${color} ${grosor} ${tipoCSS}`);
+                    break;
+                case "d":
+                    app5Div.style.setProperty("border-left", `${color} ${grosor} ${tipoCSS}`);
+                    break;
+                case "e":
+                    app5Div.style.setProperty("border-right", `${color} ${grosor} ${tipoCSS}`);
+                    break;
+            }
+        }
+    
+        app5BtnAplicar.addEventListener("click", (e) => {
+            e.preventDefault();
+            AplicarBorde();
+        });
+    </script>
+    
+
+    <form id="app4" action="">
+        <h2>Programa <i>Tabla de multiplicar</i></h2>
+        <div class="row">
+            <label for="app4Tabla">Numero:</label>
+            <input type="text" name="app4Tabla" id="app4Tabla">
+        </div>
+
+        <div class="row">
+            <input type="checkbox" name="app4Inv" id="app4Inv">
+            <label for="app4Inv">Tabla invertida</label>
+        </div>
+
+        <div class="row">
+            <input type="checkbox" name="app4SoloPunto" id="app4SoloPunto">
+            <label for="app4SoloPunto">Mostrar resultados con el símbolo punto (.)</label>
+        </div>
+        
+        <div class="row">
+            <label for="app4Res">Resultado:</label>
+            <div id="app4Res">
+
+            </div>
+        </div>
+
+        <div>
+            <input class="btn" id="app4BtnVer" type="submit" value="Ver tabla">
+        </div>
+    </form>
+
+    <form id="app3" action="">
+        <h2>Programa <i>Operaciones Aritméticas</i></h2>
+        <div class="row">
+            <label for="app3Num1">Numero:</label>
+            <input type="text" name="app3Num1" id="app3Num1">
+        </div>
+
+        <div class="row">
+            <label for="app3Num2">Numero:</label>
+            <input type="text" name="app3Num2" id="app3Num2">
+        </div>
+
+        <div class="row">
+            <label for="app3Operacion">Operación:</label>
+            <select name="app3Operacion" id="app3Operacion">
+                <option value="s">Suma</option>
+                <option value="r">Resta</option>
+                <option value="m">Multiplicación</option>
+                <option value="d">División</option>
+            </select>
+        </div>
+        
+        <div class="row">
+            <label for="app3Res">Resultado:</label>
+            <input readonly type="text" name="app3Res" id="app3Res"> 
+        </div>
+
+        <div>
+            <input class="btn" id="app3BtnCalcular" type="submit" value="Calcular">
+        </div>
+    </form>
+
+    <form id="app2" action="">
+        <h2>Programa <i>Repite cadena</i></h2>
+        <div class="row">
+            <label for="app2Texto">Texto:</label>
+            <input type="text" name="app2Texto" id="app2Texto">
+        </div>
+
+        <div class="row">
+            <label for="app2Veces">Veces:</label>
+            <input type="text" name="app2Veces" id="app2Veces">
+        </div>
+        
+        <div class="row">
+            <label for="app2Res">Resultado:</label>
+            <input readonly type="text" name="app2Res" id="app2Res"> 
+        </div>
+
+        <div>
+            <input class="btn" id="app2BtnRepetir" type="submit" value="Repetir">
+        </div>
+    </form>
+
+
+    <form id="app1" action="">
+        <h2>Programa <i>Suma números</i></h2>
+        <div class="row">
+            <label for="">Numero:</label>
+            <input type="text" name="app1Num1" id="app1Num1">
+        </div>
+
+        <div class="row">
+            <label for="">Numero:</label>
+            <input type="text" name="app1Num2" id="app1Num2">
+        </div>
+        
+        <div class="row">
+            <label for="">Resultado:</label>
+            <input readonly type="text" name="app1Res" id="app1Res"> 
+        </div>
+
+        <div>
+            <input class="btn" id="app1BtnCalcular" type="submit" value="Calcular">
+        </div>
+    </form>
+
+    <form id="app6" action="">
+        <h2>Programa <i>numeros perfectos</i></h2>
+        <div class="row">
+            <label for="app6Ini">Texto:</label>
+            <input type="text" name="app6Ini" id="app6Ini">
+        </div>
+    
+        <div class="row">
+            <label for="app6Fin">Veces:</label>
+            <input type="text" name="app6Fin" id="app6Fin">
+        </div>
+        
+        <div class="row">
+            <label for="app6Res">Resultado:</label>
+            <div id="app6Res"></div>
+        </div>
+    
+        <div>
+            <input class="btn" id="app6BtnVer" type="submit" value="Ver numeros">
+        </div>
+    </form>
+    
+    <script src="js/apps.js"></script>
+
+    <form id="app7" action="">
+        <h2>Programa "Buscar pokemon"</h2>
+        <div class="row">
+            <label for="app7Id">Id o nombre:</label>
+            <input type="text" name="app7Id" id="app7Id">
+        </div>
+        
+        <div class="row">
+            <label>Resultado:</label>
+            <ul>
+                <li ><h2 id="app7Nombre"></h2></li>
+                <li><h3 id="app7Peso"></h3></li>
+                <li><h3 id=app7Altura></h3></li>
+                <li><img id="app7Imagen" src="" alt=""></li>
+            </ul>
+        </div>
+
+        <div>
+            <input class="btn" id="app7BtnBuscar" type="submit" value="Buscar">
+        </div>
+    </form>
+</body>
+</html>
+
+

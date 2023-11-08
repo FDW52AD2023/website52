@@ -93,10 +93,7 @@ app4BtnVer.addEventListener("click", (e) => {
 
     if (app4Inv.checked && app4SoloPunto.checked){
         for(let i = 10 ; i >= 1 ; i--) {
-            let punto = ".";
-            let veces = tabla * i;
-            punto = punto.repeat(veces);
-            let mult = tabla + " X " + i + " = " + punto;
+            let mult = tabla + " X " + i + " = " + ".".repeat(tabla * i);
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);
@@ -111,10 +108,7 @@ app4BtnVer.addEventListener("click", (e) => {
         }
     } else if (app4SoloPunto.checked) {
         for(let i = 1 ; i <= 10 ; i++) {
-            let punto = ".";
-            let veces = tabla * i
-            punto = punto.repeat(veces)
-            let mult = tabla + " X " + i + " = " + punto;
+            let mult = tabla + " X " + i + " = " + ".".repeat(tabla * i);
             let item = document.createElement("li");
             item.innerHTML = mult;
             lista.appendChild(item);
@@ -132,67 +126,100 @@ app4BtnVer.addEventListener("click", (e) => {
     app4Res.appendChild(lista);
 })
 
-/* App6 */
+/* App 5 */
 
-function Perfecto(numero){
+const app5Borde = document.getElementById("app5Borde");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Prueba = document.getElementById("app5Prueba");
+const app5VerDiv = document.getElementById("app5VerDiv");
 
+
+app5VerDiv.addEventListener("click", (e) => {
+    e.preventDefault()
+    
+    if (app5Borde.value == "all") {
+        app5Prueba.style.cssText = `border: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    } else if (app5Borde.value == "top") {
+        app5Prueba.style.cssText = `border-top: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    } else if (app5Borde.value == "bottom") {
+        app5Prueba.style.cssText = `border-bottom: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    } else if (app5Borde.value == "left") {
+        app5Prueba.style.cssText = `border-left: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    } else if (app5Borde.value == "right") {
+        app5Prueba.style.cssText = `border-right: ${app5Grosor.value} ${app5Tipo.value} ${app5Color.value};`;
+    }
+})
+
+/* App 6 */
+function perfecto(num){
+    let divisor = 1
+    let suma = 0
+    do {
+        if (num % divisor == 0){
+            suma += divisor
+        }
+        divisor++
+    }while(divisor < num);
+    return num == suma;
 }
 
+
 const app6Ini = document.getElementById("app6Ini");
-const appfin = document.getElementById("app6fin");
+const app6Fin = document.getElementById("app6Fin");
 const app6Res = document.getElementById("app6Res");
-const app6btnVer = document.getElementById("app6btnVer");
-const list = document.createElement("ol")
+const app6Btn = document.getElementById("app6Btn");
+const lista = document.createElement("ol");
 
-
-app6btnVer.addEventListener("click", {e} => {
+app6Btn.addEventListener("click", (e) => {
     e.preventDefault()
 
-    let Ini = parseInt(app6Ini.value)
-    let fin = parseInt(app6fin.value)
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    if (ini > fin){
+        ini = parseInt(app6Fin.value);
+        fin = parseInt(app6Ini.value);
+    }
+
+    let num = ini;
+
+    while (num <= fin) {
+        if(perfecto(num)){
+            let item = document.createElement("li");
+            item.innerHTML = num;
+            lista.appendChild(item);
+        }
+        num++
+    }
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
     
+})
 
-    if (Ini > fin) {
-        let aux = Ini
-        Ini = fin
-        Fin = aux
-    }
+/* App 7 */
 
-    let numero  = Ini
+const app7Id = document.getElementById("app7Id")
+const app7Nombre = document.getElementById("app7Nombre")
+const app7Altura = document.getElementById("app7Altura")
+const app7Peso = document.getElementById("app7Peso")
+const app7Imgaen = document.getElementById("app7Imagen")
+const app7Btn = document.getElementById("app7Btn")
 
-    while (numero <= fin) {
-        console.log(numero);
-        numero++;
-    }
-
-    if 
-});
-
-/*  App 7  */
-
-const app7id = document.getElementById("app7id")
-const app7nombre = document.getElementById("app7nombre")
-const app7altura = document.getElementById("app7altura")
-const app7peso = document.getElementById("app7peso")
-const app7imagen = document.getElementById("app7imagen")
-const app7buscar = document.getElementById("app7buscar")
-
-app7buscar.addEventListener("click", e => {
-    let id = app7id.value
+app7Btn.addEventListener("click", (e) => {
+    e.preventDefault()
+    let id = app7Id.value
     let url = "https://pokeapi.co/api/v2/pokemon/" + id
 
     fetch(url)
-        .then(Response => Response.json())
-        .then(data => mostrarDatos(data));
-
+        .then(response => response.json())
+        .then(data => mostrarDatos(data))
+})
 
 function mostrarDatos(data){
-    app7nombre.innerHTML = "Nombre" + data.name
-    app7altura.innerHTML = "altura" + data.height
-    app7peso.innerHTML = "Nombre" + data.name
-
-
-
-
+    app7Nombre.innerHTML = "Nombre: " + data.name
+    app7Altura.innerHTML = "Altura " + data.height
+    app7Peso.innerHTML = "Peso: " + data.weight
+    app7Imagen.src = data.sprites.other.home.front_default
 }
-    

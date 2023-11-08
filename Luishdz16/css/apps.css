@@ -1,5 +1,45 @@
 * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
     font-family: sans-serif;
+}
+
+body > header {
+    padding: 2.5rem;
+    text-align: center;
+    background-color: #423152;
+    color: white;
+    position: fixed;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10vw;
+}
+
+.container-header > a {
+    padding: 10px 30px;
+    border: 3px solid #5A396F;
+    background-color: #5A398F;
+    color: white;
+}
+
+.container-header > a:hover {
+    background-color: purple;
 }
 
 input[type="text"] {
@@ -9,10 +49,35 @@ input[type="text"] {
 }
 
 .container {
-    margin: 4vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.container-medio {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.container-form {
+    height: 350px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 2rem 0;
 }
 
 .row {
@@ -20,13 +85,6 @@ input[type="text"] {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-form {
-    border: 1px solid;
-    margin-top: 20px;
-    width: 50vw;
-    padding: 1.25rem;
 }
 
 .btn {

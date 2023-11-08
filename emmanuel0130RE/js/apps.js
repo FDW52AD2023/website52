@@ -138,36 +138,42 @@ const app5Borde = document.getElementById("app5Borde");
 const app5Color = document.getElementById("app5Color");
 const app5Grosor = document.getElementById("app5Grosor");
 const app5Tipo = document.getElementById("app5Tipo");
-const app5Prueba = document.getElementById("app5Prueba");
+const app5res = document.getElementById("app5res");
 const app5BtnAplicar = document.getElementById("app5BtnAplicar");
 
-/* app5Borde.addEventListener("select", (e) => {
-    Border()
-})
-function Borde(){
-    app5Prueba.style.border = app5Borde.value;
-}
+app5BtnAplicar.addEventListener("click", (e) => {
+    e.preventDefault();
+    let opciones = app5Borde.value;
+    let color = app5Color.value;
+    let grosor = app5Grosor.value + "px";
+    let tipo = app5Tipo.value;
 
-app5Color.addEventListener("click", (e) => {
-    cambiarColor()
+    if(opciones == "T"){
+        app5res.style.borderColor =  color;
+        app5res.style.borderWidth = grosor;
+        app5res.style.borderStyle = tipo;
+    }
+    else if(opciones == "S"){
+        app5res.style.borderTopColor =  color;
+        app5res.style.borderTopWidth = grosor;
+        app5res.style.borderTopStyle = tipo;
+    }
+    else if(opciones == "I"){
+        app5res.style.borderBottomColor =  color;
+        app5res.style.borderBottomWidth = grosor;
+        app5res.style.borderBotoomStyle = tipo;
+    }
+    else if(opciones == "Iz"){
+        app5res.style.borderLeftColor =  color;
+        app5res.style.borderLeftWidth = grosor;
+        app5res.style.borderLeftStyle = tipo;
+    }
+    else if(opciones == "D"){
+        app5res.style.borderRightColor =  color;
+        app5res.style.borderRightWidth = grosor;
+        app5res.style.borderRightStyle = tipo;
+    }
 });
-function cambiarColor() {
-    app5Prueba.style.backgroundColor = app5Color.value;
-}
-
-app5Grosor.addEventListener("input", (e) => {
-    cambiarGrosor()
-});
-function cambiarGrosor() {
-    app5Prueba.style.fontSize = `${app5Grosor.value}px`;
-}
-
-app5Tipo.addEventListener("input", (e) => {
-    cambiarBorde()
-});
-function cambiarBorde() {
-    app5Prueba.style.border = app5Tipo.value;
-} */
 
 
 /* app 6 */

@@ -43,7 +43,7 @@ const lista = document.createElement("ol");
 
 app6BtnVer.addEventListener("click", (e) => {
     e.preventDefault();
-    
+
     let ini = parseInt(app6Ini.value);
     let fin = parseInt(app6Fin.value);
 
@@ -62,7 +62,7 @@ app6BtnVer.addEventListener("click", (e) => {
     let numero = ini;
 
     while( numero <= fin  ){
-    
+
         /* checar si es perfecto */
         if( perfecto(numero)){
             let item = document.createElement("li");
@@ -74,7 +74,6 @@ app6BtnVer.addEventListener("click", (e) => {
     lista.innerHTML = "";
     app6Res.appendChild(lista);
 });
-
 /* App4 */
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
@@ -115,15 +114,6 @@ app4BtnVer.addEventListener("click", (e) => {
     mostrarTabla();
     
 });
-
-
-
-
-
-
-
-
-
 
 /* App3 */
 
@@ -170,25 +160,6 @@ app3BtnCalcular.addEventListener("click", (e) => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Obtener las referencias de los elementos a programar */
 const app1Num1 = document.getElementById("app1Num1");
 const app1Num2 = document.getElementById("app1Num2");
@@ -205,7 +176,6 @@ app1BtnCalcular.addEventListener("click", (e) => {
     
     app1Res.value = suma;
 });
-
 
 /* App2 */
 const app2Texto = document.getElementById("app2Texto"); 

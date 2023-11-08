@@ -1,0 +1,197 @@
+header {
+    border: 5px solid black;
+}
+
+/* colores de los articulos
+azul,verde,tomate,peru,oro,gris */
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
+
+.tomate {
+    background-color: tomato;
+}
+
+.peru {
+    background-color: peru;
+}
+
+.oro {
+    background-color: gold;
+}
+
+.gris {
+    background-color: gray;
+}
+
+#header1 {
+    display: flex;
+    flex-flow: column wrap;
+    height: 200px;
+}
+
+#header1 #a1 {
+    height: 180px;
+}
+
+#header2 {
+    display: flex;   /* para que todo se acomode en un renglón, en fila y no en columna por default */
+    justify-content: space-evenly;   /* justify content "justifica" el texto del flex */
+}
+
+#header3 {
+    display: flex;
+    justify-content: center;
+}
+
+#header4 {
+    display: flex;
+    flex-flow: column nowrap;  /* flex-flow define la dirección del flujo del texto (como renglón o como columa) */
+    height: 200px;
+    justify-content: space-between;
+}
+
+#header5 {
+    display: flex;
+    flex-flow: wrap;   /* wrap para que el bloque sea multi línea */
+    height: 200px;
+    align-content: space-between;
+}
+
+#header5 article {
+    width: 50%;
+    padding: 10px 0px;  /* primer numero es para arriba y abajo, segundo numero es para izq y der */
+    text-align: center;
+}
+
+#header6 {
+    display: flex;
+}
+
+#header6 #a1 {
+    order: 1;  /* orden en que aparece este elemento del contenedor */
+}
+
+#header7 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header7 #a1 {
+    order: 2;
+}
+
+#header7 #a2 {
+    order: 1;
+}
+
+#header7 #a3 {
+    order: 4;
+}
+
+#header7 #a4 {
+    order: 3;
+}
+
+#header7 #a5 {
+    order: 6;
+}
+
+#header7 #a6 {
+    order: 5;
+}
+
+#header8 {
+    display: flex;
+}
+
+#header8 #a5 {
+    flex-grow: 1;
+}
+
+#header8 #a3 {
+    flex-grow: 2;
+}
+
+#header9 {
+    display: flex;
+}
+
+#header9 #a2 {
+    flex-shrink: 1;
+    width: 200px;
+}
+
+#header9 #a4 {
+    flex-shrink: 2;
+    width: 200px;
+}
+
+#header9 #a6 {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+#header10 {
+    display: flex;
+}
+
+#header10 #a5 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+
+#header10 #a2 {
+    flex: 1 0 200px;
+}
+
+#header11 {
+    display: flex;
+    height: 200px;
+    align-items: center;   /* align items para todos los elementos */
+    justify-content: center;
+}
+
+#header11 #a1 {
+    align-self: flex-end;
+}
+
+#header11 #a6 {
+    align-self: flex-start;   /* align self para un solo elemento */
+}
+
+#mp1 header {
+    background-color: greenyellow;
+    border: 0px;
+}
+
+#mp1 main {
+    background-color: lightcoral;
+}
+
+#mp1 aside {
+    background-color: darkgoldenrod;
+}
+
+#mp1 footer {
+    background-color: yellowgreen;
+}
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;   /* para definir las columnas del grid, la cantidad de nfr indica cuántas columnas se quieren además de su medida*/
+    font-family: sans-serif;
+}
+
+#mp1 header {
+    grid-column: 1 / -1;   /* para definir cuántas columna del grid ocupa el contenedor, -1 significa que llega hasta la última columna*/
+}
+
+#mp1 footer {
+    grid-column: 1 / -1;
+}
